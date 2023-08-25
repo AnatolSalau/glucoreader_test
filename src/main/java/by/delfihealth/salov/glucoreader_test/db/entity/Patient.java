@@ -1,4 +1,4 @@
-package by.delfihealth.salov.glucoreader_test.entity;
+package by.delfihealth.salov.glucoreader_test.db.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -26,7 +26,7 @@ public class Patient {
       @ToString.Exclude
       private byte[] icon;
       @Column(nullable = false)
-      private boolean deleted = Boolean. FALSE;
+      private boolean deleted = Boolean.FALSE;
 
       public Patient(String login, String password) {
             this.login = login;

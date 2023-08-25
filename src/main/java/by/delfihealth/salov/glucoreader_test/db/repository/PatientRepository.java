@@ -1,9 +1,8 @@
-package by.delfihealth.salov.glucoreader_test.repository;
+package by.delfihealth.salov.glucoreader_test.db.repository;
 
-import by.delfihealth.salov.glucoreader_test.entity.Patient;
+import by.delfihealth.salov.glucoreader_test.db.entity.Patient;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
