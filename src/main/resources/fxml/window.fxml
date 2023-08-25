@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.delfihealth.salov.glucoreader.fx.WindowController">
+   <center>
+      <StackPane fx:id="pane">
+          <children>
+              <WebView fx:id="webView" />
+              <StackPane fx:id="splashScreen">
+                  <children>
+                      <ProgressIndicator fx:id="progressIndicator" minHeight="-Infinity" minWidth="-Infinity" />
+                  </children>
+              </StackPane>
+          </children>
+      </StackPane>
+   </center>
+   <top>
+      <HBox fx:id="titleWindow" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

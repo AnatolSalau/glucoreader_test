@@ -1,0 +1,66 @@
+
+.window-button.button:hover {
+      -fx-background-color: #FFFFFF11;
+      -icon-paint: white;
+}
+
+.window-button.button:pressed {
+      -fx-background-color: #FFFFFF22;
+}
+
+.close-button.button:hover {
+      -fx-background-color: #E81123;
+      -icon-paint: white;
+}
+
+#root {
+      -fx-background-color: white;
+/*      -fx-min-width: 1340;
+      -fx-min-height: 1024;*/
+}
+
+#webView {
+      -fx-background-color: #EAEAEA;
+}
+#titleWindow {
+      -fx-pref-height: 30;
+      -fx-background-color: #344742;
+}
+#splashScreen {
+      -fx-background-color: #344742;
+}
+
+#progressIndicator {
+      -fx-accent: #EAEAEA;
+      -fx-pref-height: 150;
+      -fx-pref-width: 150;
+}
+.scroll-bar:vertical {
+      -fx-pref-width: 8;
+}
+
+.scroll-bar:vertical .thumb {
+      -fx-background-color: #BCBCC6 50% ;
+}
+
+.scroll-bar:vertical .track{
+      -fx-background-color :#EAEAEA;
+      -fx-border-color :transparent;
+      -fx-background-radius : 0;
+      -fx-border-radius : 0;
+}
+
+.scroll-bar:horizontal {
+      -fx-pref-height: 8;
+}
+
+.scroll-bar:horizontal .thumb {
+      -fx-background-color: #BCBCC6 50% ;
+}
+
+.scroll-bar:horizontal .track{
+      -fx-background-color :#EAEAEA;
+      -fx-border-color :transparent;
+      -fx-background-radius : 0;
+      -fx-border-radius : 0;
+}
