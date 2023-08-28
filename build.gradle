@@ -7,6 +7,10 @@ plugins {
 group = 'by.delfihealth.salov'
 version = '0.0.1-SNAPSHOT'
 
+bootJar {
+    archiveFileName = 'gluco_reader_test.jar'
+}
+
 java {
     sourceCompatibility = '17'
 }
