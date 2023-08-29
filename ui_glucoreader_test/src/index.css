@@ -4,7 +4,15 @@
   box-sizing: content-box;
 }
 
+@font-face {
+  font-family: "MyriadPro-Regular";   /*Can be any text*/
+  src: local("MyriadPro-Regular"),
+  url("./fonts/MyriadPro-Regular.ttf") format("truetype");
+}
+
 body {
   background-color: #FFFFFF;
   color: black;
+  font-family: 'MyriadPro-Regular', sans-serif;
+  font-size: 16px;
 }
