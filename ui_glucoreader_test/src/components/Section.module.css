@@ -2,5 +2,9 @@
       display: flex;
       align-items: center;
       border-top: 1px solid #a7eee1;
-      min-height: 50px;
+}
+
+.text {
+      margin-top: 11px;
+      padding-bottom: 9px;
 }

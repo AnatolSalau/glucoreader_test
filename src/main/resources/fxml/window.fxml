@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.web.WebView?>
 
+<?import javafx.scene.image.Image?>
 <BorderPane fx:id="root" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.delfihealth.salov.glucoreader_test.fx.WindowController">
    <center>
       <StackPane fx:id="pane">
@@ -20,6 +22,13 @@
       </StackPane>
    </center>
    <top>
-      <HBox fx:id="titleWindow" BorderPane.alignment="CENTER" />
+      <HBox fx:id="titleWindow" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView
+                    fx:id="titleImage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../png/iconWindows.png" />
+            </ImageView>
+         </children>
+      </HBox>
    </top>
 </BorderPane>

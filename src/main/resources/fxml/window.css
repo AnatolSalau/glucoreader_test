@@ -26,6 +26,12 @@
       -fx-pref-height: 30;
       -fx-background-color: #344742;
 }
+
+#titleIcon {
+      -fx-min-width: 20px;
+      -fx-max-height: 20px;
+      -fx-background-color: red;
+}
 #splashScreen {
       -fx-background-color: white;
 }

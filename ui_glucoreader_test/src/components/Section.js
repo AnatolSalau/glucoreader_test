@@ -3,7 +3,9 @@ import style from './Section.module.css'
 function Section({text}) {
       return (
             <div className={style.section}>
-                  {text}
+                  <div className={style.text}>
+                        {text}
+                  </div>
             </div>
       )
 }

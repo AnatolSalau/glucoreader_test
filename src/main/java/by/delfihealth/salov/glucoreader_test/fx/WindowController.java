@@ -54,7 +54,6 @@ public class WindowController implements Initializable {
                   timeline.setOnFinished( j -> {
                         splashScreen.setVisible(false);
                   });
-
             });
             return pause;
       }
