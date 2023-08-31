@@ -1,7 +1,7 @@
 import {memo, useEffect, useState} from "react";
 
 import style from './Main.module.css'
-import getComPortList from "./web/getComPortList"
+import getComPortList from "./web/getComPortList";
 import { FcOk } from 'react-icons/fc'
 import Section from "./Section";
 import Title from "./Title";
@@ -18,7 +18,7 @@ function Main() {
       ]);
 
       useEffect(() => {
-            setComPortList();
+            setComPortList(getComPortList);
 
       }, [setComPortList]);
 
