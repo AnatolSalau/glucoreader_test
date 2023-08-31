@@ -1,13 +1,18 @@
 import style from './Title.module.css'
+import CheckBoxList from "./checkBoxList/CheckBoxList";
 
-function Title({children}) {
+function Title({text, activeComPortName, setActiveComPortName, comPortList, setComPortList}) {
       return (
             <div className={style.title}>
                   <div className={style.text}>
-                        Соединение:
+                        {text}
                   </div>
-
-                  {children}
+                  <CheckBoxList
+                        activeComPortName={activeComPortName}
+                        setActiveComPortName={setActiveComPortName}
+                        comPortList={comPortList}
+                        setComPortList={setComPortList}
+                  />
             </div>
       )
 }

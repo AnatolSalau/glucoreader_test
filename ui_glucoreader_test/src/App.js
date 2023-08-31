@@ -1,11 +1,15 @@
 import './App.css';
 import Main from './components/Main'
+import {memo} from "react";
 function App() {
+
+      const returnMain = memo(function returnMain() {
+            return <Main/>
+      });
+
       return (
             <div className="App">
-                  <Main>
-
-                  </Main>
+                  {returnMain}
             </div>
       );
 }

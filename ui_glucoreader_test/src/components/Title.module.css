@@ -1,16 +1,9 @@
 .title {
       display: flex;
       align-items: center;
-      border: 1px solid blue;
-
 }
 
 .text {
-      margin-top: 2px;
-      padding-bottom: 1px;
+      margin-top: 11px;
+      padding-bottom: 9px;
 }
-.title svg {
-      font-size: 20px;
-      border: 1px solid red;
-}
-

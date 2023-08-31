@@ -1,0 +1,5 @@
+.checkBoxList {
+      display: flex;
+/*      border: 1px solid #A1A2A4;*/
+      gap: 4px;
+}

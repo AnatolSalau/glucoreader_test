@@ -1,0 +1,27 @@
+[
+      {
+            "id": 1,
+            "name": "COM1",
+            "description": "GlucoBridge"
+      },
+      {
+            "id": 2,
+            "name": "COM2",
+            "description": ""
+      },
+      {
+            "id": 3,
+            "name": "COM3",
+            "description": "GlucoBridge"
+      },
+      {
+            "id": 4,
+            "name": "COM4",
+            "description": ""
+      },
+      {
+            "id": 5,
+            "name": "COM5",
+            "description": ""
+      }
+]

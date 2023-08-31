@@ -61,14 +61,14 @@ public class GlucoreaderTestApplication extends Application {
                   .withContent(root)
                   .apply();
 
-            scene = primaryStage.getScene();
+            scene = primaryStage.  getScene();
 
             WaitomoTheme.apply(scene);
 
             scene.getStylesheets().add(windowCss);
 
             primaryStage.getIcons().add(titleImage);
-            primaryStage.setTitle("Title");
+            primaryStage.setTitle("GR Test");
 
             primaryStage.show();
             TimeUnit.MILLISECONDS.sleep(100);
