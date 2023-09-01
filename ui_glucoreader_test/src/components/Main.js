@@ -1,4 +1,4 @@
-import {memo, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 import style from './Main.module.css'
 import getComPortList from "./web/getComPortList";
@@ -20,7 +20,7 @@ function Main() {
       useEffect(() => {
             setComPortList(getComPortList);
 
-      }, [setComPortList]);
+      }, []);
 
       let [activeComPortName, setActiveComPortName] = useState("");
       console.log(countRender++);
