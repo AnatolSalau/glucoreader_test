@@ -23,13 +23,12 @@ function Main() {
       }, []);
 
       let [activeComPortName, setActiveComPortName] = useState("");
-      console.log(countRender++);
+      console.log("Main countRender : " + countRender++);
       return (
             <div className={style.main}>
                   <ComPortList
                         text={"Список COM портов:"}
                         comPortList={comPortList}
-                        setComPortList={setComPortList}
                         activeComPortName={activeComPortName}
                         setActiveComPortName={setActiveComPortName}
                   />
