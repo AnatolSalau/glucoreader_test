@@ -1,7 +1,7 @@
 import style from './CheckBoxList.module.css'
 import CheckBox from "./CheckBox";
 
-function CheckBoxList({activeComPortName, setActiveComPortName, comPortList}) {
+function CheckBoxList({activeComPortName, setActiveComPortNameHandler, comPortList}) {
       return (
             <div className={style.checkBoxList}>
                   {
@@ -12,6 +12,7 @@ function CheckBoxList({activeComPortName, setActiveComPortName, comPortList}) {
                                           id={comPort.id}
                                           name={comPort.name}
                                           description={comPort.description}
+                                          activePortNameClickHandler= {setActiveComPortNameHandler}
                                     />
                               }
                         )

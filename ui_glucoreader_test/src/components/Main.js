@@ -24,13 +24,16 @@ function Main() {
 
       let [activeComPortName, setActiveComPortName] = useState("");
       console.log("Main countRender : " + countRender++);
+      const setActiveComPortNameHandler = (name) => {
+            console.log(name);
+      };
       return (
             <div className={style.main}>
                   <ComPortList
                         text={"Список COM портов:"}
                         comPortList={comPortList}
                         activeComPortName={activeComPortName}
-                        setActiveComPortName={setActiveComPortName}
+                        setActiveComPortNameHandler={setActiveComPortNameHandler}
                   />
                   <Section text={"Соединение:"}>
                         <FcOk/>

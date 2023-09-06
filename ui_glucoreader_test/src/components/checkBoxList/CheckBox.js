@@ -1,15 +1,41 @@
 import {MdOutlineCheckBoxOutlineBlank} from 'react-icons/md';
 import {MdOutlineCheckBox} from 'react-icons/md';
 import style from "./CheckBox.module.css";
+import {useState} from "react";
 
-function CheckBox({id, name, description}) {
-      const setActiveCheckBoxOnCLick = (click) => {
-            
+
+let checkBoxRenderCount = 0;
+
+function CheckBox({id, name, description, activePortNameClickHandler}) {
+      let [portIsActive, setPortIsActive] = useState(false);
+
+      const changeStyleByClick = () => {
+                 return ` ${
+                       portIsActive
+                             ? ` ${style.checkBox} ${style.disabled}`
+                             : ` ${style.checkBox} `
+                 } `
       }
+
+      const changeIconByCLick = () => {
+            console.log("changeIconByCLick");
+            return portIsActive
+                  ? <MdOutlineCheckBox></MdOutlineCheckBox>
+                  : <MdOutlineCheckBoxOutlineBlank></MdOutlineCheckBoxOutlineBlank>
+
+      }
+      console.log("CheckBoxRenderCount : " + checkBoxRenderCount++);
       return (
-            <div className={style.checkBox}>
+            <div
+                  className={changeStyleByClick()}
+                  onClick={() => {
+                        activePortNameClickHandler(name);
+                        changeStyleByClick();
+                        setPortIsActive(!portIsActive);
+                  }}
+            >
                   <div className={style.checkFieldEmpty}>
-                        <MdOutlineCheckBoxOutlineBlank/>
+                        {changeIconByCLick()}
                   </div>
                   <div className={style.nameDescription}>
                         <div className={style.name}>
@@ -19,8 +45,6 @@ function CheckBox({id, name, description}) {
                               {description}
                         </div>
                   </div>
-
-
             </div>
       )
 }

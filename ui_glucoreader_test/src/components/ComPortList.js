@@ -1,7 +1,7 @@
 import style from './ComPortList.module.css'
 import CheckBoxList from "./checkBoxList/CheckBoxList";
 
-function ComPortList({text, activeComPortName, setActiveComPortName, comPortList}) {
+function ComPortList({text, activeComPortName, setActiveComPortNameHandler, comPortList}) {
       return (
             <div className={style.comPortList}>
                   <div className={style.text}>
@@ -9,7 +9,7 @@ function ComPortList({text, activeComPortName, setActiveComPortName, comPortList
                   </div>
                   <CheckBoxList
                         activeComPortName={activeComPortName}
-                        setActiveComPortName={setActiveComPortName}
+                        setActiveComPortNameHandler={setActiveComPortNameHandler}
                         comPortList={comPortList}
                   />
             </div>
