@@ -9,10 +9,11 @@ function CheckBoxList({activeComPortName, setActiveComPortNameHandler, comPortLi
                               (comPort, key) => {
                                     return <CheckBox
                                           key = {key}
-                                          id={comPort.id}
-                                          name={comPort.name}
-                                          description={comPort.description}
-                                          activePortNameClickHandler= {setActiveComPortNameHandler}
+                                          id = {comPort.id}
+                                          name = {comPort.name}
+                                          description = {comPort.description}
+                                          activeComPortName = {activeComPortName}
+                                          setActiveComPortNameHandler= {setActiveComPortNameHandler}
                                     />
                               }
                         )

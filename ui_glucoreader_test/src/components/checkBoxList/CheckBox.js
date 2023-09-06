@@ -6,32 +6,31 @@ import {useState} from "react";
 
 let checkBoxRenderCount = 0;
 
-function CheckBox({id, name, description, activePortNameClickHandler}) {
-      let [portIsActive, setPortIsActive] = useState(false);
+function CheckBox({id, name, description, activeComPortName, setActiveComPortNameHandler}) {
 
       const changeStyleByClick = () => {
                  return ` ${
-                       portIsActive
+                       name === activeComPortName
                              ? ` ${style.checkBox} ${style.disabled}`
                              : ` ${style.checkBox} `
                  } `
       }
 
       const changeIconByCLick = () => {
-            console.log("changeIconByCLick");
-            return portIsActive
+            // console.log("changeIconByCLick");
+            return name === activeComPortName
                   ? <MdOutlineCheckBox></MdOutlineCheckBox>
                   : <MdOutlineCheckBoxOutlineBlank></MdOutlineCheckBoxOutlineBlank>
 
       }
-      console.log("CheckBoxRenderCount : " + checkBoxRenderCount++);
+      // console.log("CheckBoxRenderCount : " + checkBoxRenderCount++);
       return (
             <div
                   className={changeStyleByClick()}
                   onClick={() => {
-                        activePortNameClickHandler(name);
+                        setActiveComPortNameHandler(name);
                         changeStyleByClick();
-                        setPortIsActive(!portIsActive);
+                        // setPortIsActive(!portIsActive);
                   }}
             >
                   <div className={style.checkFieldEmpty}>

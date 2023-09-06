@@ -25,8 +25,11 @@ function Main() {
       let [activeComPortName, setActiveComPortName] = useState("");
       console.log("Main countRender : " + countRender++);
       const setActiveComPortNameHandler = (name) => {
-            console.log(name);
+                  name === activeComPortName
+                        ? setActiveComPortNameHandler("")
+                        : setActiveComPortName(name);
       };
+      console.log("activeComPortName : " + activeComPortName);
       return (
             <div className={style.main}>
                   <ComPortList
