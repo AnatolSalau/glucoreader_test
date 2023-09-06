@@ -1,8 +1,6 @@
 import {MdOutlineCheckBoxOutlineBlank} from 'react-icons/md';
 import {MdOutlineCheckBox} from 'react-icons/md';
 import style from "./CheckBox.module.css";
-import {useState} from "react";
-
 
 let checkBoxRenderCount = 0;
 
