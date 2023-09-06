@@ -4,7 +4,7 @@ import style from './Main.module.css'
 import getComPortList from "./web/getComPortList";
 import { FcOk } from 'react-icons/fc'
 import Section from "./Section";
-import Title from "./Title";
+import ComPortList from "./ComPortList";
 
 let countRender = 0;
 
@@ -26,11 +26,11 @@ function Main() {
       console.log(countRender++);
       return (
             <div className={style.main}>
-                  <Title
+                  <ComPortList
                         text={"Список COM портов:"}
                         comPortList={comPortList}
                         setComPortList={setComPortList}
-                        activeComPortName={setActiveComPortName}
+                        activeComPortName={activeComPortName}
                         setActiveComPortName={setActiveComPortName}
                   />
                   <Section text={"Соединение:"}>

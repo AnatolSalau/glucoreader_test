@@ -1,4 +1,4 @@
-.title {
+.comPortList {
       display: flex;
       align-items: center;
 }
@@ -6,4 +6,6 @@
 .text {
       margin-top: 11px;
       padding-bottom: 9px;
+      padding-right: 4px;
+      padding-left: 4px;
 }

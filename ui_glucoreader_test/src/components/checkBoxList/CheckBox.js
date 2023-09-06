@@ -2,7 +2,7 @@ import {MdOutlineCheckBoxOutlineBlank} from 'react-icons/md';
 import {MdOutlineCheckBox} from 'react-icons/md';
 import style from "./CheckBox.module.css";
 
-function CheckBox({name, description}) {
+function CheckBox({id, name, description}) {
       const setActiveCheckBoxOnCLick = (click) => {
             
       }

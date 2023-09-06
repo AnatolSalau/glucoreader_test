@@ -4,8 +4,18 @@ import CheckBox from "./CheckBox";
 function CheckBoxList({activeComPortName, setActiveComPortName, comPortList, setComPortList}) {
       return (
             <div className={style.checkBoxList}>
-                  <CheckBox name={'COM1'} description={'GlucoBridge'}/>
-                  <CheckBox name={'COM2'} />
+                  {
+                        comPortList.map(
+                              (comPort, key) => {
+                                    return <CheckBox
+                                          key = {key}
+                                          id={comPort.id}
+                                          name={comPort.name}
+                                          description={comPort.description}
+                                    />
+                              }
+                        )
+                  }
             </div>
       )
 }
