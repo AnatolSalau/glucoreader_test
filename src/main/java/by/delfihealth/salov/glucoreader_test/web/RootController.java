@@ -1,5 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.web;
 
+import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fazecast.jSerialComm.SerialPort;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,15 +18,11 @@ public class RootController {
       @Autowired
       private ComPortService comPortService;
 
-      @GetMapping("getallportnames")
-      public ResponseEntity<List<String>> getAllComPortsNames() {
-            List<SerialPort> serialPorts = comPortService.getSerialPorts();
-            List<String> serialPortNames = serialPorts
-                  .stream()
-                  .map(SerialPort::getSystemPortName)
-                  .collect(Collectors.toList());
+      @GetMapping("ports")
+      public ResponseEntity<List<SerialPortDTO>> getAllComPorts() {
+            List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
             return ResponseEntity
                         .status(200)
-                  .body(serialPortNames);
+                  .body(serialPorts);
       }
 }
