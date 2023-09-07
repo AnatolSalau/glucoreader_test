@@ -12,7 +12,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 @SpringBootTest
 class ComPortServiceTest {
@@ -40,7 +39,7 @@ class ComPortServiceTest {
 
       @Test
       void findAllPortsDTO() {
-            List<SerialPortDTO> allPortsDTO = comPortService.findAllPortsDTO();
+            List<SerialPortDTO> allPortsDTO = comPortService.findAllSerialPortsDTO();
             System.out.println(allPortsDTO);
       }
 
@@ -52,7 +51,7 @@ class ComPortServiceTest {
             System.out.println(declaredMethods);
             Method convertSerialPortNameToID = Arrays.stream(declaredMethods)
                   .filter(method -> method.getName().equals("convertSerialPortNameToID"))
-                  .filter(method -> method.getReturnType().equals(Long.class))
+                  .filter(method -> method.getReturnType().equals(Integer.class))
                   .findFirst().orElseGet(null);
             convertSerialPortNameToID.setAccessible(true);
 

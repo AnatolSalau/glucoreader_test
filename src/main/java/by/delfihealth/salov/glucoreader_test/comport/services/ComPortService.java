@@ -81,12 +81,12 @@ public class ComPortService {
             return false;
       }
 
-      public List<SerialPortDTO> findAllPortsDTO() {
+      public List<SerialPortDTO> findAllSerialPortsDTO() {
             SerialPort[] commPorts = SerialPort.getCommPorts();
             List<SerialPortDTO> serialPortDTOS = Arrays
                   .stream(commPorts)
                   .map((serialPort) -> new SerialPortDTO(
-                              0L,
+                              convertSerialPortNameToID(serialPort.getSystemPortName()),
                         serialPort.getSystemPortName(),
                         serialPort.getPortDescription()
                         )
@@ -131,11 +131,11 @@ public class ComPortService {
             return dataList;
       }
 
-      private Long convertSerialPortNameToID(String systemPortName) {
+      private Integer convertSerialPortNameToID(String systemPortName) {
             String substring = systemPortName
                   .substring(systemPortName.length() - 1, systemPortName.length());
             System.out.println(substring);
-            return Long.parseLong(substring);
+            return Integer.parseInt(substring);
       }
 }
 

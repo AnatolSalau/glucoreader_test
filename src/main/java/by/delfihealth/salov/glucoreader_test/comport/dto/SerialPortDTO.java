@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class SerialPortDTO {
-      private  final Long id;
+      private  final Integer id;
       private final String name;
       private final String description;
 }
