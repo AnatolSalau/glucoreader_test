@@ -30,6 +30,7 @@ function Main() {
                         : setActiveComPortName(name);
       };
       console.log("activeComPortName : " + activeComPortName);
+
       return (
             <div className={style.main}>
                   <ComPortList

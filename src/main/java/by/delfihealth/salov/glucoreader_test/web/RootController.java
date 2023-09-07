@@ -1,7 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.web;
 
-import by.delfihealth.salov.glucoreader_test.comport.ComPortService;
-import by.delfihealth.salov.glucoreader_test.comport.HexByteData;
+import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fazecast.jSerialComm.SerialPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

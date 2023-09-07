@@ -17,8 +17,8 @@ function CheckBox({id, name, description, activeComPortName, setActiveComPortNam
       const changeIconByCLick = () => {
             // console.log("changeIconByCLick");
             return name === activeComPortName
-                  ? <MdOutlineCheckBox></MdOutlineCheckBox>
-                  : <MdOutlineCheckBoxOutlineBlank></MdOutlineCheckBoxOutlineBlank>
+                  ? <MdOutlineCheckBox/>
+                  : <MdOutlineCheckBoxOutlineBlank/>
 
       }
       // console.log("CheckBoxRenderCount : " + checkBoxRenderCount++);

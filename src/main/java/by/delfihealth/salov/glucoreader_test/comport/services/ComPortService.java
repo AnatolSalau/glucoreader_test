@@ -1,10 +1,11 @@
-package by.delfihealth.salov.glucoreader_test.comport;
+package by.delfihealth.salov.glucoreader_test.comport.services;
 
+import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
+import by.delfihealth.salov.glucoreader_test.comport.pojo.HexByteData;
+import by.delfihealth.salov.glucoreader_test.comport.pojo.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
 import javafx.util.Pair;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -80,6 +81,19 @@ public class ComPortService {
             return false;
       }
 
+      public List<SerialPortDTO> findAllPortsDTO() {
+            SerialPort[] commPorts = SerialPort.getCommPorts();
+            List<SerialPortDTO> serialPortDTOS = Arrays
+                  .stream(commPorts)
+                  .map((serialPort) -> new SerialPortDTO(
+                              0L,
+                        serialPort.getSystemPortName(),
+                        serialPort.getPortDescription()
+                        )
+                  ).toList();
+            return serialPortDTOS;
+      }
+
       private List<SerialPort> findAllComPorts() {
             SerialPort[] commPorts = SerialPort.getCommPorts();
             List<SerialPort> serialPorts = Arrays.asList(commPorts);
@@ -117,6 +131,12 @@ public class ComPortService {
             return dataList;
       }
 
+      private Long convertSerialPortNameToID(String systemPortName) {
+            String substring = systemPortName
+                  .substring(systemPortName.length() - 1, systemPortName.length());
+            System.out.println(substring);
+            return Long.parseLong(substring);
+      }
 }
 
 

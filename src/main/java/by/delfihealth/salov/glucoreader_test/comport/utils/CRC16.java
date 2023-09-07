@@ -1,4 +1,4 @@
-package by.delfihealth.salov.glucoreader_test.comport;
+package by.delfihealth.salov.glucoreader_test.comport.utils;
 
 import java.util.zip.Checksum;
 
