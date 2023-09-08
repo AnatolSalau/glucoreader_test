@@ -1,7 +1,7 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
 import by.delfihealth.salov.glucoreader_test.comport.utils.CRC16;
-import by.delfihealth.salov.glucoreader_test.comport.pojo.HexByteData;
+import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import javafx.util.Pair;
 import lombok.AllArgsConstructor;
 

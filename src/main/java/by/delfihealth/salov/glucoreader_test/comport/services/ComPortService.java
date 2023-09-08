@@ -1,8 +1,8 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
 import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
-import by.delfihealth.salov.glucoreader_test.comport.pojo.HexByteData;
-import by.delfihealth.salov.glucoreader_test.comport.pojo.HexByteType;
+import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
+import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
 import javafx.util.Pair;
 import lombok.Getter;
@@ -24,8 +24,6 @@ public class ComPortService {
       public ComPortService() {
             this.serialPorts = findAllComPorts();
       }
-
-
 
       public boolean openComPort(String portSystemName, int baudRate, int dataBits,
                                  int stopBits, int parity) {

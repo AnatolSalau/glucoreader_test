@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 
 import style from './Main.module.css'
 import getComPortList from "./web/getComPortList";
+import wsConnection, {onOpen} from './web/wsConnection';
 import { FcOk } from 'react-icons/fc'
 import Section from "./Section";
 import ComPortList from "./ComPortList";
@@ -19,7 +20,8 @@ function Main() {
 
       useEffect(() => {
             setComPortList(getComPortList);
-
+            const webSocket = new WebSocket('ws://127.0.0.1:8044/websocket',
+                  "subprotocol.glucoreader.websocket");
       }, []);
 
       let [activeComPortName, setActiveComPortName] = useState("");

@@ -1,7 +1,7 @@
 package by.delfihealth.salov.glucoreader_test.comport;
 
 import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
-import by.delfihealth.salov.glucoreader_test.comport.pojo.HexByteData;
+import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
