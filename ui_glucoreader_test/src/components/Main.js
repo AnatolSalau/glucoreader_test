@@ -1,11 +1,11 @@
 import {useEffect, useState} from "react";
 
 import style from './Main.module.css'
-import getComPortList from "./web/getComPortList";
-import wsConnection, {onOpen} from './web/wsConnection';
+import io from 'socket.io-client';
 import { FcOk } from 'react-icons/fc'
 import Section from "./Section";
 import ComPortList from "./ComPortList";
+import {onOpen, onClose, onError, onMessage} from './web/wsConnection';
 
 let countRender = 0;
 
@@ -19,9 +19,19 @@ function Main() {
       ]);
 
       useEffect(() => {
-            setComPortList(getComPortList);
-            const webSocket = new WebSocket('ws://127.0.0.1:8044/websocket',
-                  "subprotocol.glucoreader.websocket");
+            //------------------------------------
+/*            const socket = io("http://127.0.0.1:8044/websocket", {
+                  //withCredentials: true,
+                  extraHeaders: {
+                        "Access-Control-Allow-Origin" : "*"
+                  }
+            })*/
+            //------------------------------------
+/*            const webSocket = new WebSocket('ws://127.0.0.1:8044/websocket',
+                  "subprotocol.glucoreader.websocket");*/
+            onMessage()
+
+            //----------------------------
       }, []);
 
       let [activeComPortName, setActiveComPortName] = useState("");
