@@ -1,11 +1,10 @@
 import {useEffect, useState} from "react";
 
 import style from './Main.module.css'
-import io from 'socket.io-client';
 import { FcOk } from 'react-icons/fc'
 import Section from "./Section";
 import ComPortList from "./ComPortList";
-import {onOpen, onClose, onError, onMessage} from './web/wsConnection';
+import {onOpen, onClose, onError, onMessage, connectionListener} from './web/wsConnection';
 
 let countRender = 0;
 
@@ -19,23 +18,13 @@ function Main() {
       ]);
 
       useEffect(() => {
-            //------------------------------------
-/*            const socket = io("http://127.0.0.1:8044/websocket", {
-                  //withCredentials: true,
-                  extraHeaders: {
-                        "Access-Control-Allow-Origin" : "*"
-                  }
-            })*/
-            //------------------------------------
-/*            const webSocket = new WebSocket('ws://127.0.0.1:8044/websocket',
-                  "subprotocol.glucoreader.websocket");*/
-            onMessage()
-
-            //----------------------------
+            console.log("ComPortList : "  + comPortList);
+            connectionListener(setComPortList, comPortList);
       }, []);
 
       let [activeComPortName, setActiveComPortName] = useState("");
       console.log("Main countRender : " + countRender++);
+
       const setActiveComPortNameHandler = (name) => {
                   name === activeComPortName
                         ? setActiveComPortNameHandler("")
@@ -54,8 +43,7 @@ function Main() {
                   <Section text={"Соединение:"}>
                         <FcOk/>
                   </Section>
-                  <Section text={"Версия протокола:"}>
-                  </Section>
+                  <Section text={"Версия протокола:"}/>
                   <Section text={"Версия прибора:"}/>
                   <Section text={"Состояние прибора:"}/>
             </div>

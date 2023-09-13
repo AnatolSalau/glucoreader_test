@@ -132,7 +132,7 @@ public class ComPortService {
       private Integer convertSerialPortNameToID(String systemPortName) {
             String substring = systemPortName
                   .substring(systemPortName.length() - 1, systemPortName.length());
-            System.out.println(substring);
+            //System.out.println(substring);
             return Integer.parseInt(substring);
       }
 }

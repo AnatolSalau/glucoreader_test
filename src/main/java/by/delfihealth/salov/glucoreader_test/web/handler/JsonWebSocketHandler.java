@@ -1,7 +1,11 @@
 package by.delfihealth.salov.glucoreader_test.web.handler;
 
+import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
+import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.SubProtocolCapable;
@@ -22,13 +26,20 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       private static final Logger logger = LoggerFactory.getLogger(JsonWebSocketHandler.class);
 
       private final Set<WebSocketSession> sessions = new CopyOnWriteArraySet<>();
+
+      @Autowired
+      private ComPortService comPortService;
+
+      @Autowired
+      ObjectMapper objectMapper = new ObjectMapper();
       
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             logger.info("Server connection opened");
             sessions.add(session);
-
-            TextMessage message = new TextMessage("one-time message from server");
+            List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
+            String serialPortsStr = objectMapper.writeValueAsString(serialPorts);
+            TextMessage message = new TextMessage(serialPortsStr);
             logger.info("Server sends: {}", message);
             session.sendMessage(message);
       }
@@ -39,13 +50,17 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             sessions.remove(session);
       }
 
-      @Scheduled(fixedRate = 10000)
+      @Scheduled(fixedRate = 5000)
       void sendPeriodicMessages() throws IOException {
+
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
                         String broadcast = "server periodic message " + LocalTime.now();
-                        logger.info("Server sends: {}", broadcast);
-                        session.sendMessage(new TextMessage(broadcast));
+                        List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
+                        String serialPortsStr = objectMapper.writeValueAsString(serialPorts);
+                        //System.out.println("SerialPorts : " + serialPortsStr);
+                        //logger.info("Server sends: {}", serialPortsStr);
+                        session.sendMessage(new TextMessage(serialPortsStr));
                   }
             }
       }

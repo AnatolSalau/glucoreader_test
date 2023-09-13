@@ -5,7 +5,7 @@ function CheckBoxList({activeComPortName, setActiveComPortNameHandler, comPortLi
       return (
             <div className={style.checkBoxList}>
                   {
-                        comPortList.map(
+/*                        comPortList.map(
                               (comPort, key) => {
                                     return <CheckBox
                                           key = {key}
@@ -16,7 +16,7 @@ function CheckBoxList({activeComPortName, setActiveComPortNameHandler, comPortLi
                                           setActiveComPortNameHandler= {setActiveComPortNameHandler}
                                     />
                               }
-                        )
+                        )*/
                   }
             </div>
       )
