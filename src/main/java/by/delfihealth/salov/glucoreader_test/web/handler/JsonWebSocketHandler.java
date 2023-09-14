@@ -1,6 +1,7 @@
 package by.delfihealth.salov.glucoreader_test.web.handler;
 
 import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
+import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -52,12 +53,23 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 5000)
       void sendPeriodicMessages() throws IOException {
-
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
                         String broadcast = "server periodic message " + LocalTime.now();
-                        List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
-                        String serialPortsStr = objectMapper.writeValueAsString(serialPorts);
+                        List<SerialPortDTO> currentSerialPortsDTO = comPortService.getCurrentSerialPortsDTO();
+                        List<SerialPortDTO> newSerialPortsDTO = comPortService.findAllSerialPortsDTO();
+                        if (currentSerialPortsDTO.equals(newSerialPortsDTO)) {
+                              System.out.println("ComPortList are equals");
+                              System.out.println("currentSerialPortsDTO : " + currentSerialPortsDTO);
+                              System.out.println("newSerialPortsDTO : " + newSerialPortsDTO);
+                              System.out.println();
+                              return;
+                        }
+                        System.out.println("ComPortList are different");
+                        System.out.println("currentSerialPortsDTO : " + currentSerialPortsDTO);
+                        System.out.println("newSerialPortsDTO : " + newSerialPortsDTO);
+                        System.out.println();
+                        String serialPortsStr = objectMapper.writeValueAsString(newSerialPortsDTO);
                         //System.out.println("SerialPorts : " + serialPortsStr);
                         //logger.info("Server sends: {}", serialPortsStr);
                         session.sendMessage(new TextMessage(serialPortsStr));
@@ -70,9 +82,16 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             String request = message.getPayload();
             logger.info("Server received: {}", request);
 
-            String response = String.format("response from server to '%s'", HtmlUtils.htmlEscape(request));
+            comPortService.openComPort(request, 19200, 8,
+                  1, 2);
+            List<HexByteData> protocolVersion = comPortService.getProtocolVersion();
+            System.out.println("-------------------------------------");
+            System.out.println(protocolVersion);
+            System.out.println("-------------------------------------");
+
+/*            String response = String.format("response from server to '%s'", HtmlUtils.htmlEscape(request));
             logger.info("Server sends: {}", response);
-            session.sendMessage(new TextMessage(response));
+            session.sendMessage(new TextMessage(response));*/
       }
 
       @Override

@@ -1,7 +1,8 @@
 .checkBoxList {
       display: flex;
+      flex-direction: column;
 /*      border: 1px solid #A1A2A4;*/
       gap: 4px;
       flex-wrap: wrap;
-      padding: 8px;
+      padding: 4px;
 }

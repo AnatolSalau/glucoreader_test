@@ -1,34 +1,43 @@
 import {useEffect, useState} from "react";
-
-import style from './Main.module.css'
 import { FcOk } from 'react-icons/fc'
+import style from './Main.module.css'
 import Section from "./Section";
-import ComPortList from "./ComPortList";
-import {onOpen, onClose, onError, onMessage, connectionListener} from './web/wsConnection';
+import ComPortList from "./comPortList/ComPortList";
+import {connection} from "./ws/wsConnection"
+
 
 let countRender = 0;
 
 function Main() {
+/*      let[connection, setConnection] = useState(new WebSocket('ws://127.0.0.1:8044/websocket',
+            "subprotocol.glucoreader.websocket"));*/
+
       let [comPortList, setComPortList] = useState([
             {
-                  id: null,
-                  name: "",
-                  description: ""
+                  id: 0,
+                  name: "name",
+                  description: "description"
             }
       ]);
 
       useEffect(() => {
-            console.log("ComPortList : "  + comPortList);
-            connectionListener(setComPortList, comPortList);
+            connection.onmessage = function (event) {
+                  setComPortList(JSON.parse(event.data));
+            };
       }, []);
 
       let [activeComPortName, setActiveComPortName] = useState("");
       console.log("Main countRender : " + countRender++);
 
       const setActiveComPortNameHandler = (name) => {
-                  name === activeComPortName
-                        ? setActiveComPortNameHandler("")
-                        : setActiveComPortName(name);
+                  if (name === activeComPortName) {
+                        setActiveComPortNameHandler("")
+
+                  }
+                  else {
+                        setActiveComPortName(name);
+                        connection.send(name);
+                  }
       };
       console.log("activeComPortName : " + activeComPortName);
 

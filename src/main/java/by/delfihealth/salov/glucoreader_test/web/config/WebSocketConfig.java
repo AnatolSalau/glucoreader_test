@@ -18,9 +18,7 @@ public class WebSocketConfig implements WebSocketConfigurer {
       public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
             registry
                   .addHandler(webSocketHandler(), "/websocket")
-                  //.setAllowedOrigins("http://127.0.0.1:3000")
-                  .setAllowedOrigins("*")
-            ;
+                  .setAllowedOrigins("*");
       }
 
       @Bean
@@ -34,7 +32,6 @@ public class WebSocketConfig implements WebSocketConfigurer {
                   @Override
                   public void addCorsMappings(CorsRegistry registry){
                         registry.addMapping("/**")
-                              //.allowedOrigins("http://127.0.0.1:3000");
                               .allowedOrigins("*");
                   }
             };

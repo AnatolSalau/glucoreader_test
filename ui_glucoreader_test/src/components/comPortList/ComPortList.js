@@ -1,5 +1,5 @@
 import style from './ComPortList.module.css'
-import CheckBoxList from "./checkBoxList/CheckBoxList";
+import CheckBoxList from "./CheckBoxList";
 function ComPortList({text, activeComPortName, setActiveComPortNameHandler, comPortList}) {
 
       return (

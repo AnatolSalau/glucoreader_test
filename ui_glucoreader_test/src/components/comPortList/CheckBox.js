@@ -9,7 +9,7 @@ function CheckBox({id, name, description, activeComPortName, setActiveComPortNam
       const changeStyleByClick = () => {
                  return ` ${
                        name === activeComPortName
-                             ? ` ${style.checkBox} ${style.disabled}`
+                             ? ` ${style.checkBox} ${style.active}`
                              : ` ${style.checkBox} `
                  } `
       }

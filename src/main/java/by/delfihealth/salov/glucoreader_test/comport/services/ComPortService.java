@@ -18,11 +18,11 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class ComPortService {
       
-      private List<SerialPort> serialPorts;
+      private List<SerialPortDTO> currentSerialPortsDTO;
       private SerialPort currentCommPort;
 
       public ComPortService() {
-            this.serialPorts = findAllComPorts();
+            this.currentSerialPortsDTO = findAllSerialPortsDTO();
       }
 
       public boolean openComPort(String portSystemName, int baudRate, int dataBits,
@@ -80,16 +80,18 @@ public class ComPortService {
       }
 
       public List<SerialPortDTO> findAllSerialPortsDTO() {
-            SerialPort[] commPorts = SerialPort.getCommPorts();
-            List<SerialPortDTO> serialPortDTOS = Arrays
-                  .stream(commPorts)
+            List<SerialPort> allComPorts = findAllComPorts();
+
+            List<SerialPortDTO> newSerialPortsDTO = allComPorts
+                  .stream()
                   .map((serialPort) -> new SerialPortDTO(
                               convertSerialPortNameToID(serialPort.getSystemPortName()),
                         serialPort.getSystemPortName(),
                         serialPort.getPortDescription()
                         )
                   ).toList();
-            return serialPortDTOS;
+            currentSerialPortsDTO = newSerialPortsDTO;
+            return newSerialPortsDTO;
       }
 
       private List<SerialPort> findAllComPorts() {
