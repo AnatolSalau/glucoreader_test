@@ -41,7 +41,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
             String serialPortsStr = objectMapper.writeValueAsString(serialPorts);
             TextMessage message = new TextMessage(serialPortsStr);
-            logger.info("Server sends: {}", message);
+            logger.info("Server onOpen message: {}", message);
             session.sendMessage(message);
       }
 
@@ -53,28 +53,20 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 5000)
       void sendPeriodicMessages() throws IOException {
+            List<SerialPortDTO> currentSerialPortsDTO = comPortService.getCurrentSerialPortsDTO();
+            List<SerialPortDTO> newSerialPortsDTO = comPortService.findAllSerialPortsDTO();
             for (WebSocketSession session : sessions) {
-                  if (session.isOpen()) {
-                        String broadcast = "server periodic message " + LocalTime.now();
-                        List<SerialPortDTO> currentSerialPortsDTO = comPortService.getCurrentSerialPortsDTO();
-                        List<SerialPortDTO> newSerialPortsDTO = comPortService.findAllSerialPortsDTO();
-                        if (currentSerialPortsDTO.equals(newSerialPortsDTO)) {
-                              System.out.println("ComPortList are equals");
-                              System.out.println("currentSerialPortsDTO : " + currentSerialPortsDTO);
-                              System.out.println("newSerialPortsDTO : " + newSerialPortsDTO);
-                              System.out.println();
-                              return;
+/*                  if (session.isOpen()) {*/
+
+                  System.out.println();
+                        if (currentSerialPortsDTO.equals(newSerialPortsDTO) == false) {
+                              String serialPortsStr = objectMapper.writeValueAsString(newSerialPortsDTO);
+
+                              session.sendMessage(new TextMessage(serialPortsStr));
                         }
-                        System.out.println("ComPortList are different");
-                        System.out.println("currentSerialPortsDTO : " + currentSerialPortsDTO);
-                        System.out.println("newSerialPortsDTO : " + newSerialPortsDTO);
-                        System.out.println();
-                        String serialPortsStr = objectMapper.writeValueAsString(newSerialPortsDTO);
-                        //System.out.println("SerialPorts : " + serialPortsStr);
-                        //logger.info("Server sends: {}", serialPortsStr);
-                        session.sendMessage(new TextMessage(serialPortsStr));
-                  }
+/*                  }*/
             }
+            comPortService.setCurrentSerialPortsDTO(newSerialPortsDTO);
       }
 
       @Override

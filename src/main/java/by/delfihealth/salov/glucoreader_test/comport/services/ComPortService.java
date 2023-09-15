@@ -6,6 +6,7 @@ import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
 import javafx.util.Pair;
 import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @Getter
+@Setter
 
 @Service
 public class ComPortService {
@@ -90,7 +92,6 @@ public class ComPortService {
                         serialPort.getPortDescription()
                         )
                   ).toList();
-            currentSerialPortsDTO = newSerialPortsDTO;
             return newSerialPortsDTO;
       }
 

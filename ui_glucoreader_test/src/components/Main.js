@@ -3,14 +3,12 @@ import { FcOk } from 'react-icons/fc'
 import style from './Main.module.css'
 import Section from "./Section";
 import ComPortList from "./comPortList/ComPortList";
-import {connection} from "./ws/wsConnection"
+
 
 
 let countRender = 0;
 
-function Main() {
-/*      let[connection, setConnection] = useState(new WebSocket('ws://127.0.0.1:8044/websocket',
-            "subprotocol.glucoreader.websocket"));*/
+function Main({connection}) {
 
       let [comPortList, setComPortList] = useState([
             {
@@ -21,12 +19,23 @@ function Main() {
       ]);
 
       useEffect(() => {
-            connection.onmessage = function (event) {
-                  setComPortList(JSON.parse(event.data));
+            connection.onopen = (ev) => {
+                  console.log('Connection is open');
+                  if (ev.data) {
+                        setComPortList(JSON.parse(ev.data));
+                  }
             };
-      }, []);
+            connection.onmessage = (ev) => {
+                  console.log('Message from server received');
+                  setComPortList(JSON.parse(ev.data));
+            };
+            connection.onclose = (ev) => {
+                  console.log('Connection is close');
+            };
+      }, [setComPortList]);
 
       let [activeComPortName, setActiveComPortName] = useState("");
+
       console.log("Main countRender : " + countRender++);
 
       const setActiveComPortNameHandler = (name) => {
