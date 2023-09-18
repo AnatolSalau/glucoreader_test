@@ -4,6 +4,9 @@ import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +16,8 @@ import org.springframework.web.socket.SubProtocolCapable;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
-import org.springframework.web.util.HtmlUtils;
 
 import java.io.IOException;
-import java.time.LocalTime;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -33,16 +34,19 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Autowired
       ObjectMapper objectMapper = new ObjectMapper();
-      
+
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             logger.info("Server connection opened");
             sessions.add(session);
             List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
-            String serialPortsStr = objectMapper.writeValueAsString(serialPorts);
-            TextMessage message = new TextMessage(serialPortsStr);
-            logger.info("Server onOpen message: {}", message);
-            session.sendMessage(message);
+            JSONArray jsonArray = new JSONArray(serialPorts);
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("COMPortList", jsonArray);
+            String string = jsonObject.toString();
+            System.out.println(string);
+            session.sendMessage(new TextMessage(string));
+            logger.info("Server onOpen message: {}", string);
       }
 
       @Override
@@ -51,20 +55,21 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             sessions.remove(session);
       }
 
-      @Scheduled(fixedRate = 5000)
+      @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
             List<SerialPortDTO> currentSerialPortsDTO = comPortService.getCurrentSerialPortsDTO();
             List<SerialPortDTO> newSerialPortsDTO = comPortService.findAllSerialPortsDTO();
             for (WebSocketSession session : sessions) {
-/*                  if (session.isOpen()) {*/
-
-                  System.out.println();
+                  if (session.isOpen()) {
                         if (currentSerialPortsDTO.equals(newSerialPortsDTO) == false) {
-                              String serialPortsStr = objectMapper.writeValueAsString(newSerialPortsDTO);
-
-                              session.sendMessage(new TextMessage(serialPortsStr));
+                              JSONArray jsonArray = new JSONArray(newSerialPortsDTO);
+                              JSONObject jsonObject = new JSONObject();
+                              jsonObject.put("COMPortList", jsonArray);
+                              String string = jsonObject.toString();
+                              System.out.println(string);
+                              session.sendMessage(new TextMessage(string));
                         }
-/*                  }*/
+                  }
             }
             comPortService.setCurrentSerialPortsDTO(newSerialPortsDTO);
       }
@@ -73,17 +78,15 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
             String request = message.getPayload();
             logger.info("Server received: {}", request);
-
             comPortService.openComPort(request, 19200, 8,
                   1, 2);
             List<HexByteData> protocolVersion = comPortService.getProtocolVersion();
-            System.out.println("-------------------------------------");
-            System.out.println(protocolVersion);
-            System.out.println("-------------------------------------");
 
-/*            String response = String.format("response from server to '%s'", HtmlUtils.htmlEscape(request));
-            logger.info("Server sends: {}", response);
-            session.sendMessage(new TextMessage(response));*/
+            comPortService.closeComport();
+/*            System.out.println("-------------------------------------");
+            System.out.println(protocolVersion);
+            System.out.println(protocolVersion);
+            System.out.println("-------------------------------------");*/
       }
 
       @Override

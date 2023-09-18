@@ -39,8 +39,12 @@ class ComPortServiceTest {
 
       @Test
       void findAllPortsDTO() {
-            List<SerialPortDTO> allPortsDTO = comPortService.findAllSerialPortsDTO();
-            System.out.println(allPortsDTO);
+
+            while (true) {
+                  List<SerialPortDTO> allPortsDTO = comPortService.findAllSerialPortsDTO();
+                  System.out.println(allPortsDTO);
+            }
+
       }
 
       @Test

@@ -3,8 +3,7 @@ import { FcOk } from 'react-icons/fc'
 import style from './Main.module.css'
 import Section from "./Section";
 import ComPortList from "./comPortList/ComPortList";
-
-
+import axios from 'axios';
 
 let countRender = 0;
 
@@ -22,11 +21,15 @@ function Main({connection}) {
             connection.onopen = (ev) => {
                   console.log('Connection is open');
                   if (ev.data) {
+                        console.log(ev.data)
+                        let jsonObj = JSON.parse(ev.data);
+                        console.log(jsonObj);
                         setComPortList(JSON.parse(ev.data));
                   }
             };
             connection.onmessage = (ev) => {
                   console.log('Message from server received');
+                  console.log(ev.data);
                   setComPortList(JSON.parse(ev.data));
             };
             connection.onclose = (ev) => {
