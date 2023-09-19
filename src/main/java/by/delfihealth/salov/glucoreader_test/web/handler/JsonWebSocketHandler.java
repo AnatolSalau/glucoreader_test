@@ -70,7 +70,6 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
                               JSONObject jsonData = new JSONObject();
                               jsonData.put("data", jsonComPorts);
                               String jsonDataStr = jsonData.toString();
-                              System.out.println(jsonDataStr);
                               session.sendMessage(new TextMessage(jsonDataStr));
                         }
                   }
@@ -84,7 +83,6 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             logger.info("Server received: {}", request);
             comPortService.openComPort(request, 19200, 8,
                   1, 2);
-            List<HexByteData> protocolVersion = comPortService.getProtocolVersion();
 
             comPortService.closeComport();
 /*            System.out.println("-------------------------------------");

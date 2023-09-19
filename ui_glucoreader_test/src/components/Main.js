@@ -13,7 +13,10 @@ function Main({connection}) {
             {
                   id: 0,
                   name: "name",
-                  description: "description"
+                  description: "description",
+                  protocolVersion: [
+
+                  ]
             }
       ]);
 
