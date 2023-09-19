@@ -4,7 +4,6 @@ import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -41,12 +40,14 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             sessions.add(session);
             List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
             JSONArray jsonArray = new JSONArray(serialPorts);
-            JSONObject jsonObject = new JSONObject();
-            jsonObject.put("COMPortList", jsonArray);
-            String string = jsonObject.toString();
-            System.out.println(string);
-            session.sendMessage(new TextMessage(string));
-            logger.info("Server onOpen message: {}", string);
+            JSONObject jsonComPorts = new JSONObject();
+            jsonComPorts.put("comPortList", jsonArray);
+            JSONObject jsonData = new JSONObject();
+            jsonData.put("data", jsonComPorts);
+            String jsonDataStr = jsonData.toString();
+            System.out.println(jsonDataStr);
+            session.sendMessage(new TextMessage(jsonDataStr));
+            logger.info("Server onOpen message: {}", jsonDataStr);
       }
 
       @Override
@@ -62,12 +63,15 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
                         if (currentSerialPortsDTO.equals(newSerialPortsDTO) == false) {
-                              JSONArray jsonArray = new JSONArray(newSerialPortsDTO);
-                              JSONObject jsonObject = new JSONObject();
-                              jsonObject.put("COMPortList", jsonArray);
-                              String string = jsonObject.toString();
-                              System.out.println(string);
-                              session.sendMessage(new TextMessage(string));
+                              List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
+                              JSONArray jsonArray = new JSONArray(serialPorts);
+                              JSONObject jsonComPorts = new JSONObject();
+                              jsonComPorts.put("comPortList", jsonArray);
+                              JSONObject jsonData = new JSONObject();
+                              jsonData.put("data", jsonComPorts);
+                              String jsonDataStr = jsonData.toString();
+                              System.out.println(jsonDataStr);
+                              session.sendMessage(new TextMessage(jsonDataStr));
                         }
                   }
             }

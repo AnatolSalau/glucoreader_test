@@ -22,15 +22,21 @@ function Main({connection}) {
                   console.log('Connection is open');
                   if (ev.data) {
                         console.log(ev.data)
-                        let jsonObj = JSON.parse(ev.data);
-                        console.log(jsonObj);
-                        setComPortList(JSON.parse(ev.data));
+                        let json = JSON.parse(ev.data);
+                        console.log("__________________________________")
+                        console.log(json.data);
+                        console.log("__________________________________")
+                        setComPortList(json.data.comPortList);
                   }
             };
             connection.onmessage = (ev) => {
                   console.log('Message from server received');
-                  console.log(ev.data);
-                  setComPortList(JSON.parse(ev.data));
+                  let json = JSON.parse(ev.data);
+                  console.log("__________________________________")
+                  console.log(json.data);
+
+                  console.log("__________________________________")
+                  setComPortList(json.data.comPortList);
             };
             connection.onclose = (ev) => {
                   console.log('Connection is close');
