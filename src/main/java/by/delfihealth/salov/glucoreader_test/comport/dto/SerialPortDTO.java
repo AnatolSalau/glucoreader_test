@@ -18,4 +18,11 @@ public class SerialPortDTO {
             this.description = portDescription;
             this.protocolVersion = null;
       }
+
+      public SerialPortDTO(Integer id, String systemPortName, String portDescription, List<HexByteData> protocolVersion) {
+            this.id = id;
+            this.name = systemPortName;
+            this.description = portDescription;
+            this.protocolVersion = protocolVersion;
+      }
 }

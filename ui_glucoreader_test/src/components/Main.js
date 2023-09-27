@@ -36,6 +36,7 @@ function Main({connection}) {
                   console.log('Message from server received');
                   let json = JSON.parse(ev.data);
                   console.log("__________________________________")
+                  console.log("JSON : ")
                   console.log(json.data);
 
                   console.log("__________________________________")

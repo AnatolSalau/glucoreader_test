@@ -83,12 +83,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             logger.info("Server received: {}", request);
             comPortService.openComPort(request, 19200, 8,
                   1, 2);
-
             comPortService.closeComport();
-/*            System.out.println("-------------------------------------");
-            System.out.println(protocolVersion);
-            System.out.println(protocolVersion);
-            System.out.println("-------------------------------------");*/
       }
 
       @Override

@@ -89,7 +89,8 @@ public class ComPortService {
                   .map((serialPort) -> new SerialPortDTO(
                               convertSerialPortNameToID(serialPort.getSystemPortName()),
                         serialPort.getSystemPortName(),
-                        serialPort.getPortDescription())
+                        serialPort.getPortDescription()
+                        )
                   ).toList();
             return newSerialPortsDTO;
       }
