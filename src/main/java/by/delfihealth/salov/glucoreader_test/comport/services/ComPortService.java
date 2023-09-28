@@ -111,7 +111,6 @@ public class ComPortService {
 
       private List<HexByteData> convertByteArrToGetProtocolVersion(byte[] data) {
             List<HexByteData> dataList = new ArrayList<>();
-
             HexByteData dataStx = new HexByteData(0,data[0], HexByteType.STX);
             dataList.add(dataStx);
             HexByteData dataLenLo = new HexByteData(1, data[1], HexByteType.LEN_LO);
@@ -135,8 +134,11 @@ public class ComPortService {
       private Integer convertSerialPortNameToID(String systemPortName) {
             String substring = systemPortName
                   .substring(systemPortName.length() - 1, systemPortName.length());
-            //System.out.println(substring);
             return Integer.parseInt(substring);
+      }
+
+      private void test() {
+
       }
 }
 
