@@ -4,11 +4,13 @@ import by.delfihealth.salov.glucoreader_test.comport.utils.CRC16;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import javafx.util.Pair;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 
-@AllArgsConstructor
+@Component
 public class ControlSumCRC16Service {
       public Pair<String, String> getHighLowByteOfSum(List<HexByteData> hexByteData) {
             CRC16 checksum = new CRC16();

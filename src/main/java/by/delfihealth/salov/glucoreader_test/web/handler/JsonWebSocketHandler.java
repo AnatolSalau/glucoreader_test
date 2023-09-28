@@ -58,7 +58,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
-            List<SerialPortDTO> currentSerialPortsDTO = comPortService.getCurrentSerialPortsDTO();
+/*            List<SerialPortDTO> currentSerialPortsDTO = comPortService.getCurrentSerialPortsDTO();
             List<SerialPortDTO> newSerialPortsDTO = comPortService.findAllSerialPortsDTO();
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
@@ -74,16 +74,16 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
                         }
                   }
             }
-            comPortService.setCurrentSerialPortsDTO(newSerialPortsDTO);
+            comPortService.setCurrentSerialPortsDTO(newSerialPortsDTO);*/
       }
 
       @Override
       public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-            String request = message.getPayload();
+/*            String request = message.getPayload();
             logger.info("Server received: {}", request);
             comPortService.openComPort(request, 19200, 8,
                   1, 2);
-            comPortService.closeComport();
+            comPortService.closeComport();*/
       }
 
       @Override
