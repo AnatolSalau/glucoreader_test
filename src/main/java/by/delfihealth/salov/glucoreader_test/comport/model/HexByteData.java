@@ -3,7 +3,7 @@ package by.delfihealth.salov.glucoreader_test.comport.model;
 import java.util.HexFormat;
 
 public class HexByteData {
-      private int number;
+      private final int number;
       private final String value;
       private final HexByteType type;
 
