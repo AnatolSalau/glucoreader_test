@@ -98,14 +98,14 @@ public class ComPortService {
                   serialPort.writeBytes(getDeviceTypeByteRequest, getDeviceTypeRequest.size());
             }
 
-            byte[] getDeviceTypeByteResponse = comPortRead(serialPort, 8, 15, 150);
-            List<HexByteData> getProtocolVersionDateResponse = convertByteArrToGetProtocolVersion(getDeviceTypeByteResponse);
+            byte[] getDeviceTypeByteResponse = comPortRead(serialPort, 18, 15, 150);
+            List<HexByteData> getProtocolVersionDateResponse = convertByteArrToGetDeviceType(getDeviceTypeByteResponse);
 
             /**
              * -------------------------------------------------------------
              */
             closeComport(serialPort);
-            return null;
+            return getProtocolVersionDateResponse;
       }
 
       public SerialPort findSerialPortByName(String portSystemName) {
@@ -153,7 +153,6 @@ public class ComPortService {
 
       private List<HexByteData> convertByteArrToGetProtocolVersion(byte[] data) {
             List<HexByteData> dataList = new ArrayList<>();
-
             dataList.add(new HexByteData(0, data[0], HexByteType.STX));
             dataList.add(new HexByteData(1, data[1], HexByteType.LEN_LO));
             dataList.add(new HexByteData(2, data[2], HexByteType.LEN_HI));
@@ -181,8 +180,12 @@ public class ComPortService {
             dataList.add(new HexByteData(10, data[10], HexByteType.SERIAL_ID_B5));
             dataList.add(new HexByteData(11, data[11], HexByteType.SERIAL_ID_B6));
             dataList.add(new HexByteData(12, data[12], HexByteType.SERIAL_ID_B7));
-            return null;
+            dataList.add(new HexByteData(13, data[13], HexByteType.HW_VERSION));
+            dataList.add(new HexByteData(14, data[14], HexByteType.SW_VERSION_LO));
+            dataList.add(new HexByteData(15, data[15], HexByteType.SW_VERSION_HI));
+            dataList.add(new HexByteData(16, data[16], HexByteType.CRC_LO));
+            dataList.add(new HexByteData(17, data[17], HexByteType.CRC_HI));
+            return dataList;
       }
-
 
 }

@@ -27,4 +27,13 @@ class ComPortServiceTest {
                   .getProtocolVersion(com2, 19200, 8, 1, 2);
             System.out.println(protocolVersion);
       }
+
+      @Test
+      void getDeviceType() {
+            SerialPort com2 = comPortService.findSerialPortByName("COM2");
+
+            List<HexByteData> deviceType = comPortService
+                  .getDeviceType(com2, 19200, 8, 1, 2);
+            System.out.println(deviceType);
+      }
 }
