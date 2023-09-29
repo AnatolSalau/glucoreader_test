@@ -21,19 +21,46 @@ class ComPortServiceTest {
 
       @Test
       void getProtocolVersion() {
-            SerialPort com2 = comPortService.findSerialPortByName("COM2");
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> protocolVersion = comPortService
-                  .getProtocolVersion(com2, 19200, 8, 1, 2);
+                  .getProtocolVersion(portByName, 19200, 8, 1, 2);
             System.out.println(protocolVersion);
       }
 
       @Test
       void getDeviceType() {
-            SerialPort com2 = comPortService.findSerialPortByName("COM2");
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> deviceType = comPortService
-                  .getDeviceType(com2, 19200, 8, 1, 2);
+                  .getDeviceType(portByName, 19200, 8, 1, 2);
+            System.out.println(deviceType);
+      }
+
+      @Test
+      void getState() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            List<HexByteData> deviceType = comPortService
+                  .getState(portByName, 19200, 8, 1, 2);
+            System.out.println(deviceType);
+      }
+
+      @Test
+      void getDateTime() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            List<HexByteData> deviceType = comPortService
+                  .getDateTime(portByName, 19200, 8, 1, 2);
+            System.out.println(deviceType);
+      }
+
+      @Test
+      void getConverterType() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            List<HexByteData> deviceType = comPortService
+                  .getConverterType(portByName, 19200, 8, 1, 2);
             System.out.println(deviceType);
       }
 }
