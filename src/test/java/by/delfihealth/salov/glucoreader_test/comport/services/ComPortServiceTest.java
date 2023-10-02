@@ -63,4 +63,13 @@ class ComPortServiceTest {
                   .getConverterType(portByName, 19200, 8, 1, 2);
             System.out.println(deviceType);
       }
+
+      @Test
+      void getValues() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            List<HexByteData> deviceType = comPortService
+                  .getValues(portByName, 19200, 8, 1, 2);
+            System.out.println(deviceType);
+      }
 }

@@ -158,6 +158,7 @@ public class ComPortService {
             /**
              * -------------------------------------------------------------
              */
+
             closeComport(serialPort);
             return  getDateTimeResponse;
       }
@@ -176,12 +177,11 @@ public class ComPortService {
             getConverterTypeRequest.add(new HexByteData(3, "0x31", HexByteType.CMD));
             Pair<String, String> highLowByteOfSum = controlSumCRC16Service
                   .getHighLowByteOfSum(getConverterTypeRequest);
-
             getConverterTypeRequest.add(new HexByteData(4, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
             getConverterTypeRequest.add(new HexByteData(5, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
 
             comPortWrite(serialPort, convertRequestToByteArr(getConverterTypeRequest));
-            List<HexByteData> getConverterTypeResponse = convertToGetDeviceType(
+            List<HexByteData> getConverterTypeResponse = convertToGetConverterType(
                   comPortRead(serialPort, 18, 15, 150)
             );
             /**
@@ -190,6 +190,43 @@ public class ComPortService {
             closeComport(serialPort);
             return  getConverterTypeResponse;
       }
+
+      public List<HexByteData> getValues(SerialPort serialPort, int baudRate, int dataBits,
+                                         int stopBits, int parity) {
+            openComPort(serialPort, baudRate,
+                  dataBits, stopBits, parity);
+            /**
+             * -------------------------------------------------------------
+             */
+            List<HexByteData> getValuesRequest = new ArrayList<>();
+            getValuesRequest.add(new HexByteData(0, "0x02" , HexByteType.STX));
+            getValuesRequest.add(new HexByteData(1, "0x0A" , HexByteType.LEN_LO));
+            getValuesRequest.add(new HexByteData(2, "0x00" , HexByteType.LEN_HI));
+            getValuesRequest.add(new HexByteData(3, "0x05" , HexByteType.CMD));
+            getValuesRequest.add(new HexByteData(4, "0x00" , HexByteType.START_LO));
+            getValuesRequest.add(new HexByteData(5, "0x00" , HexByteType.START_HI));
+            getValuesRequest.add(new HexByteData(6, "0x3F" , HexByteType.STOP_LO));
+            getValuesRequest.add(new HexByteData(7, "0x00" , HexByteType.STOP_HI));
+
+            Pair<String, String> highLowByteOfSum = controlSumCRC16Service
+                  .getHighLowByteOfSum(getValuesRequest);
+
+            getValuesRequest.add(new HexByteData(8, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
+            getValuesRequest.add(new HexByteData(9, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
+
+            comPortWrite(serialPort, convertRequestToByteArr(getValuesRequest));
+
+            List<HexByteData> getValuesResponse = convertRequestToGetValues(
+                  comPortRead(serialPort, 966, 15, 150)
+            );
+            /**
+             * -------------------------------------------------------------
+             */
+            closeComport(serialPort);
+            return getValuesResponse;
+      }
+
+
 
       public SerialPort findSerialPortByName(String portSystemName) {
             SerialPort commPort = SerialPort.getCommPort(portSystemName);
@@ -332,6 +369,35 @@ public class ComPortService {
             dataList.add(new HexByteData(15, data[15], HexByteType.SW_VERSION_HI));
             dataList.add(new HexByteData(16, data[16], HexByteType.CRC_LO));
             dataList.add(new HexByteData(17, data[17], HexByteType.CRC_HI));
+            return dataList;
+      }
+
+      private List<HexByteData> convertRequestToGetValues(byte[] data) {
+            List<HexByteData> dataList = new ArrayList<>();
+            dataList.add(new HexByteData(0, data[0], HexByteType.STX));
+            dataList.add(new HexByteData(1, data[1], HexByteType.LEN_LO));
+            dataList.add(new HexByteData(2, data[2], HexByteType.LEN_HI));
+            dataList.add(new HexByteData(3, data[3], HexByteType.CMD));
+            for (int i = 4; i < 964; i +=15 ) {
+                  dataList.add(new HexByteData(i, data[i], HexByteType.INDEX_LO));
+                  dataList.add(new HexByteData(i+1, data[i+1], HexByteType.INDEX_HI));
+                  dataList.add(new HexByteData(i+3, data[i+2], HexByteType.DATE_YEAR));
+                  dataList.add(new HexByteData(i+4, data[i+3], HexByteType.DATE_MONTH));
+                  dataList.add(new HexByteData(i+5, data[i+4], HexByteType.DATE_DAY));
+                  dataList.add(new HexByteData(i+6, data[i+5], HexByteType.TIME_HOUR));
+                  dataList.add(new HexByteData(i+7, data[i+6], HexByteType.TIME_MINUTE));
+                  dataList.add(new HexByteData(i+8, data[i+7], HexByteType.TIME_SEC));
+                  dataList.add(new HexByteData(i+9, data[i+8], HexByteType.GLUCOSE_HI));
+                  dataList.add(new HexByteData(i+10, data[i+9], HexByteType.GLUCOSE_LO));
+                  dataList.add(new HexByteData(i+11, data[i+10], HexByteType.TE_HI));
+                  dataList.add(new HexByteData(i+12, data[i+11], HexByteType.TE_LO));
+                  dataList.add(new HexByteData(i+13, data[i+12], HexByteType.HEMATOCRIT_HI));
+                  dataList.add(new HexByteData(i+14, data[i+13], HexByteType.HEMATOCRIT_LO));
+                  dataList.add(new HexByteData(i+15, data[i+14], HexByteType.STATE));
+            }
+            dataList.add(new HexByteData(964, data[964], HexByteType.CRC_LO));
+            dataList.add(new HexByteData(965, data[965], HexByteType.CRC_HI));
+
             return dataList;
       }
 }
