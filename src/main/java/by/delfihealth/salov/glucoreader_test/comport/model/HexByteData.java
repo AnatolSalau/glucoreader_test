@@ -15,7 +15,13 @@ public class HexByteData {
 
       public HexByteData (int number, byte dataByte, HexByteType type) {
             this.number = number;
-            this.value = getHexStrFromByte(dataByte);
+            this.value = getHexStr(dataByte);
+            this.type = type;
+      }
+
+      public HexByteData (int number, int dataInt, HexByteType type) {
+            this.number = number;
+            this.value = getHexStr(dataInt);
             this.type = type;
       }
 
@@ -26,7 +32,20 @@ public class HexByteData {
             return resultByte;
       }
 
-      private String getHexStrFromByte(byte data) {
+      private String getHexStr(byte data) {
+            String string = Integer.toHexString(data);
+            if (string.length() == 1) {
+                  return "0x" + "0" + Integer.toHexString(data).toUpperCase();
+            }
+            if (string.startsWith("f")) {
+                  return "0x" + Integer.toHexString(data)
+                        .substring(string.length()-2)
+                        .toUpperCase();
+            }
+            return "0x" + Integer.toHexString(data).toUpperCase();
+      }
+
+      private String getHexStr(int data) {
             String string = Integer.toHexString(data);
             if (string.length() == 1) {
                   return "0x" + "0" + Integer.toHexString(data).toUpperCase();

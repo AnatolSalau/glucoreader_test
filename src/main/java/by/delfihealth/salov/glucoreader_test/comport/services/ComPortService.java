@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -226,7 +227,42 @@ public class ComPortService {
             return getValuesResponse;
       }
 
+      public List<HexByteData> setCurrentDateTime(SerialPort serialPort, int baudRate, int dataBits,
+                                                  int stopBits, int parity) {
+            openComPort(serialPort, baudRate,
+                  dataBits, stopBits, parity);
+            /**
+             * -------------------------------------------------------------
+             */
+            List<HexByteData> setDateTimeRequest = new ArrayList<>();
+            setDateTimeRequest.add(new HexByteData(0, "0x02" , HexByteType.STX));
+            setDateTimeRequest.add(new HexByteData(1, "0x0C" , HexByteType.LEN_LO));
+            setDateTimeRequest.add(new HexByteData(2, "0x00" , HexByteType.LEN_HI));
+            setDateTimeRequest.add(new HexByteData(3, "0x81" , HexByteType.CMD));
+            setDateTimeRequest.add(new HexByteData(4,Calendar.getInstance().get(Calendar.YEAR) - 2000,HexByteType.DATE_YEAR));
+            setDateTimeRequest.add(new HexByteData(5,Calendar.getInstance().get(Calendar.MONTH) + 1,HexByteType.DATE_MONTH));
+            setDateTimeRequest.add(new HexByteData(6,Calendar.getInstance().get(Calendar.DAY_OF_MONTH),HexByteType.DATE_DAY));
+            setDateTimeRequest.add(new HexByteData(7,Calendar.getInstance().get(Calendar.HOUR_OF_DAY),HexByteType.TIME_HOUR));
+            setDateTimeRequest.add(new HexByteData(8,Calendar.getInstance().get(Calendar.MINUTE),HexByteType.TIME_MINUTE));
+            setDateTimeRequest.add(new HexByteData(9,Calendar.getInstance().get(Calendar.SECOND),HexByteType.TIME_SEC));
 
+            Pair<String, String> highLowByteOfSum = controlSumCRC16Service
+                  .getHighLowByteOfSum(setDateTimeRequest);
+
+            setDateTimeRequest.add(new HexByteData(10, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
+            setDateTimeRequest.add(new HexByteData(11, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
+
+            comPortWrite(serialPort, convertRequestToByteArr(setDateTimeRequest));
+
+            List<HexByteData> getValuesResponse = convertRequestToSetDateTime(
+                  comPortRead(serialPort, 966, 15, 150)
+            );
+            /**
+             * -------------------------------------------------------------
+             */
+            closeComport(serialPort);
+            return getValuesResponse;
+      }
 
       public SerialPort findSerialPortByName(String portSystemName) {
             SerialPort commPort = SerialPort.getCommPort(portSystemName);
@@ -398,6 +434,18 @@ public class ComPortService {
             dataList.add(new HexByteData(964, data[964], HexByteType.CRC_LO));
             dataList.add(new HexByteData(965, data[965], HexByteType.CRC_HI));
 
+            return dataList;
+      }
+
+      private List<HexByteData> convertRequestToSetDateTime(byte[] data) {
+            List<HexByteData> dataList = new ArrayList<>();
+            dataList.add(new HexByteData(0, data[0], HexByteType.STX));
+            dataList.add(new HexByteData(1, data[1], HexByteType.LEN_LO));
+            dataList.add(new HexByteData(2, data[2], HexByteType.LEN_HI));
+            dataList.add(new HexByteData(3, data[3], HexByteType.CMD));
+            dataList.add(new HexByteData(4, data[4], HexByteType.ERROR_CODE));
+            dataList.add(new HexByteData(5, data[5], HexByteType.CRC_LO));
+            dataList.add(new HexByteData(6, data[6], HexByteType.CRC_HI));
             return dataList;
       }
 }
