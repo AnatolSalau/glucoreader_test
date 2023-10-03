@@ -4,6 +4,7 @@ import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fazecast.jSerialComm.SerialPort;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -17,6 +18,7 @@ import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -28,6 +30,8 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       private final Set<WebSocketSession> sessions = new CopyOnWriteArraySet<>();
 
+      private List<SerialPortDTO> serialPortsAfterConnectionEstablished = new ArrayList<>();
+
       @Autowired
       private ComPortService comPortService;
 
@@ -36,9 +40,9 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
-            logger.info("Server connection opened");
             sessions.add(session);
             List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
+            serialPortsAfterConnectionEstablished = serialPorts;
             JSONArray jsonArray = new JSONArray(serialPorts);
             JSONObject jsonComPorts = new JSONObject();
             jsonComPorts.put("comPortList", jsonArray);
@@ -47,7 +51,8 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             String jsonDataStr = jsonData.toString();
             System.out.println(jsonDataStr);
             session.sendMessage(new TextMessage(jsonDataStr));
-            logger.info("Server onOpen message: {}", jsonDataStr);
+            System.out.println("AFTER CONNECTION ESTABLISHED : ");
+            System.out.println("serialPortsAfterConnectionEstablished size: " + serialPortsAfterConnectionEstablished.size() );
       }
 
       @Override
@@ -58,32 +63,34 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
-/*            List<SerialPortDTO> currentSerialPortsDTO = comPortService.getCurrentSerialPortsDTO();
             List<SerialPortDTO> newSerialPortsDTO = comPortService.findAllSerialPortsDTO();
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
-                        if (currentSerialPortsDTO.equals(newSerialPortsDTO) == false) {
-                              List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
-                              JSONArray jsonArray = new JSONArray(serialPorts);
+                        if ( serialPortsAfterConnectionEstablished.equals(newSerialPortsDTO) == false) {
+                              JSONArray jsonArray = new JSONArray(newSerialPortsDTO);
                               JSONObject jsonComPorts = new JSONObject();
                               jsonComPorts.put("comPortList", jsonArray);
                               JSONObject jsonData = new JSONObject();
                               jsonData.put("data", jsonComPorts);
                               String jsonDataStr = jsonData.toString();
                               session.sendMessage(new TextMessage(jsonDataStr));
+                              System.out.println("SEND PERIODIC MESSAGE : ");
+                              System.out.println("serialPortsAfterConnectionEstablished length : " + serialPortsAfterConnectionEstablished.size() );
                         }
                   }
             }
-            comPortService.setCurrentSerialPortsDTO(newSerialPortsDTO);*/
+            serialPortsAfterConnectionEstablished = newSerialPortsDTO;
       }
 
       @Override
       public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-/*            String request = message.getPayload();
+            String request = message.getPayload();
             logger.info("Server received: {}", request);
-            comPortService.openComPort(request, 19200, 8,
+            SerialPort serialPortByName = comPortService.findSerialPortByName(request);
+            comPortService.openComPort(serialPortByName, 19200, 8,
                   1, 2);
-            comPortService.closeComport();*/
+
+            comPortService.closeComport(serialPortByName);
       }
 
       @Override

@@ -13,6 +13,8 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class ComPortService {
@@ -21,16 +23,14 @@ public class ComPortService {
       ControlSumCRC16Service controlSumCRC16Service;
 
       public List<SerialPortDTO> findAllSerialPortsDTO() {
-            System.out.println("/--------------------------------------------------------");
-            System.out.println("ComPortServiceFindAllPorts start");
-
             List<SerialPort> allComPorts = findAllComPorts();
-            System.out.println(allComPorts);
-
-            System.out.println("ComPortServiceFindAllPorts end");
-            System.out.println("/--------------------------------------------------------");
-
-            return null;
+            List<SerialPortDTO> serialPortDTOList = IntStream.range(0, allComPorts.size())
+                  .mapToObj(i -> new SerialPortDTO(i,
+                        allComPorts.get(i).getSystemPortName(),
+                        allComPorts.get(i).getPortDescription()
+                  ))
+                  .collect(Collectors.toList());
+            return serialPortDTOList;
       }
 
       private List<SerialPort> findAllComPorts() {
