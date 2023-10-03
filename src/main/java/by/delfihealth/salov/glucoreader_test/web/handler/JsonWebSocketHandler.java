@@ -1,9 +1,8 @@
 package by.delfihealth.salov.glucoreader_test.web.handler;
 
 import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
-import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
+import by.delfihealth.salov.glucoreader_test.comport.services.SerialPortDTOService;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fazecast.jSerialComm.SerialPort;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -36,23 +35,15 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       private ComPortService comPortService;
 
       @Autowired
-      ObjectMapper objectMapper = new ObjectMapper();
+      private SerialPortDTOService serialPortDTOService;
 
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             sessions.add(session);
             List<SerialPortDTO> serialPorts = comPortService.findAllSerialPortsDTO();
             serialPortsAfterConnectionEstablished = serialPorts;
-            JSONArray jsonArray = new JSONArray(serialPorts);
-            JSONObject jsonComPorts = new JSONObject();
-            jsonComPorts.put("comPortList", jsonArray);
-            JSONObject jsonData = new JSONObject();
-            jsonData.put("data", jsonComPorts);
-            String jsonDataStr = jsonData.toString();
-            System.out.println(jsonDataStr);
+            String jsonDataStr = serialPortDTOService.convertSerialPortToJson(serialPorts);
             session.sendMessage(new TextMessage(jsonDataStr));
-            System.out.println("AFTER CONNECTION ESTABLISHED : ");
-            System.out.println("serialPortsAfterConnectionEstablished size: " + serialPortsAfterConnectionEstablished.size() );
       }
 
       @Override
@@ -67,15 +58,8 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
                         if ( serialPortsAfterConnectionEstablished.equals(newSerialPortsDTO) == false) {
-                              JSONArray jsonArray = new JSONArray(newSerialPortsDTO);
-                              JSONObject jsonComPorts = new JSONObject();
-                              jsonComPorts.put("comPortList", jsonArray);
-                              JSONObject jsonData = new JSONObject();
-                              jsonData.put("data", jsonComPorts);
-                              String jsonDataStr = jsonData.toString();
+                              String jsonDataStr = serialPortDTOService.convertSerialPortToJson(newSerialPortsDTO);
                               session.sendMessage(new TextMessage(jsonDataStr));
-                              System.out.println("SEND PERIODIC MESSAGE : ");
-                              System.out.println("serialPortsAfterConnectionEstablished length : " + serialPortsAfterConnectionEstablished.size() );
                         }
                   }
             }
