@@ -264,6 +264,47 @@ public class ComPortService {
             return getValuesResponse;
       }
 
+      public List<HexByteData> setConverterType(SerialPort serialPort, int baudRate, int dataBits, int stopBits, int parity,
+                                                String deviceType, String serialIdB0, String serialIdB1, String serialIdB2,
+                                                String serialIdB3, String serialIdB4, String serialIdB5, String serialIdB6,
+                                                String serialIdB7, String hwVersion, String swVersionLo, String swVersionHi) {
+            openComPort(serialPort, baudRate,
+                  dataBits, stopBits, parity);
+            /**
+             * -------------------------------------------------------------
+             */
+            List<HexByteData> setConverterTypeRequest = new ArrayList<>();
+            setConverterTypeRequest.add(new HexByteData(0, "0x02" , HexByteType.STX));
+            setConverterTypeRequest.add(new HexByteData(1, "0x12" , HexByteType.LEN_LO));
+            setConverterTypeRequest.add(new HexByteData(2, "0x00" , HexByteType.LEN_HI));
+            setConverterTypeRequest.add(new HexByteData(3, "0xB1" , HexByteType.CMD));
+            setConverterTypeRequest.add(new HexByteData(4, deviceType , HexByteType.DEVICE_TYPE));
+            setConverterTypeRequest.add(new HexByteData(5, serialIdB0 , HexByteType.SERIAL_ID_B0));
+            setConverterTypeRequest.add(new HexByteData(6, serialIdB1 , HexByteType.SERIAL_ID_B1));
+            setConverterTypeRequest.add(new HexByteData(7, serialIdB2 , HexByteType.SERIAL_ID_B2));
+            setConverterTypeRequest.add(new HexByteData(8, serialIdB3 , HexByteType.SERIAL_ID_B3));
+            setConverterTypeRequest.add(new HexByteData(9, serialIdB4 , HexByteType.SERIAL_ID_B4));
+            setConverterTypeRequest.add(new HexByteData(10, serialIdB5 , HexByteType.SERIAL_ID_B5));
+            setConverterTypeRequest.add(new HexByteData(11, serialIdB6 , HexByteType.SERIAL_ID_B6));
+            setConverterTypeRequest.add(new HexByteData(12, serialIdB7 , HexByteType.SERIAL_ID_B7));
+            setConverterTypeRequest.add(new HexByteData(13, hwVersion , HexByteType.HW_VERSION));
+            setConverterTypeRequest.add(new HexByteData(14, swVersionLo , HexByteType.SW_VERSION_LO));
+            setConverterTypeRequest.add(new HexByteData(15, swVersionHi , HexByteType.SW_VERSION_HI));
+            Pair<String, String> highLowByteOfSum = controlSumCRC16Service
+                  .getHighLowByteOfSum(setConverterTypeRequest);
+
+            setConverterTypeRequest.add(new HexByteData(16, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
+            setConverterTypeRequest.add(new HexByteData(17, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
+
+            comPortWrite(serialPort, convertRequestToByteArr(setConverterTypeRequest));
+            List<HexByteData> setConverterTypeResponse = convertRequestToSetDateTime(
+                  comPortRead(serialPort, 7, 15, 150));
+            /**
+             * -------------------------------------------------------------
+             */
+            closeComport(serialPort);
+            return setConverterTypeResponse;
+      }
       public SerialPort findSerialPortByName(String portSystemName) {
             SerialPort commPort = SerialPort.getCommPort(portSystemName);
             return commPort;
@@ -438,6 +479,18 @@ public class ComPortService {
       }
 
       private List<HexByteData> convertRequestToSetDateTime(byte[] data) {
+            List<HexByteData> dataList = new ArrayList<>();
+            dataList.add(new HexByteData(0, data[0], HexByteType.STX));
+            dataList.add(new HexByteData(1, data[1], HexByteType.LEN_LO));
+            dataList.add(new HexByteData(2, data[2], HexByteType.LEN_HI));
+            dataList.add(new HexByteData(3, data[3], HexByteType.CMD));
+            dataList.add(new HexByteData(4, data[4], HexByteType.ERROR_CODE));
+            dataList.add(new HexByteData(5, data[5], HexByteType.CRC_LO));
+            dataList.add(new HexByteData(6, data[6], HexByteType.CRC_HI));
+            return dataList;
+      }
+
+      private List<HexByteData> convertRequestToSetConverterType(byte[] data) {
             List<HexByteData> dataList = new ArrayList<>();
             dataList.add(new HexByteData(0, data[0], HexByteType.STX));
             dataList.add(new HexByteData(1, data[1], HexByteType.LEN_LO));

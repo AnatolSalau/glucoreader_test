@@ -73,13 +73,23 @@ class ComPortServiceTest {
             System.out.println(deviceType);
       }
 
-
       @Test
       void setCurrentDateTime() {
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> deviceType = comPortService
                   .setCurrentDateTime(portByName, 19200, 8, 1, 2);
+            System.out.println(deviceType);
+      }
+
+      @Test
+      void setConverterType() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            List<HexByteData> deviceType = comPortService
+                  .setConverterType(portByName, 19200, 8, 1, 2, "0x03",
+                        "0xB0", "0xB1", "0xB2","0xB3","0xB4", "0xB5",
+                        "0xB6", "0xB7", "0x02","0x00", "0x02");
             System.out.println(deviceType);
       }
 }
