@@ -936,7 +936,7 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 2023-10-03T14:12:32.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -953,7 +953,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:33.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -970,7 +970,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:34.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -987,7 +987,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:35.600+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1004,7 +1004,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:36.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1021,7 +1021,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:37.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1038,7 +1038,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:38.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1055,7 +1055,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:39.600+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1072,7 +1072,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:40.600+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1089,7 +1089,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:41.600+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1106,7 +1106,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:42.599+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1123,7 +1123,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:43.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1140,7 +1140,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:44.601+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1157,7 +1157,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:12:45.602+03:00 ERROR 3640 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1213,7 +1213,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:42.674+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1230,7 +1230,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:43.674+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1247,7 +1247,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:44.674+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1264,7 +1264,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:45.674+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1281,7 +1281,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:46.674+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1298,7 +1298,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:47.673+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1315,7 +1315,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:48.673+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1332,7 +1332,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:49.673+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1349,7 +1349,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:50.673+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1366,7 +1366,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:51.675+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1383,7 +1383,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:52.674+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1400,7 +1400,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:16:53.676+03:00 ERROR 12800 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1456,7 +1456,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:18.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1473,7 +1473,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:19.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1490,7 +1490,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:20.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1507,7 +1507,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:21.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1524,7 +1524,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:22.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1541,7 +1541,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:23.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1558,7 +1558,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:24.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1575,7 +1575,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:25.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1592,7 +1592,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:26.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1609,7 +1609,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:27.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1626,7 +1626,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:28.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1643,7 +1643,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:29.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1660,7 +1660,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:30.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1677,7 +1677,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:31.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1694,7 +1694,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:32.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -1711,7 +1711,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:33.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1727,7 +1727,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:34.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1743,7 +1743,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:35.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1759,7 +1759,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:36.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1775,7 +1775,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:37.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1791,7 +1791,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:38.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1807,7 +1807,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:39.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1823,7 +1823,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:40.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1839,7 +1839,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:41.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1855,7 +1855,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:42.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1871,7 +1871,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:43.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1887,7 +1887,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:44.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1903,7 +1903,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:45.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1919,7 +1919,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:46.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1935,7 +1935,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:47.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1951,7 +1951,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:48.971+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1967,7 +1967,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:49.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1983,7 +1983,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:50.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -1999,7 +1999,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:51.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2015,7 +2015,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:52.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2031,7 +2031,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:53.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2047,7 +2047,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:54.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2063,7 +2063,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:55.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2079,7 +2079,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:56.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2095,7 +2095,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:57.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2111,7 +2111,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:58.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2127,7 +2127,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:18:59.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2143,7 +2143,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:00.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2159,7 +2159,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:01.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2175,7 +2175,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:02.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2191,7 +2191,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:03.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2207,7 +2207,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:04.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2223,7 +2223,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:05.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2239,7 +2239,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:06.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2255,7 +2255,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:07.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2271,7 +2271,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:08.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2287,7 +2287,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:09.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2303,7 +2303,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:10.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2319,7 +2319,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:11.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2335,7 +2335,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:12.968+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2351,7 +2351,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:13.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2367,7 +2367,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:14.969+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2383,7 +2383,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:15.970+03:00 ERROR 5320 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
@@ -2438,7 +2438,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.equals(Object)" be
 2023-10-03T14:19:23.311+03:00 ERROR 588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2455,7 +2455,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:19:24.310+03:00 ERROR 588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2472,7 +2472,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:19:25.311+03:00 ERROR 588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2489,7 +2489,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:19:26.310+03:00 ERROR 588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2506,7 +2506,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:19:27.310+03:00 ERROR 588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2563,7 +2563,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.064+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2581,7 +2581,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.077+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2599,7 +2599,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.083+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2617,7 +2617,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.087+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2635,7 +2635,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.091+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2653,7 +2653,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.095+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2671,7 +2671,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.102+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2689,7 +2689,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.106+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -2707,7 +2707,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "t
 2023-10-03T14:21:26.111+03:00 ERROR 1232 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.serialPortsAfterConnectionEstablished" is null
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:68) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -3024,7 +3024,7 @@ java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_
 	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:48) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
 	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215) ~[spring-websocket-6.0.11.jar:6.0.11]
 	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:108) ~[spring-websocket-6.0.11.jar:6.0.11]
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.afterConnectionEstablished(JsonWebSocketHandler.java:53) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.afterConnectionEstablished(JsonWebSocketHandler.java:53) ~[main/:na]
 	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.afterConnectionEstablished(WebSocketHandlerDecorator.java:70) ~[spring-websocket-6.0.11.jar:6.0.11]
 	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.afterConnectionEstablished(LoggingWebSocketHandlerDecorator.java:48) ~[spring-websocket-6.0.11.jar:6.0.11]
 	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.afterConnectionEstablished(ExceptionWebSocketHandlerDecorator.java:48) ~[spring-websocket-6.0.11.jar:6.0.11]
@@ -3134,7 +3134,7 @@ java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_
 	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:48) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
 	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215) ~[spring-websocket-6.0.11.jar:6.0.11]
 	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:108) ~[spring-websocket-6.0.11.jar:6.0.11]
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:77) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.sendPeriodicMessages(JsonWebSocketHandler.java:77) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -3197,7 +3197,7 @@ java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_
 	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:48) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
 	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215) ~[spring-websocket-6.0.11.jar:6.0.11]
 	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:108) ~[spring-websocket-6.0.11.jar:6.0.11]
-	at by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler.afterConnectionEstablished(JsonWebSocketHandler.java:53) ~[main/:na]
+	at by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler.afterConnectionEstablished(JsonWebSocketHandler.java:53) ~[main/:na]
 	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.afterConnectionEstablished(WebSocketHandlerDecorator.java:70) ~[spring-websocket-6.0.11.jar:6.0.11]
 	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.afterConnectionEstablished(LoggingWebSocketHandlerDecorator.java:48) ~[spring-websocket-6.0.11.jar:6.0.11]
 	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.afterConnectionEstablished(ExceptionWebSocketHandlerDecorator.java:48) ~[spring-websocket-6.0.11.jar:6.0.11]
@@ -3458,3 +3458,87 @@ java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_
 2023-10-03T15:52:54.885+03:00  INFO 16100 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-10-03T15:52:54.889+03:00  INFO 16100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-10-03T15:52:54.891+03:00  INFO 16100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-03T15:52:58.301+03:00  INFO 3796 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 17.0.4.1 with PID 3796 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-03T15:52:58.304+03:00  INFO 3796 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-10-03T15:52:58.728+03:00  INFO 3796 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-03T15:52:58.768+03:00  INFO 3796 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2023-10-03T15:52:59.130+03:00  INFO 3796 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8044 (http)
+2023-10-03T15:52:59.136+03:00  INFO 3796 --- [JavaFX-Launcher] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-03T15:52:59.137+03:00  INFO 3796 --- [JavaFX-Launcher] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-03T15:52:59.208+03:00  INFO 3796 --- [JavaFX-Launcher] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-03T15:52:59.208+03:00  INFO 3796 --- [JavaFX-Launcher] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2023-10-03T15:52:59.304+03:00  INFO 3796 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-03T15:52:59.305+03:00  INFO 3796 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-03T15:52:59.305+03:00  INFO 3796 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : 
+2023-10-03T15:52:59.311+03:00  INFO 3796 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-03T15:52:59.429+03:00  INFO 3796 --- [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1a43f048
+2023-10-03T15:52:59.431+03:00  INFO 3796 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-03T15:52:59.445+03:00  INFO 3796 --- [JavaFX-Launcher] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-03T15:52:59.471+03:00  INFO 3796 --- [JavaFX-Launcher] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
+2023-10-03T15:52:59.474+03:00  INFO 3796 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-03T15:52:59.474+03:00  INFO 3796 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-03T15:52:59.522+03:00  INFO 3796 --- [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-03T15:52:59.556+03:00  INFO 3796 --- [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-03T15:52:59.558+03:00  INFO 3796 --- [JavaFX-Launcher] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-03T15:52:59.646+03:00  INFO 3796 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-03T15:52:59.719+03:00  INFO 3796 --- [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-03T15:52:59.854+03:00  INFO 3796 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-03T15:53:00.199+03:00  INFO 3796 --- [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-03T15:53:00.220+03:00  INFO 3796 --- [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-03T15:53:00.285+03:00  WARN 3796 --- [JavaFX-Launcher] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-03T15:53:00.682+03:00  INFO 3796 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8044 (http) with context path ''
+2023-10-03T15:53:00.689+03:00  INFO 3796 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 2.74 seconds (process running for 3.381)
+2023-10-03T15:53:01.604+03:00  INFO 3796 --- [http-nio-8044-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-03T15:53:01.604+03:00  INFO 3796 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-03T15:53:01.605+03:00  INFO 3796 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-03T15:53:23.804+03:00  INFO 3796 --- [http-nio-8044-exec-3] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM8
+2023-10-03T15:53:24.304+03:00  INFO 3796 --- [http-nio-8044-exec-4] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM7
+2023-10-03T15:53:25.699+03:00  INFO 3796 --- [http-nio-8044-exec-5] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM6
+2023-10-03T15:53:29.204+03:00  INFO 3796 --- [http-nio-8044-exec-6] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM5
+2023-10-03T15:53:30.385+03:00  INFO 3796 --- [http-nio-8044-exec-7] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM4
+2023-10-03T15:53:30.897+03:00  INFO 3796 --- [http-nio-8044-exec-8] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM3
+2023-10-03T15:53:31.423+03:00  INFO 3796 --- [http-nio-8044-exec-9] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM2
+2023-10-03T15:53:32.017+03:00  INFO 3796 --- [http-nio-8044-exec-10] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM1
+2023-10-03T15:53:32.961+03:00  INFO 3796 --- [http-nio-8044-exec-1] b.d.s.g.w.handler.JsonWebSocketHandler   : Server received: COM6
+2023-10-03T16:15:13.653+03:00  INFO 3796 --- [SpringApplicationShutdownHook] b.d.s.g.w.handler.JsonWebSocketHandler   : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-03T16:15:13.654+03:00  INFO 3796 --- [SpringApplicationShutdownHook] b.d.s.g.w.handler.JsonWebSocketHandler   : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-03T16:15:13.661+03:00  INFO 3796 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-03T16:15:13.663+03:00  INFO 3796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-03T16:15:13.665+03:00  INFO 3796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-03T16:15:17.487+03:00  INFO 1888 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 17.0.4.1 with PID 1888 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-03T16:15:17.489+03:00  INFO 1888 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-10-03T16:15:17.939+03:00  INFO 1888 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-03T16:15:17.977+03:00  INFO 1888 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2023-10-03T16:15:18.307+03:00  INFO 1888 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8044 (http)
+2023-10-03T16:15:18.313+03:00  INFO 1888 --- [JavaFX-Launcher] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-03T16:15:18.313+03:00  INFO 1888 --- [JavaFX-Launcher] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-03T16:15:18.384+03:00  INFO 1888 --- [JavaFX-Launcher] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-03T16:15:18.385+03:00  INFO 1888 --- [JavaFX-Launcher] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+2023-10-03T16:15:18.468+03:00  INFO 1888 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-03T16:15:18.469+03:00  INFO 1888 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-03T16:15:18.469+03:00  INFO 1888 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : 
+2023-10-03T16:15:18.475+03:00  INFO 1888 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-03T16:15:18.561+03:00  INFO 1888 --- [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@64c6b9ac
+2023-10-03T16:15:18.562+03:00  INFO 1888 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-03T16:15:18.575+03:00  INFO 1888 --- [JavaFX-Launcher] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-03T16:15:18.596+03:00  INFO 1888 --- [JavaFX-Launcher] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.010s)
+2023-10-03T16:15:18.599+03:00  INFO 1888 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-03T16:15:18.599+03:00  INFO 1888 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-03T16:15:18.644+03:00  INFO 1888 --- [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-03T16:15:18.680+03:00  INFO 1888 --- [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-03T16:15:18.682+03:00  INFO 1888 --- [JavaFX-Launcher] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-03T16:15:18.770+03:00  INFO 1888 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-03T16:15:18.854+03:00  INFO 1888 --- [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-03T16:15:19.019+03:00  INFO 1888 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-03T16:15:19.412+03:00  INFO 1888 --- [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-03T16:15:19.432+03:00  INFO 1888 --- [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-03T16:15:19.498+03:00  WARN 1888 --- [JavaFX-Launcher] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-03T16:15:19.911+03:00  INFO 1888 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8044 (http) with context path ''
+2023-10-03T16:15:19.919+03:00  INFO 1888 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 2.802 seconds (process running for 3.494)
+2023-10-03T16:15:21.012+03:00  INFO 1888 --- [http-nio-8044-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-03T16:15:21.012+03:00  INFO 1888 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-03T16:15:21.013+03:00  INFO 1888 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-03T16:17:39.793+03:00  INFO 1888 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-03T16:17:39.799+03:00  INFO 1888 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-03T16:17:39.800+03:00  INFO 1888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-03T16:17:39.802+03:00  INFO 1888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,4 +1,4 @@
-package by.delfihealth.salov.glucoreader_test.web;
+package by.delfihealth.salov.glucoreader_test.web.controller;
 
 import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;

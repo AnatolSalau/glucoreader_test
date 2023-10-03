@@ -1,6 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.web.config;
 
-import by.delfihealth.salov.glucoreader_test.web.handler.JsonWebSocketHandler;
+import by.delfihealth.salov.glucoreader_test.web.ws.JsonWebSocketHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;

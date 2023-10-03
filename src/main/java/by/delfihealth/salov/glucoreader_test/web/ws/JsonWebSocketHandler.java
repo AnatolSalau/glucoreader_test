@@ -1,11 +1,9 @@
-package by.delfihealth.salov.glucoreader_test.web.handler;
+package by.delfihealth.salov.glucoreader_test.web.ws;
 
 import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDTO;
 import by.delfihealth.salov.glucoreader_test.comport.services.SerialPortDTOService;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fazecast.jSerialComm.SerialPort;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
