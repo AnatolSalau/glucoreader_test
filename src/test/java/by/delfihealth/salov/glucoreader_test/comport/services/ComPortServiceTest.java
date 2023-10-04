@@ -16,7 +16,7 @@ class ComPortServiceTest {
 
       @Test
       void findAllSerialPortsDTO() {
-            comPortService.findAllSerialPortsDTO();
+            comPortService.findAllSerialPortsDtoWithoutData();
       }
 
       @Test

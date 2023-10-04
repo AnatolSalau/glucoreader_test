@@ -22,7 +22,7 @@ public class ComPortService {
       @Autowired
       ControlSumCRC16Service controlSumCRC16Service;
 
-      public List<SerialPortDTO> findAllSerialPortsDTO() {
+      public List<SerialPortDTO> findAllSerialPortsDtoWithoutData() {
             List<SerialPort> allComPorts = findAllComPorts();
             List<SerialPortDTO> serialPortDTOList = IntStream.range(0, allComPorts.size())
                   .mapToObj(i -> new SerialPortDTO(i,
@@ -31,6 +31,36 @@ public class ComPortService {
                   ))
                   .collect(Collectors.toList());
             return serialPortDTOList;
+      }
+
+      public List<SerialPortDTO> findAllSerialPortsDtoWithDataByName(String portName, int baudRate, int dataBits,
+                                                                     int stopBits, int parity) {
+            List<SerialPort> allComPorts = findAllComPorts();
+            List<SerialPortDTO> serialPortDTOListWithData = IntStream.range(0, allComPorts.size())
+                  .mapToObj(i -> {
+                              if(allComPorts.get(i).getSystemPortName().equalsIgnoreCase(portName))
+                              {
+                                    return new SerialPortDTO(i,
+                                          allComPorts.get(i).getSystemPortName(),
+                                          allComPorts.get(i).getPortDescription(),
+                                          getProtocolVersion(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
+                                          getDeviceType(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
+                                          getState(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
+                                          getDateTime(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
+                                          getConverterType(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
+                                          /*getValues(allComPorts.get(i), baudRate, dataBits, stopBits, parity)*/ null
+                                    );
+                              } else {
+               /*                     return new SerialPortDTO(i,
+                                          allComPorts.get(i).getSystemPortName(),
+                                          allComPorts.get(i).getPortDescription()
+                                    );*/
+                                    return null;
+                              }
+                        }
+                  )
+                  .collect(Collectors.toList());
+            return serialPortDTOListWithData;
       }
 
       private List<SerialPort> findAllComPorts() {
@@ -134,7 +164,7 @@ public class ComPortService {
       }
 
       public List<HexByteData> getDateTime(SerialPort serialPort, int baudRate, int dataBits,
-                                        int stopBits, int parity) {
+                                           int stopBits, int parity) {
             openComPort(serialPort, baudRate,
                   dataBits, stopBits, parity);
             /**
@@ -161,11 +191,11 @@ public class ComPortService {
              */
 
             closeComport(serialPort);
-            return  getDateTimeResponse;
+            return getDateTimeResponse;
       }
 
       public List<HexByteData> getConverterType(SerialPort serialPort, int baudRate, int dataBits,
-                                           int stopBits, int parity) {
+                                                int stopBits, int parity) {
             openComPort(serialPort, baudRate,
                   dataBits, stopBits, parity);
             /**
@@ -189,7 +219,7 @@ public class ComPortService {
              * -------------------------------------------------------------
              */
             closeComport(serialPort);
-            return  getConverterTypeResponse;
+            return getConverterTypeResponse;
       }
 
       public List<HexByteData> getValues(SerialPort serialPort, int baudRate, int dataBits,
@@ -200,14 +230,14 @@ public class ComPortService {
              * -------------------------------------------------------------
              */
             List<HexByteData> getValuesRequest = new ArrayList<>();
-            getValuesRequest.add(new HexByteData(0, "0x02" , HexByteType.STX));
-            getValuesRequest.add(new HexByteData(1, "0x0A" , HexByteType.LEN_LO));
-            getValuesRequest.add(new HexByteData(2, "0x00" , HexByteType.LEN_HI));
-            getValuesRequest.add(new HexByteData(3, "0x05" , HexByteType.CMD));
-            getValuesRequest.add(new HexByteData(4, "0x00" , HexByteType.START_LO));
-            getValuesRequest.add(new HexByteData(5, "0x00" , HexByteType.START_HI));
-            getValuesRequest.add(new HexByteData(6, "0x3F" , HexByteType.STOP_LO));
-            getValuesRequest.add(new HexByteData(7, "0x00" , HexByteType.STOP_HI));
+            getValuesRequest.add(new HexByteData(0, "0x02", HexByteType.STX));
+            getValuesRequest.add(new HexByteData(1, "0x0A", HexByteType.LEN_LO));
+            getValuesRequest.add(new HexByteData(2, "0x00", HexByteType.LEN_HI));
+            getValuesRequest.add(new HexByteData(3, "0x05", HexByteType.CMD));
+            getValuesRequest.add(new HexByteData(4, "0x00", HexByteType.START_LO));
+            getValuesRequest.add(new HexByteData(5, "0x00", HexByteType.START_HI));
+            getValuesRequest.add(new HexByteData(6, "0x3F", HexByteType.STOP_LO));
+            getValuesRequest.add(new HexByteData(7, "0x00", HexByteType.STOP_HI));
 
             Pair<String, String> highLowByteOfSum = controlSumCRC16Service
                   .getHighLowByteOfSum(getValuesRequest);
@@ -235,16 +265,16 @@ public class ComPortService {
              * -------------------------------------------------------------
              */
             List<HexByteData> setDateTimeRequest = new ArrayList<>();
-            setDateTimeRequest.add(new HexByteData(0, "0x02" , HexByteType.STX));
-            setDateTimeRequest.add(new HexByteData(1, "0x0C" , HexByteType.LEN_LO));
-            setDateTimeRequest.add(new HexByteData(2, "0x00" , HexByteType.LEN_HI));
-            setDateTimeRequest.add(new HexByteData(3, "0x81" , HexByteType.CMD));
-            setDateTimeRequest.add(new HexByteData(4,Calendar.getInstance().get(Calendar.YEAR) - 2000,HexByteType.DATE_YEAR));
-            setDateTimeRequest.add(new HexByteData(5,Calendar.getInstance().get(Calendar.MONTH) + 1,HexByteType.DATE_MONTH));
-            setDateTimeRequest.add(new HexByteData(6,Calendar.getInstance().get(Calendar.DAY_OF_MONTH),HexByteType.DATE_DAY));
-            setDateTimeRequest.add(new HexByteData(7,Calendar.getInstance().get(Calendar.HOUR_OF_DAY),HexByteType.TIME_HOUR));
-            setDateTimeRequest.add(new HexByteData(8,Calendar.getInstance().get(Calendar.MINUTE),HexByteType.TIME_MINUTE));
-            setDateTimeRequest.add(new HexByteData(9,Calendar.getInstance().get(Calendar.SECOND),HexByteType.TIME_SEC));
+            setDateTimeRequest.add(new HexByteData(0, "0x02", HexByteType.STX));
+            setDateTimeRequest.add(new HexByteData(1, "0x0C", HexByteType.LEN_LO));
+            setDateTimeRequest.add(new HexByteData(2, "0x00", HexByteType.LEN_HI));
+            setDateTimeRequest.add(new HexByteData(3, "0x81", HexByteType.CMD));
+            setDateTimeRequest.add(new HexByteData(4, Calendar.getInstance().get(Calendar.YEAR) - 2000, HexByteType.DATE_YEAR));
+            setDateTimeRequest.add(new HexByteData(5, Calendar.getInstance().get(Calendar.MONTH) + 1, HexByteType.DATE_MONTH));
+            setDateTimeRequest.add(new HexByteData(6, Calendar.getInstance().get(Calendar.DAY_OF_MONTH), HexByteType.DATE_DAY));
+            setDateTimeRequest.add(new HexByteData(7, Calendar.getInstance().get(Calendar.HOUR_OF_DAY), HexByteType.TIME_HOUR));
+            setDateTimeRequest.add(new HexByteData(8, Calendar.getInstance().get(Calendar.MINUTE), HexByteType.TIME_MINUTE));
+            setDateTimeRequest.add(new HexByteData(9, Calendar.getInstance().get(Calendar.SECOND), HexByteType.TIME_SEC));
 
             Pair<String, String> highLowByteOfSum = controlSumCRC16Service
                   .getHighLowByteOfSum(setDateTimeRequest);
@@ -274,22 +304,22 @@ public class ComPortService {
              * -------------------------------------------------------------
              */
             List<HexByteData> setConverterTypeRequest = new ArrayList<>();
-            setConverterTypeRequest.add(new HexByteData(0, "0x02" , HexByteType.STX));
-            setConverterTypeRequest.add(new HexByteData(1, "0x12" , HexByteType.LEN_LO));
-            setConverterTypeRequest.add(new HexByteData(2, "0x00" , HexByteType.LEN_HI));
-            setConverterTypeRequest.add(new HexByteData(3, "0xB1" , HexByteType.CMD));
-            setConverterTypeRequest.add(new HexByteData(4, deviceType , HexByteType.DEVICE_TYPE));
-            setConverterTypeRequest.add(new HexByteData(5, serialIdB0 , HexByteType.SERIAL_ID_B0));
-            setConverterTypeRequest.add(new HexByteData(6, serialIdB1 , HexByteType.SERIAL_ID_B1));
-            setConverterTypeRequest.add(new HexByteData(7, serialIdB2 , HexByteType.SERIAL_ID_B2));
-            setConverterTypeRequest.add(new HexByteData(8, serialIdB3 , HexByteType.SERIAL_ID_B3));
-            setConverterTypeRequest.add(new HexByteData(9, serialIdB4 , HexByteType.SERIAL_ID_B4));
-            setConverterTypeRequest.add(new HexByteData(10, serialIdB5 , HexByteType.SERIAL_ID_B5));
-            setConverterTypeRequest.add(new HexByteData(11, serialIdB6 , HexByteType.SERIAL_ID_B6));
-            setConverterTypeRequest.add(new HexByteData(12, serialIdB7 , HexByteType.SERIAL_ID_B7));
-            setConverterTypeRequest.add(new HexByteData(13, hwVersion , HexByteType.HW_VERSION));
-            setConverterTypeRequest.add(new HexByteData(14, swVersionLo , HexByteType.SW_VERSION_LO));
-            setConverterTypeRequest.add(new HexByteData(15, swVersionHi , HexByteType.SW_VERSION_HI));
+            setConverterTypeRequest.add(new HexByteData(0, "0x02", HexByteType.STX));
+            setConverterTypeRequest.add(new HexByteData(1, "0x12", HexByteType.LEN_LO));
+            setConverterTypeRequest.add(new HexByteData(2, "0x00", HexByteType.LEN_HI));
+            setConverterTypeRequest.add(new HexByteData(3, "0xB1", HexByteType.CMD));
+            setConverterTypeRequest.add(new HexByteData(4, deviceType, HexByteType.DEVICE_TYPE));
+            setConverterTypeRequest.add(new HexByteData(5, serialIdB0, HexByteType.SERIAL_ID_B0));
+            setConverterTypeRequest.add(new HexByteData(6, serialIdB1, HexByteType.SERIAL_ID_B1));
+            setConverterTypeRequest.add(new HexByteData(7, serialIdB2, HexByteType.SERIAL_ID_B2));
+            setConverterTypeRequest.add(new HexByteData(8, serialIdB3, HexByteType.SERIAL_ID_B3));
+            setConverterTypeRequest.add(new HexByteData(9, serialIdB4, HexByteType.SERIAL_ID_B4));
+            setConverterTypeRequest.add(new HexByteData(10, serialIdB5, HexByteType.SERIAL_ID_B5));
+            setConverterTypeRequest.add(new HexByteData(11, serialIdB6, HexByteType.SERIAL_ID_B6));
+            setConverterTypeRequest.add(new HexByteData(12, serialIdB7, HexByteType.SERIAL_ID_B7));
+            setConverterTypeRequest.add(new HexByteData(13, hwVersion, HexByteType.HW_VERSION));
+            setConverterTypeRequest.add(new HexByteData(14, swVersionLo, HexByteType.SW_VERSION_LO));
+            setConverterTypeRequest.add(new HexByteData(15, swVersionHi, HexByteType.SW_VERSION_HI));
             Pair<String, String> highLowByteOfSum = controlSumCRC16Service
                   .getHighLowByteOfSum(setConverterTypeRequest);
 
@@ -305,6 +335,7 @@ public class ComPortService {
             closeComport(serialPort);
             return setConverterTypeResponse;
       }
+
       public SerialPort findSerialPortByName(String portSystemName) {
             SerialPort commPort = SerialPort.getCommPort(portSystemName);
             return commPort;
@@ -455,22 +486,22 @@ public class ComPortService {
             dataList.add(new HexByteData(1, data[1], HexByteType.LEN_LO));
             dataList.add(new HexByteData(2, data[2], HexByteType.LEN_HI));
             dataList.add(new HexByteData(3, data[3], HexByteType.CMD));
-            for (int i = 4; i < 964; i +=15 ) {
+            for (int i = 4; i < 964; i += 15) {
                   dataList.add(new HexByteData(i, data[i], HexByteType.INDEX_LO));
-                  dataList.add(new HexByteData(i+1, data[i+1], HexByteType.INDEX_HI));
-                  dataList.add(new HexByteData(i+3, data[i+2], HexByteType.DATE_YEAR));
-                  dataList.add(new HexByteData(i+4, data[i+3], HexByteType.DATE_MONTH));
-                  dataList.add(new HexByteData(i+5, data[i+4], HexByteType.DATE_DAY));
-                  dataList.add(new HexByteData(i+6, data[i+5], HexByteType.TIME_HOUR));
-                  dataList.add(new HexByteData(i+7, data[i+6], HexByteType.TIME_MINUTE));
-                  dataList.add(new HexByteData(i+8, data[i+7], HexByteType.TIME_SEC));
-                  dataList.add(new HexByteData(i+9, data[i+8], HexByteType.GLUCOSE_HI));
-                  dataList.add(new HexByteData(i+10, data[i+9], HexByteType.GLUCOSE_LO));
-                  dataList.add(new HexByteData(i+11, data[i+10], HexByteType.TE_HI));
-                  dataList.add(new HexByteData(i+12, data[i+11], HexByteType.TE_LO));
-                  dataList.add(new HexByteData(i+13, data[i+12], HexByteType.HEMATOCRIT_HI));
-                  dataList.add(new HexByteData(i+14, data[i+13], HexByteType.HEMATOCRIT_LO));
-                  dataList.add(new HexByteData(i+15, data[i+14], HexByteType.STATE));
+                  dataList.add(new HexByteData(i + 1, data[i + 1], HexByteType.INDEX_HI));
+                  dataList.add(new HexByteData(i + 3, data[i + 2], HexByteType.DATE_YEAR));
+                  dataList.add(new HexByteData(i + 4, data[i + 3], HexByteType.DATE_MONTH));
+                  dataList.add(new HexByteData(i + 5, data[i + 4], HexByteType.DATE_DAY));
+                  dataList.add(new HexByteData(i + 6, data[i + 5], HexByteType.TIME_HOUR));
+                  dataList.add(new HexByteData(i + 7, data[i + 6], HexByteType.TIME_MINUTE));
+                  dataList.add(new HexByteData(i + 8, data[i + 7], HexByteType.TIME_SEC));
+                  dataList.add(new HexByteData(i + 9, data[i + 8], HexByteType.GLUCOSE_HI));
+                  dataList.add(new HexByteData(i + 10, data[i + 9], HexByteType.GLUCOSE_LO));
+                  dataList.add(new HexByteData(i + 11, data[i + 10], HexByteType.TE_HI));
+                  dataList.add(new HexByteData(i + 12, data[i + 11], HexByteType.TE_LO));
+                  dataList.add(new HexByteData(i + 13, data[i + 12], HexByteType.HEMATOCRIT_HI));
+                  dataList.add(new HexByteData(i + 14, data[i + 13], HexByteType.HEMATOCRIT_LO));
+                  dataList.add(new HexByteData(i + 15, data[i + 14], HexByteType.STATE));
             }
             dataList.add(new HexByteData(964, data[964], HexByteType.CRC_LO));
             dataList.add(new HexByteData(965, data[965], HexByteType.CRC_HI));
