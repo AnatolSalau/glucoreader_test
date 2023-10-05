@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 
 @AllArgsConstructor
-public class SerialPortDTO {
+public class SerialPortDto {
       private  final Integer id;
       private final String name;
       private final String description;
@@ -20,7 +20,7 @@ public class SerialPortDTO {
       private final List<HexByteData> converterType;
       private final List<HexByteData> values;
 
-      public SerialPortDTO(Integer id, String systemPortName, String portDescription) {
+      public SerialPortDto(Integer id, String systemPortName, String portDescription) {
             this.id = id;
             this.name = systemPortName;
             this.description = portDescription;
