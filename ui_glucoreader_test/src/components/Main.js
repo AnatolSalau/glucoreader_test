@@ -45,6 +45,18 @@ function Main({connection}) {
             connection.onclose = (ev) => {
                   console.log('Connection is close');
             };
+
+            const parseDateTimeFromStr = () => {
+                  let mydate = new Date('2023-10-05T15:16:17');
+                  console.log("GetDay : " + mydate.getUTCDate());
+                  console.log("GetMonth : " + (mydate.getMonth() + 1));
+                  console.log("GetFullYear : " + mydate.getFullYear());
+                  console.log("GetHours : " + mydate.getHours());
+                  console.log("GetMinutes : " + mydate.getMinutes());
+                  console.log("GetSeconds : " + mydate.getSeconds());
+            }
+            parseDateTimeFromStr();
+
       }, [setComPortList]);
 
       let [activeComPortName, setActiveComPortName] = useState("");

@@ -2,8 +2,8 @@
       "data": {
             "comPortList": [
                   {
-                        "id": 1,
-                        "name": "COM2",
+                        "id": 0,
+                        "name": "COM1",
                         "description": "ELTIMA_Virtual_Serial_Port_00",
                         "protocolVersion": 1,
                         "deviceType": {
@@ -17,14 +17,7 @@
                               "temperature": 36.6,
                               "battery": 1
                         },
-                        "dateTime": {
-                              "year": 2000,
-                              "month": 2,
-                              "day": 12,
-                              "hour": 15,
-                              "min": 55,
-                              "sec": 20
-                        },
+                        "dateTime": "2023-10-05T15:16:17",
                         "converterType": {
                               "deviceType": 1,
                               "serialId": "AA110000",
@@ -34,12 +27,7 @@
                         "values": [
                               {
                                     "id": 0,
-                                    "year": 2000,
-                                    "month": 2,
-                                    "day": 12,
-                                    "hour": 15,
-                                    "min": 55,
-                                    "sec": 20,
+                                    "dateTime": "2023-10-05T15:16:17",
                                     "glucose" : 4.5,
                                     "temperature" : 36.6,
                                     "hematocrit" : 45.5,
@@ -48,12 +36,7 @@
                               },
                               {
                                     "id": 1,
-                                    "year": 2000,
-                                    "month": 2,
-                                    "day": 12,
-                                    "hour": 15,
-                                    "min": 55,
-                                    "sec": 20,
+                                    "dateTime": "2023-10-05T15:16:17",
                                     "glucose" : 4.5,
                                     "temperature" : 36.6,
                                     "hematocrit" : 45.5,
@@ -66,17 +49,47 @@
                   {
                         "id": 1,
                         "name": "COM2",
-                        "description": "ELTIMA_Virtual_Serial_Port_00",
+                        "description": "ELTIMA_Virtual_Serial_Port_01",
                         "protocolVersion": 1,
                         "deviceType": {
+                              "deviceType": 1,
                               "serialId": "AA110000",
                               "hwVersion": 1,
                               "swVersion": 1
                         },
-                        "dateTime": [],
-                        "state": [],
-                        "converterType": [],
-                        "values": []
+                        "state": {
+                              "errorCode": 0,
+                              "temperature": 36.6,
+                              "battery": 1
+                        },
+                        "dateTime": "2023-10-05T15:16:17",
+                        "converterType": {
+                              "deviceType": 1,
+                              "serialId": "AA110000",
+                              "hwVersion": 1,
+                              "swVersion": 1
+                        },
+                        "values": [
+                              {
+                                    "id": 0,
+                                    "dateTime": "2023-10-05T15:16:17",
+                                    "glucose" : 4.5,
+                                    "temperature" : 36.6,
+                                    "hematocrit" : 45.5,
+                                    "state" : 11,
+                                    "stateUserMark" : 0
+                              },
+                              {
+                                    "id": 1,
+                                    "dateTime": "2023-10-05T15:16:17",
+                                    "glucose" : 4.5,
+                                    "temperature" : 36.6,
+                                    "hematocrit" : 45.5,
+                                    "state" : 11,
+                                    "stateUserMark" : 0
+                              },
+                              {}
+                        ]
                   },
                   null,
                   null,
