@@ -47,9 +47,6 @@ public class SerialPortDTOService {
       }
 
       private int getIdFromLowHiByte(HexByteData indexLo, HexByteData indexHi) {
-            byte resultByte = indexHi.getByteValue();
-            resultByte = (byte) (resultByte << 8);
-            resultByte = (byte) (resultByte + indexLo.getByteValue());
-            return resultByte;
+            return ((int) indexLo.getByteValue() & 0xff) | (((int) indexHi.getByteValue() & 0xff) << 8);
       }
 }
