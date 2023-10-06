@@ -1,4 +1,4 @@
-2023-10-05T11:05:43.572+03:00  WARN 12956 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-10-06T09:27:43.365+03:00  WARN 5820 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -7,34 +7,34 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-10-05T11:05:43.597+03:00  INFO 12956 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 12956 (started by User in D:\JAVA\Projects\glucoreader_test)
-2023-10-05T11:05:43.599+03:00  INFO 12956 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
-2023-10-05T11:05:44.274+03:00  INFO 12956 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-05T11:05:44.357+03:00  INFO 12956 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
-2023-10-05T11:05:44.799+03:00  INFO 12956 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
-2023-10-05T11:05:44.799+03:00  INFO 12956 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
-2023-10-05T11:05:44.799+03:00  INFO 12956 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-10-05T11:05:44.810+03:00  INFO 12956 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-05T11:05:44.942+03:00  INFO 12956 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@11f23203
-2023-10-05T11:05:44.944+03:00  INFO 12956 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-05T11:05:44.953+03:00  INFO 12956 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
-2023-10-05T11:05:44.986+03:00  INFO 12956 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.013s)
-2023-10-05T11:05:44.990+03:00  INFO 12956 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
-2023-10-05T11:05:44.990+03:00  INFO 12956 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
-2023-10-05T11:05:45.093+03:00  INFO 12956 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-05T11:05:45.173+03:00  INFO 12956 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-10-05T11:05:45.176+03:00  INFO 12956 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-05T11:05:45.341+03:00  INFO 12956 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T11:05:45.490+03:00  INFO 12956 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-05T11:05:45.719+03:00  INFO 12956 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T11:05:46.224+03:00  INFO 12956 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-05T11:05:46.248+03:00  INFO 12956 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T11:05:46.435+03:00  WARN 12956 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-05T11:05:47.089+03:00  INFO 12956 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.747 seconds (process running for 4.964)
-2023-10-05T11:05:47.626+03:00  INFO 12956 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T11:05:47.630+03:00  INFO 12956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-10-05T11:05:47.633+03:00  INFO 12956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-10-05T12:06:50.352+03:00  WARN 14792 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-10-06T09:27:43.390+03:00  INFO 5820 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 5820 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T09:27:43.392+03:00  INFO 5820 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T09:27:44.085+03:00  INFO 5820 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T09:27:44.149+03:00  INFO 5820 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2023-10-06T09:27:44.599+03:00  INFO 5820 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T09:27:44.599+03:00  INFO 5820 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T09:27:44.599+03:00  INFO 5820 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T09:27:44.610+03:00  INFO 5820 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T09:27:44.747+03:00  INFO 5820 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6221b13b
+2023-10-06T09:27:44.749+03:00  INFO 5820 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T09:27:44.759+03:00  INFO 5820 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T09:27:44.792+03:00  INFO 5820 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.015s)
+2023-10-06T09:27:44.795+03:00  INFO 5820 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T09:27:44.796+03:00  INFO 5820 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T09:27:44.898+03:00  INFO 5820 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T09:27:44.971+03:00  INFO 5820 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T09:27:44.974+03:00  INFO 5820 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T09:27:45.140+03:00  INFO 5820 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:27:45.305+03:00  INFO 5820 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T09:27:45.548+03:00  INFO 5820 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:27:46.072+03:00  INFO 5820 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T09:27:46.100+03:00  INFO 5820 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:27:46.296+03:00  WARN 5820 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T09:27:46.964+03:00  INFO 5820 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.854 seconds (process running for 5.164)
+2023-10-06T09:27:47.546+03:00  INFO 5820 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:27:47.550+03:00  INFO 5820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T09:27:47.558+03:00  INFO 5820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T09:27:57.366+03:00  WARN 13520 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -43,77 +43,34 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-10-05T12:06:50.367+03:00  INFO 14792 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 14792 (started by User in D:\JAVA\Projects\glucoreader_test)
-2023-10-05T12:06:50.368+03:00  INFO 14792 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
-2023-10-05T12:06:50.913+03:00  INFO 14792 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-05T12:06:50.973+03:00  INFO 14792 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
-2023-10-05T12:06:51.404+03:00  INFO 14792 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
-2023-10-05T12:06:51.405+03:00  INFO 14792 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
-2023-10-05T12:06:51.405+03:00  INFO 14792 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-10-05T12:06:51.415+03:00  INFO 14792 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-05T12:06:51.524+03:00  INFO 14792 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@7db40fd5
-2023-10-05T12:06:51.525+03:00  INFO 14792 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-05T12:06:51.534+03:00  INFO 14792 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
-2023-10-05T12:06:51.565+03:00  INFO 14792 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.015s)
-2023-10-05T12:06:51.568+03:00  INFO 14792 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
-2023-10-05T12:06:51.569+03:00  INFO 14792 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
-2023-10-05T12:06:51.658+03:00  INFO 14792 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-05T12:06:51.728+03:00  INFO 14792 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-10-05T12:06:51.730+03:00  INFO 14792 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-05T12:06:51.884+03:00  INFO 14792 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T12:06:52.004+03:00  INFO 14792 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-05T12:06:52.193+03:00  INFO 14792 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T12:06:52.670+03:00  INFO 14792 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-05T12:06:52.696+03:00  INFO 14792 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T12:06:52.868+03:00  WARN 14792 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-05T12:06:53.439+03:00  INFO 14792 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.34 seconds (process running for 4.377)
-2023-10-05T12:06:53.990+03:00  INFO 14792 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T12:06:53.994+03:00  INFO 14792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-10-05T12:06:53.996+03:00  INFO 14792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-10-05T12:46:29.774+03:00  INFO 7652 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 17.0.4.1 with PID 7652 (started by User in D:\JAVA\Projects\glucoreader_test)
-2023-10-05T12:46:29.778+03:00  INFO 7652 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
-2023-10-05T12:46:30.242+03:00  INFO 7652 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-05T12:46:30.283+03:00  INFO 7652 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
-2023-10-05T12:46:30.654+03:00  INFO 7652 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8044 (http)
-2023-10-05T12:46:30.660+03:00  INFO 7652 --- [JavaFX-Launcher] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-05T12:46:30.660+03:00  INFO 7652 --- [JavaFX-Launcher] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-10-05T12:46:30.734+03:00  INFO 7652 --- [JavaFX-Launcher] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-10-05T12:46:30.734+03:00  INFO 7652 --- [JavaFX-Launcher] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 913 ms
-2023-10-05T12:46:30.828+03:00  INFO 7652 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
-2023-10-05T12:46:30.829+03:00  INFO 7652 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
-2023-10-05T12:46:30.829+03:00  INFO 7652 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : 
-2023-10-05T12:46:30.835+03:00  INFO 7652 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-05T12:46:30.921+03:00  INFO 7652 --- [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@116b6d6c
-2023-10-05T12:46:30.923+03:00  INFO 7652 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-05T12:46:30.934+03:00  INFO 7652 --- [JavaFX-Launcher] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
-2023-10-05T12:46:30.956+03:00  INFO 7652 --- [JavaFX-Launcher] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
-2023-10-05T12:46:30.958+03:00  INFO 7652 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
-2023-10-05T12:46:30.959+03:00  INFO 7652 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
-2023-10-05T12:46:31.007+03:00  INFO 7652 --- [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-05T12:46:31.042+03:00  INFO 7652 --- [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-10-05T12:46:31.043+03:00  INFO 7652 --- [JavaFX-Launcher] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-05T12:46:31.136+03:00  INFO 7652 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T12:46:31.204+03:00  INFO 7652 --- [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-05T12:46:31.330+03:00  INFO 7652 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T12:46:31.675+03:00  INFO 7652 --- [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-05T12:46:31.697+03:00  INFO 7652 --- [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T12:46:31.759+03:00  WARN 7652 --- [JavaFX-Launcher] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-05T12:46:32.177+03:00  INFO 7652 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8044 (http) with context path ''
-2023-10-05T12:46:32.184+03:00  INFO 7652 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 2.802 seconds (process running for 3.456)
-2023-10-05T12:46:33.430+03:00  INFO 7652 --- [http-nio-8044-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-05T12:46:33.431+03:00  INFO 7652 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-10-05T12:46:33.431+03:00  INFO 7652 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-10-05T12:50:01.434+03:00  INFO 7652 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
-2023-10-05T12:51:26.783+03:00  INFO 7652 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
-2023-10-05T12:52:17.743+03:00  INFO 7652 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
-2023-10-05T12:53:09.269+03:00  INFO 7652 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
-2023-10-05T12:53:15.567+03:00  INFO 7652 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
-2023-10-05T14:20:41.870+03:00  INFO 7652 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
-2023-10-05T14:20:41.870+03:00  INFO 7652 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
-2023-10-05T14:20:41.876+03:00  INFO 7652 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T14:20:41.879+03:00  INFO 7652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-10-05T14:20:41.880+03:00  INFO 7652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-10-05T14:30:14.462+03:00  WARN 4512 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-10-06T09:27:57.382+03:00  INFO 13520 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 13520 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T09:27:57.384+03:00  INFO 13520 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T09:27:57.988+03:00  INFO 13520 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T09:27:58.051+03:00  INFO 13520 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2023-10-06T09:27:58.476+03:00  INFO 13520 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T09:27:58.476+03:00  INFO 13520 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T09:27:58.476+03:00  INFO 13520 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T09:27:58.488+03:00  INFO 13520 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T09:27:58.596+03:00  INFO 13520 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@31b0f02
+2023-10-06T09:27:58.597+03:00  INFO 13520 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T09:27:58.606+03:00  INFO 13520 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T09:27:58.635+03:00  INFO 13520 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
+2023-10-06T09:27:58.638+03:00  INFO 13520 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T09:27:58.639+03:00  INFO 13520 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T09:27:58.754+03:00  INFO 13520 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T09:27:58.814+03:00  INFO 13520 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T09:27:58.817+03:00  INFO 13520 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T09:27:58.953+03:00  INFO 13520 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:27:59.086+03:00  INFO 13520 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T09:27:59.285+03:00  INFO 13520 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:27:59.779+03:00  INFO 13520 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T09:27:59.801+03:00  INFO 13520 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:28:00.003+03:00  WARN 13520 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T09:28:00.672+03:00  INFO 13520 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.634 seconds (process running for 4.684)
+2023-10-06T09:28:01.199+03:00  INFO 13520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:28:01.202+03:00  INFO 13520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T09:28:01.206+03:00  INFO 13520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T09:28:06.972+03:00  WARN 14244 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -122,34 +79,34 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-10-05T14:30:14.475+03:00  INFO 4512 --- [Test worker] b.d.s.g.comport.dto.DeviceValuesDtoTest  : Starting DeviceValuesDtoTest using Java 17.0.4.1 with PID 4512 (started by User in D:\JAVA\Projects\glucoreader_test)
-2023-10-05T14:30:14.477+03:00  INFO 4512 --- [Test worker] b.d.s.g.comport.dto.DeviceValuesDtoTest  : No active profile set, falling back to 1 default profile: "default"
-2023-10-05T14:30:14.999+03:00  INFO 4512 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-05T14:30:15.056+03:00  INFO 4512 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
-2023-10-05T14:30:15.454+03:00  INFO 4512 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
-2023-10-05T14:30:15.454+03:00  INFO 4512 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
-2023-10-05T14:30:15.454+03:00  INFO 4512 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-10-05T14:30:15.464+03:00  INFO 4512 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-05T14:30:15.594+03:00  INFO 4512 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6a55594b
-2023-10-05T14:30:15.596+03:00  INFO 4512 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-05T14:30:15.605+03:00  INFO 4512 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
-2023-10-05T14:30:15.634+03:00  INFO 4512 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
-2023-10-05T14:30:15.638+03:00  INFO 4512 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
-2023-10-05T14:30:15.638+03:00  INFO 4512 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
-2023-10-05T14:30:15.721+03:00  INFO 4512 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-05T14:30:15.780+03:00  INFO 4512 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-10-05T14:30:15.782+03:00  INFO 4512 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-05T14:30:15.928+03:00  INFO 4512 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T14:30:16.054+03:00  INFO 4512 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-05T14:30:16.235+03:00  INFO 4512 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T14:30:16.703+03:00  INFO 4512 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-05T14:30:16.727+03:00  INFO 4512 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T14:30:16.903+03:00  WARN 4512 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-05T14:30:17.513+03:00  INFO 4512 --- [Test worker] b.d.s.g.comport.dto.DeviceValuesDtoTest  : Started DeviceValuesDtoTest in 3.32 seconds (process running for 4.328)
-2023-10-05T14:30:17.997+03:00  INFO 4512 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T14:30:18.000+03:00  INFO 4512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-10-05T14:30:18.002+03:00  INFO 4512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-10-05T14:57:19.054+03:00  WARN 8908 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-10-06T09:28:06.987+03:00  INFO 14244 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 14244 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T09:28:06.988+03:00  INFO 14244 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T09:28:07.550+03:00  INFO 14244 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T09:28:07.618+03:00  INFO 14244 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2023-10-06T09:28:08.021+03:00  INFO 14244 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T09:28:08.022+03:00  INFO 14244 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T09:28:08.022+03:00  INFO 14244 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T09:28:08.031+03:00  INFO 14244 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T09:28:08.134+03:00  INFO 14244 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@266e9dda
+2023-10-06T09:28:08.136+03:00  INFO 14244 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T09:28:08.144+03:00  INFO 14244 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T09:28:08.177+03:00  INFO 14244 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.013s)
+2023-10-06T09:28:08.181+03:00  INFO 14244 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T09:28:08.181+03:00  INFO 14244 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T09:28:08.278+03:00  INFO 14244 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T09:28:08.332+03:00  INFO 14244 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T09:28:08.334+03:00  INFO 14244 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T09:28:08.474+03:00  INFO 14244 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:28:08.599+03:00  INFO 14244 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T09:28:08.809+03:00  INFO 14244 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:28:09.304+03:00  INFO 14244 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T09:28:09.327+03:00  INFO 14244 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:28:09.512+03:00  WARN 14244 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T09:28:10.175+03:00  INFO 14244 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.453 seconds (process running for 4.486)
+2023-10-06T09:28:10.754+03:00  INFO 14244 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:28:10.756+03:00  INFO 14244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T09:28:10.761+03:00  INFO 14244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T09:59:10.410+03:00  WARN 2568 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -158,31 +115,34 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-10-05T14:57:19.070+03:00  INFO 8908 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 8908 (started by User in D:\JAVA\Projects\glucoreader_test)
-2023-10-05T14:57:19.072+03:00  INFO 8908 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
-2023-10-05T14:57:19.682+03:00  INFO 8908 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-05T14:57:19.747+03:00  INFO 8908 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
-2023-10-05T14:57:20.255+03:00  INFO 8908 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
-2023-10-05T14:57:20.255+03:00  INFO 8908 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
-2023-10-05T14:57:20.255+03:00  INFO 8908 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-10-05T14:57:20.269+03:00  INFO 8908 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-05T14:57:20.382+03:00  INFO 8908 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@7fe8c7db
-2023-10-05T14:57:20.384+03:00  INFO 8908 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-05T14:57:20.393+03:00  INFO 8908 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
-2023-10-05T14:57:20.424+03:00  INFO 8908 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
-2023-10-05T14:57:20.429+03:00  INFO 8908 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
-2023-10-05T14:57:20.430+03:00  INFO 8908 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
-2023-10-05T14:57:20.528+03:00  INFO 8908 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-05T14:57:20.598+03:00  INFO 8908 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-10-05T14:57:20.601+03:00  INFO 8908 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-05T14:57:20.769+03:00  INFO 8908 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T14:57:20.901+03:00  INFO 8908 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-05T14:57:21.107+03:00  INFO 8908 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T14:57:21.613+03:00  INFO 8908 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-05T14:57:21.639+03:00  INFO 8908 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T14:57:21.842+03:00  WARN 8908 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-05T14:57:22.486+03:00  INFO 8908 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.716 seconds (process running for 5.16)
-2023-10-05T16:09:59.244+03:00  WARN 7612 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-10-06T09:59:10.425+03:00  INFO 2568 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 2568 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T09:59:10.426+03:00  INFO 2568 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T09:59:11.000+03:00  INFO 2568 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T09:59:11.069+03:00  INFO 2568 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2023-10-06T09:59:11.475+03:00  INFO 2568 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T09:59:11.475+03:00  INFO 2568 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T09:59:11.475+03:00  INFO 2568 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T09:59:11.484+03:00  INFO 2568 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T09:59:11.591+03:00  INFO 2568 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@31b0f02
+2023-10-06T09:59:11.592+03:00  INFO 2568 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T09:59:11.602+03:00  INFO 2568 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T09:59:11.633+03:00  INFO 2568 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2023-10-06T09:59:11.638+03:00  INFO 2568 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T09:59:11.638+03:00  INFO 2568 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T09:59:11.731+03:00  INFO 2568 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T09:59:11.790+03:00  INFO 2568 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T09:59:11.793+03:00  INFO 2568 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T09:59:11.943+03:00  INFO 2568 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:59:12.077+03:00  INFO 2568 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T09:59:12.266+03:00  INFO 2568 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T09:59:12.758+03:00  INFO 2568 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T09:59:12.783+03:00  INFO 2568 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:59:12.960+03:00  WARN 2568 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T09:59:13.568+03:00  INFO 2568 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.412 seconds (process running for 4.484)
+2023-10-06T09:59:14.077+03:00  INFO 2568 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T09:59:14.079+03:00  INFO 2568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T09:59:14.081+03:00  INFO 2568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T10:02:56.434+03:00  WARN 12968 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -191,27 +151,570 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-10-05T16:09:59.262+03:00  INFO 7612 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 7612 (started by User in D:\JAVA\Projects\glucoreader_test)
-2023-10-05T16:09:59.263+03:00  INFO 7612 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
-2023-10-05T16:09:59.890+03:00  INFO 7612 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-05T16:09:59.968+03:00  INFO 7612 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
-2023-10-05T16:10:00.492+03:00  INFO 7612 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
-2023-10-05T16:10:00.492+03:00  INFO 7612 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
-2023-10-05T16:10:00.492+03:00  INFO 7612 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-10-05T16:10:00.511+03:00  INFO 7612 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-05T16:10:00.634+03:00  INFO 7612 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5efe47fd
-2023-10-05T16:10:00.635+03:00  INFO 7612 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-05T16:10:00.644+03:00  INFO 7612 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
-2023-10-05T16:10:00.677+03:00  INFO 7612 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.016s)
-2023-10-05T16:10:00.682+03:00  INFO 7612 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
-2023-10-05T16:10:00.682+03:00  INFO 7612 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
-2023-10-05T16:10:00.774+03:00  INFO 7612 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-05T16:10:00.847+03:00  INFO 7612 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-10-05T16:10:00.850+03:00  INFO 7612 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-05T16:10:01.019+03:00  INFO 7612 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T16:10:01.172+03:00  INFO 7612 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-05T16:10:01.418+03:00  INFO 7612 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-05T16:10:01.936+03:00  INFO 7612 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-05T16:10:01.961+03:00  INFO 7612 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-05T16:10:02.138+03:00  WARN 7612 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-05T16:10:02.798+03:00  INFO 7612 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.846 seconds (process running for 5.033)
+2023-10-06T10:02:56.451+03:00  INFO 12968 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 12968 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T10:02:56.452+03:00  INFO 12968 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T10:02:57.063+03:00  INFO 12968 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T10:02:57.139+03:00  INFO 12968 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2023-10-06T10:02:57.577+03:00  INFO 12968 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T10:02:57.577+03:00  INFO 12968 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T10:02:57.577+03:00  INFO 12968 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T10:02:57.587+03:00  INFO 12968 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T10:02:57.690+03:00  INFO 12968 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@38883a31
+2023-10-06T10:02:57.691+03:00  INFO 12968 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T10:02:57.700+03:00  INFO 12968 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T10:02:57.735+03:00  INFO 12968 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.018s)
+2023-10-06T10:02:57.740+03:00  INFO 12968 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T10:02:57.740+03:00  INFO 12968 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T10:02:57.826+03:00  INFO 12968 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T10:02:57.879+03:00  INFO 12968 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T10:02:57.881+03:00  INFO 12968 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T10:02:58.015+03:00  INFO 12968 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T10:02:58.142+03:00  INFO 12968 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T10:02:58.348+03:00  INFO 12968 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T10:02:58.814+03:00  INFO 12968 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T10:02:58.836+03:00  INFO 12968 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T10:02:58.998+03:00  WARN 12968 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T10:02:59.593+03:00  INFO 12968 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.434 seconds (process running for 4.614)
+2023-10-06T10:03:00.148+03:00  INFO 12968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T10:03:00.152+03:00  INFO 12968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T10:03:00.156+03:00  INFO 12968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:19:53.682+03:00  WARN 14764 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:19:53.698+03:00  INFO 14764 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 14764 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:19:53.699+03:00  INFO 14764 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:19:54.271+03:00  INFO 14764 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:19:54.324+03:00  INFO 14764 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:19:54.729+03:00  INFO 14764 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:19:54.729+03:00  INFO 14764 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:19:54.729+03:00  INFO 14764 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:19:54.739+03:00  INFO 14764 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:19:54.870+03:00  INFO 14764 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5efe47fd
+2023-10-06T14:19:54.873+03:00  INFO 14764 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:19:54.884+03:00  INFO 14764 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:19:54.912+03:00  INFO 14764 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
+2023-10-06T14:19:54.916+03:00  INFO 14764 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:19:54.917+03:00  INFO 14764 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:19:55.009+03:00  INFO 14764 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:19:55.066+03:00  INFO 14764 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:19:55.068+03:00  INFO 14764 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:19:55.208+03:00  INFO 14764 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:19:55.344+03:00  INFO 14764 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:19:55.553+03:00  INFO 14764 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:19:56.096+03:00  INFO 14764 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:19:56.119+03:00  INFO 14764 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:19:56.292+03:00  WARN 14764 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:19:56.939+03:00  INFO 14764 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.484 seconds (process running for 4.711)
+2023-10-06T14:19:57.442+03:00  INFO 14764 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:19:57.446+03:00  INFO 14764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:19:57.451+03:00  INFO 14764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:21:07.857+03:00  WARN 5680 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:21:07.873+03:00  INFO 5680 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 5680 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:21:07.874+03:00  INFO 5680 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:21:08.539+03:00  INFO 5680 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:21:08.615+03:00  INFO 5680 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:21:09.135+03:00  INFO 5680 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:21:09.136+03:00  INFO 5680 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:21:09.136+03:00  INFO 5680 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:21:09.149+03:00  INFO 5680 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:21:09.261+03:00  INFO 5680 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T14:21:09.263+03:00  INFO 5680 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:21:09.273+03:00  INFO 5680 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:21:09.306+03:00  INFO 5680 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.015s)
+2023-10-06T14:21:09.312+03:00  INFO 5680 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:21:09.313+03:00  INFO 5680 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:21:09.541+03:00  INFO 5680 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:21:09.603+03:00  INFO 5680 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:21:09.606+03:00  INFO 5680 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:21:09.778+03:00  INFO 5680 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:21:09.948+03:00  INFO 5680 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:21:10.157+03:00  INFO 5680 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:21:10.686+03:00  INFO 5680 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:21:10.709+03:00  INFO 5680 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:21:10.884+03:00  WARN 5680 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:21:11.563+03:00  INFO 5680 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.975 seconds (process running for 5.02)
+2023-10-06T14:21:12.031+03:00  INFO 5680 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:21:12.033+03:00  INFO 5680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:21:12.036+03:00  INFO 5680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:23:51.677+03:00  WARN 10992 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:23:51.692+03:00  INFO 10992 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 10992 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:23:51.693+03:00  INFO 10992 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:23:52.251+03:00  INFO 10992 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:23:52.311+03:00  INFO 10992 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:23:52.725+03:00  INFO 10992 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:23:52.726+03:00  INFO 10992 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:23:52.726+03:00  INFO 10992 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:23:52.735+03:00  INFO 10992 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:23:52.837+03:00  INFO 10992 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5efe47fd
+2023-10-06T14:23:52.839+03:00  INFO 10992 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:23:52.847+03:00  INFO 10992 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:23:52.877+03:00  INFO 10992 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.013s)
+2023-10-06T14:23:52.883+03:00  INFO 10992 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:23:52.884+03:00  INFO 10992 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:23:52.974+03:00  INFO 10992 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:23:53.035+03:00  INFO 10992 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:23:53.037+03:00  INFO 10992 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:23:53.181+03:00  INFO 10992 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:23:53.304+03:00  INFO 10992 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:23:53.496+03:00  INFO 10992 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:23:53.987+03:00  INFO 10992 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:23:54.011+03:00  INFO 10992 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:23:54.189+03:00  WARN 10992 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:23:54.795+03:00  INFO 10992 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.372 seconds (process running for 4.505)
+2023-10-06T14:23:55.219+03:00  INFO 10992 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:23:55.221+03:00  INFO 10992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:23:55.223+03:00  INFO 10992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:24:22.644+03:00  WARN 12816 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:24:22.657+03:00  INFO 12816 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 12816 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:24:22.658+03:00  INFO 12816 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:24:23.230+03:00  INFO 12816 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:24:23.305+03:00  INFO 12816 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:24:23.778+03:00  INFO 12816 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:24:23.779+03:00  INFO 12816 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:24:23.779+03:00  INFO 12816 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:24:23.790+03:00  INFO 12816 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:24:23.965+03:00  INFO 12816 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T14:24:23.967+03:00  INFO 12816 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:24:23.976+03:00  INFO 12816 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:24:24.006+03:00  INFO 12816 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2023-10-06T14:24:24.010+03:00  INFO 12816 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:24:24.010+03:00  INFO 12816 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:24:24.122+03:00  INFO 12816 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:24:24.185+03:00  INFO 12816 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:24:24.188+03:00  INFO 12816 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:24:24.337+03:00  INFO 12816 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:24:24.500+03:00  INFO 12816 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:24:24.796+03:00  INFO 12816 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:24:25.356+03:00  INFO 12816 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:24:25.379+03:00  INFO 12816 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:24:25.555+03:00  WARN 12816 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:24:26.264+03:00  INFO 12816 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.888 seconds (process running for 4.972)
+2023-10-06T14:24:26.717+03:00  INFO 12816 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:24:26.720+03:00  INFO 12816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:24:26.724+03:00  INFO 12816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:26:54.877+03:00  WARN 11284 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:26:54.890+03:00  INFO 11284 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Starting ComPortServiceTest using Java 17.0.4.1 with PID 11284 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:26:54.891+03:00  INFO 11284 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:26:55.447+03:00  INFO 11284 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:26:55.505+03:00  INFO 11284 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:26:55.905+03:00  INFO 11284 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:26:55.905+03:00  INFO 11284 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:26:55.906+03:00  INFO 11284 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:26:55.915+03:00  INFO 11284 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:26:56.016+03:00  INFO 11284 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@31b0f02
+2023-10-06T14:26:56.018+03:00  INFO 11284 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:26:56.027+03:00  INFO 11284 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:26:56.056+03:00  INFO 11284 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.013s)
+2023-10-06T14:26:56.060+03:00  INFO 11284 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:26:56.060+03:00  INFO 11284 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:26:56.150+03:00  INFO 11284 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:26:56.208+03:00  INFO 11284 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:26:56.211+03:00  INFO 11284 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:26:56.353+03:00  INFO 11284 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:26:56.482+03:00  INFO 11284 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:26:56.698+03:00  INFO 11284 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:26:57.187+03:00  INFO 11284 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:26:57.209+03:00  INFO 11284 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:26:57.384+03:00  WARN 11284 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:26:57.990+03:00  INFO 11284 --- [Test worker] b.d.s.g.c.services.ComPortServiceTest    : Started ComPortServiceTest in 3.362 seconds (process running for 4.504)
+2023-10-06T14:26:58.517+03:00  INFO 11284 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:26:58.531+03:00  INFO 11284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:26:58.556+03:00  INFO 11284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:30:17.915+03:00  WARN 14444 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:30:17.929+03:00  INFO 14444 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 14444 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:30:17.931+03:00  INFO 14444 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:30:18.570+03:00  INFO 14444 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:30:18.630+03:00  INFO 14444 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:30:19.058+03:00  INFO 14444 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:30:19.059+03:00  INFO 14444 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:30:19.059+03:00  INFO 14444 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:30:19.070+03:00  INFO 14444 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:30:19.176+03:00  INFO 14444 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T14:30:19.178+03:00  INFO 14444 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:30:19.186+03:00  INFO 14444 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:30:19.215+03:00  INFO 14444 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.013s)
+2023-10-06T14:30:19.219+03:00  INFO 14444 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:30:19.219+03:00  INFO 14444 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:30:19.333+03:00  INFO 14444 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:30:19.400+03:00  INFO 14444 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:30:19.402+03:00  INFO 14444 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:30:19.549+03:00  INFO 14444 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:30:19.670+03:00  INFO 14444 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:30:19.875+03:00  INFO 14444 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:30:20.363+03:00  INFO 14444 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:30:20.386+03:00  INFO 14444 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:30:20.566+03:00  WARN 14444 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:30:21.158+03:00  INFO 14444 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.486 seconds (process running for 4.649)
+2023-10-06T14:30:21.615+03:00  INFO 14444 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:30:21.617+03:00  INFO 14444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:30:21.619+03:00  INFO 14444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:30:38.866+03:00  WARN 6520 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:30:38.881+03:00  INFO 6520 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 6520 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:30:38.882+03:00  INFO 6520 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:30:39.454+03:00  INFO 6520 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:30:39.508+03:00  INFO 6520 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:30:39.926+03:00  INFO 6520 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:30:39.926+03:00  INFO 6520 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:30:39.926+03:00  INFO 6520 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:30:39.935+03:00  INFO 6520 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:30:40.035+03:00  INFO 6520 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T14:30:40.037+03:00  INFO 6520 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:30:40.045+03:00  INFO 6520 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:30:40.071+03:00  INFO 6520 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.011s)
+2023-10-06T14:30:40.075+03:00  INFO 6520 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:30:40.075+03:00  INFO 6520 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:30:40.168+03:00  INFO 6520 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:30:40.228+03:00  INFO 6520 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:30:40.230+03:00  INFO 6520 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:30:40.379+03:00  INFO 6520 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:30:40.502+03:00  INFO 6520 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:30:40.710+03:00  INFO 6520 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:30:41.204+03:00  INFO 6520 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:30:41.226+03:00  INFO 6520 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:30:41.417+03:00  WARN 6520 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:30:42.036+03:00  INFO 6520 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.433 seconds (process running for 4.496)
+2023-10-06T14:30:42.495+03:00  INFO 6520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:30:42.497+03:00  INFO 6520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:30:42.499+03:00  INFO 6520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:36:19.472+03:00  WARN 12876 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:36:19.485+03:00  INFO 12876 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 12876 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:36:19.486+03:00  INFO 12876 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:36:20.078+03:00  INFO 12876 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:36:20.143+03:00  INFO 12876 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:36:20.580+03:00  INFO 12876 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:36:20.580+03:00  INFO 12876 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:36:20.580+03:00  INFO 12876 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:36:20.593+03:00  INFO 12876 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:36:20.701+03:00  INFO 12876 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5efe47fd
+2023-10-06T14:36:20.703+03:00  INFO 12876 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:36:20.711+03:00  INFO 12876 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:36:20.738+03:00  INFO 12876 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.011s)
+2023-10-06T14:36:20.741+03:00  INFO 12876 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:36:20.742+03:00  INFO 12876 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:36:20.842+03:00  INFO 12876 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:36:20.900+03:00  INFO 12876 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:36:20.902+03:00  INFO 12876 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:36:21.050+03:00  INFO 12876 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:36:21.185+03:00  INFO 12876 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:36:21.409+03:00  INFO 12876 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:36:21.913+03:00  INFO 12876 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:36:21.940+03:00  INFO 12876 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:36:22.132+03:00  WARN 12876 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:36:22.808+03:00  INFO 12876 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.642 seconds (process running for 4.844)
+2023-10-06T14:36:23.322+03:00  INFO 12876 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:36:23.325+03:00  INFO 12876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:36:23.328+03:00  INFO 12876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:36:36.245+03:00  WARN 9868 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:36:36.258+03:00  INFO 9868 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 9868 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:36:36.259+03:00  INFO 9868 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:36:36.811+03:00  INFO 9868 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:36:36.873+03:00  INFO 9868 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:36:37.273+03:00  INFO 9868 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:36:37.273+03:00  INFO 9868 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:36:37.273+03:00  INFO 9868 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:36:37.282+03:00  INFO 9868 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:36:37.386+03:00  INFO 9868 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T14:36:37.387+03:00  INFO 9868 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:36:37.396+03:00  INFO 9868 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:36:37.426+03:00  INFO 9868 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
+2023-10-06T14:36:37.429+03:00  INFO 9868 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:36:37.430+03:00  INFO 9868 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:36:37.521+03:00  INFO 9868 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:36:37.585+03:00  INFO 9868 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:36:37.588+03:00  INFO 9868 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:36:37.730+03:00  INFO 9868 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:36:37.856+03:00  INFO 9868 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:36:38.063+03:00  INFO 9868 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:36:38.565+03:00  INFO 9868 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:36:38.588+03:00  INFO 9868 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:36:38.765+03:00  WARN 9868 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:36:39.358+03:00  INFO 9868 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.366 seconds (process running for 4.483)
+2023-10-06T14:36:39.825+03:00  INFO 9868 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:36:39.829+03:00  INFO 9868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:36:39.832+03:00  INFO 9868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:36:48.265+03:00  WARN 3464 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:36:48.278+03:00  INFO 3464 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 3464 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:36:48.279+03:00  INFO 3464 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:36:48.839+03:00  INFO 3464 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:36:48.890+03:00  INFO 3464 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:36:49.329+03:00  INFO 3464 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:36:49.330+03:00  INFO 3464 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:36:49.330+03:00  INFO 3464 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:36:49.338+03:00  INFO 3464 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:36:49.441+03:00  INFO 3464 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T14:36:49.443+03:00  INFO 3464 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:36:49.451+03:00  INFO 3464 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:36:49.479+03:00  INFO 3464 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
+2023-10-06T14:36:49.482+03:00  INFO 3464 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:36:49.483+03:00  INFO 3464 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:36:49.585+03:00  INFO 3464 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:36:49.644+03:00  INFO 3464 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:36:49.647+03:00  INFO 3464 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:36:49.789+03:00  INFO 3464 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:36:49.911+03:00  INFO 3464 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:36:50.109+03:00  INFO 3464 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:36:50.580+03:00  INFO 3464 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:36:50.605+03:00  INFO 3464 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:36:50.788+03:00  WARN 3464 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:36:51.380+03:00  INFO 3464 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.366 seconds (process running for 4.412)
+2023-10-06T14:36:51.840+03:00  INFO 3464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:36:51.842+03:00  INFO 3464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:36:51.844+03:00  INFO 3464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T14:45:01.251+03:00  WARN 14556 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T14:45:01.264+03:00  INFO 14556 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 14556 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T14:45:01.265+03:00  INFO 14556 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T14:45:01.812+03:00  INFO 14556 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T14:45:01.876+03:00  INFO 14556 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2023-10-06T14:45:02.312+03:00  INFO 14556 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T14:45:02.313+03:00  INFO 14556 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T14:45:02.313+03:00  INFO 14556 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T14:45:02.323+03:00  INFO 14556 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T14:45:02.424+03:00  INFO 14556 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5efe47fd
+2023-10-06T14:45:02.426+03:00  INFO 14556 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T14:45:02.434+03:00  INFO 14556 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T14:45:02.463+03:00  INFO 14556 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
+2023-10-06T14:45:02.466+03:00  INFO 14556 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T14:45:02.467+03:00  INFO 14556 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T14:45:02.553+03:00  INFO 14556 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T14:45:02.616+03:00  INFO 14556 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T14:45:02.618+03:00  INFO 14556 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T14:45:02.755+03:00  INFO 14556 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:45:02.877+03:00  INFO 14556 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T14:45:03.088+03:00  INFO 14556 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T14:45:03.603+03:00  INFO 14556 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T14:45:03.625+03:00  INFO 14556 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:45:03.806+03:00  WARN 14556 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T14:45:04.382+03:00  INFO 14556 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.386 seconds (process running for 4.451)
+2023-10-06T14:45:04.812+03:00  INFO 14556 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T14:45:04.814+03:00  INFO 14556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T14:45:04.816+03:00  INFO 14556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T15:02:15.692+03:00  WARN 11860 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T15:02:15.706+03:00  INFO 11860 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 11860 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T15:02:15.707+03:00  INFO 11860 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T15:02:16.323+03:00  INFO 11860 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T15:02:16.407+03:00  INFO 11860 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2023-10-06T15:02:16.910+03:00  INFO 11860 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T15:02:16.910+03:00  INFO 11860 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T15:02:16.910+03:00  INFO 11860 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T15:02:16.919+03:00  INFO 11860 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T15:02:17.032+03:00  INFO 11860 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5efe47fd
+2023-10-06T15:02:17.034+03:00  INFO 11860 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T15:02:17.043+03:00  INFO 11860 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T15:02:17.071+03:00  INFO 11860 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.011s)
+2023-10-06T15:02:17.074+03:00  INFO 11860 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T15:02:17.075+03:00  INFO 11860 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T15:02:17.194+03:00  INFO 11860 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T15:02:17.245+03:00  INFO 11860 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T15:02:17.247+03:00  INFO 11860 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T15:02:17.388+03:00  INFO 11860 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:02:17.543+03:00  INFO 11860 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T15:02:17.790+03:00  INFO 11860 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:02:18.303+03:00  INFO 11860 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T15:02:18.330+03:00  INFO 11860 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:02:18.514+03:00  WARN 11860 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T15:02:19.121+03:00  INFO 11860 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.704 seconds (process running for 4.774)
+2023-10-06T15:02:19.572+03:00  INFO 11860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:02:19.575+03:00  INFO 11860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T15:02:19.578+03:00  INFO 11860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T15:02:51.192+03:00  WARN 14680 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T15:02:51.205+03:00  INFO 14680 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 14680 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T15:02:51.206+03:00  INFO 14680 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T15:02:51.759+03:00  INFO 14680 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T15:02:51.817+03:00  INFO 14680 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-10-06T15:02:52.234+03:00  INFO 14680 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T15:02:52.234+03:00  INFO 14680 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T15:02:52.234+03:00  INFO 14680 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T15:02:52.244+03:00  INFO 14680 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T15:02:52.349+03:00  INFO 14680 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T15:02:52.351+03:00  INFO 14680 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T15:02:52.359+03:00  INFO 14680 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T15:02:52.390+03:00  INFO 14680 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2023-10-06T15:02:52.394+03:00  INFO 14680 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T15:02:52.394+03:00  INFO 14680 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T15:02:52.478+03:00  INFO 14680 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T15:02:52.537+03:00  INFO 14680 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T15:02:52.540+03:00  INFO 14680 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T15:02:52.678+03:00  INFO 14680 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:02:52.803+03:00  INFO 14680 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T15:02:53.012+03:00  INFO 14680 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:02:53.501+03:00  INFO 14680 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T15:02:53.525+03:00  INFO 14680 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:02:53.708+03:00  WARN 14680 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T15:02:54.310+03:00  INFO 14680 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.385 seconds (process running for 4.549)
+2023-10-06T15:02:54.797+03:00  INFO 14680 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:02:54.799+03:00  INFO 14680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T15:02:54.802+03:00  INFO 14680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T15:09:22.610+03:00  WARN 10192 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T15:09:22.624+03:00  INFO 10192 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 10192 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T15:09:22.626+03:00  INFO 10192 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T15:09:23.183+03:00  INFO 10192 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T15:09:23.245+03:00  INFO 10192 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-10-06T15:09:23.657+03:00  INFO 10192 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T15:09:23.657+03:00  INFO 10192 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T15:09:23.657+03:00  INFO 10192 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T15:09:23.667+03:00  INFO 10192 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T15:09:23.772+03:00  INFO 10192 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T15:09:23.773+03:00  INFO 10192 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T15:09:23.782+03:00  INFO 10192 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T15:09:23.810+03:00  INFO 10192 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.011s)
+2023-10-06T15:09:23.814+03:00  INFO 10192 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T15:09:23.814+03:00  INFO 10192 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T15:09:23.910+03:00  INFO 10192 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T15:09:23.973+03:00  INFO 10192 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T15:09:23.975+03:00  INFO 10192 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T15:09:24.118+03:00  INFO 10192 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:09:24.240+03:00  INFO 10192 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T15:09:24.456+03:00  INFO 10192 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:09:24.944+03:00  INFO 10192 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T15:09:24.970+03:00  INFO 10192 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:09:25.161+03:00  WARN 10192 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T15:09:25.763+03:00  INFO 10192 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.407 seconds (process running for 4.47)
+2023-10-06T15:09:26.226+03:00  INFO 10192 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:09:26.228+03:00  INFO 10192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T15:09:26.230+03:00  INFO 10192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06T15:10:30.885+03:00  WARN 8368 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+	jar:file:/C:/JAVA/gradle-7.5.1/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-06T15:10:30.900+03:00  INFO 8368 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Starting SerialPortDTOServiceTest using Java 17.0.4.1 with PID 8368 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-06T15:10:30.901+03:00  INFO 8368 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T15:10:31.471+03:00  INFO 8368 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T15:10:31.547+03:00  INFO 8368 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2023-10-06T15:10:31.993+03:00  INFO 8368 --- [Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-06T15:10:31.993+03:00  INFO 8368 --- [Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-06T15:10:31.993+03:00  INFO 8368 --- [Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-10-06T15:10:32.002+03:00  INFO 8368 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T15:10:32.113+03:00  INFO 8368 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2dba05b1
+2023-10-06T15:10:32.114+03:00  INFO 8368 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T15:10:32.122+03:00  INFO 8368 --- [Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-06T15:10:32.152+03:00  INFO 8368 --- [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2023-10-06T15:10:32.155+03:00  INFO 8368 --- [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-06T15:10:32.156+03:00  INFO 8368 --- [Test worker] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-06T15:10:32.263+03:00  INFO 8368 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T15:10:32.323+03:00  INFO 8368 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-06T15:10:32.325+03:00  INFO 8368 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T15:10:32.466+03:00  INFO 8368 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:10:32.588+03:00  INFO 8368 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T15:10:32.784+03:00  INFO 8368 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T15:10:33.280+03:00  INFO 8368 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T15:10:33.302+03:00  INFO 8368 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:10:33.487+03:00  WARN 8368 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T15:10:34.077+03:00  INFO 8368 --- [Test worker] b.d.s.g.c.s.SerialPortDTOServiceTest     : Started SerialPortDTOServiceTest in 3.476 seconds (process running for 4.681)
+2023-10-06T15:10:34.524+03:00  INFO 8368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T15:10:34.527+03:00  INFO 8368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T15:10:34.534+03:00  INFO 8368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

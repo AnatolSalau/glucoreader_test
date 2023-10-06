@@ -8,6 +8,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,7 +23,7 @@ public class SerialPortDTOService {
             return jsonDataStr;
       }
 
-      public DataDto convertSerialPortDtoToDeviceDataDto(SerialPortDto serialPortDto) {
+      public DataDto convertSerialPortDtoToDataDto(SerialPortDto serialPortDto) {
             int idRaw = serialPortDto.getId().intValue();
             String nameRaw = serialPortDto.getName();
             String descriptionRaw = serialPortDto.getDescription();
@@ -30,7 +31,25 @@ public class SerialPortDTOService {
             List<HexByteData> values = serialPortDto.getValues();
             return null;
       }
-      public ValueDto convertValuesToDeviceValueDto(List<HexByteData> valuesRaw) {
+
+      /**
+       *
+       * @param valuesRaw - raw data bytes
+       * @return List<ValueDto> - list from it we will create json
+       */
+      public List<ValueDto> convertHexByteDataValueToValueDto(List<HexByteData> valuesRaw, int capacityOfList) {
+            List<ValueDto> resultValueDtoList = new ArrayList<>(capacityOfList);
+            for (int i = 0; i < capacityOfList; i++) {
+                  HexByteData indexLo = valuesRaw.get(4);
+                  HexByteData indexHi = valuesRaw.get(5);
+            }
             return null;
+      }
+
+      private int getIdFromLowHiByte(HexByteData indexLo, HexByteData indexHi) {
+            byte resultByte = indexHi.getByteValue();
+            resultByte = (byte) (resultByte << 8);
+            resultByte = (byte) (resultByte + indexLo.getByteValue());
+            return resultByte;
       }
 }
