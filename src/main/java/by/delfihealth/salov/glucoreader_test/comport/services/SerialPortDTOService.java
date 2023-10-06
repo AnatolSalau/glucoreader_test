@@ -42,11 +42,20 @@ public class SerialPortDTOService {
             for (int i = 0; i < capacityOfList; i++) {
                   HexByteData indexLo = valuesRaw.get(4);
                   HexByteData indexHi = valuesRaw.get(5);
+                  int id = getIdFromLowHiByte(indexLo, indexHi);
+
             }
             return null;
       }
 
       private int getIdFromLowHiByte(HexByteData indexLo, HexByteData indexHi) {
             return ((int) indexLo.getByteValue() & 0xff) | (((int) indexHi.getByteValue() & 0xff) << 8);
+      }
+
+      private String getDateTimeFromBytes(HexByteData year, HexByteData month, HexByteData day) {
+            int y = year.getByteValue();
+            int m = month.getByteValue();
+            int d = day.getByteValue();
+            return null;
       }
 }

@@ -77,6 +77,22 @@ class SerialPortDTOServiceTest {
             //Assertions.assertEquals(999, result);
       }
 
+      @Test
+      void getDateTimeFromBytes() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+            // HexByteData{'number='7', value='0x17', type='DATE_YEAR'}, -- 17 + 2000 = 2017 year
+            // HexByteData{'number='8', value='0x0A', type='DATE_MONTH'},-- 10 month
+            // HexByteData{'number='9', value='0x06', type='DATE_DAY'}, -- 6 date
+
+            HexByteData year = new HexByteData(0, "0x17", HexByteType.DATE_YEAR);
+            HexByteData month = new HexByteData(1, "0x0A", HexByteType.DATE_MONTH);
+            HexByteData day = new HexByteData(2, "0x06", HexByteType.DATE_DAY);
+
+            Method getIdFromLowHiByte = serialPortDTOService.getClass()
+                  .getDeclaredMethod("getDateTimeFromBytes", HexByteData.class, HexByteData.class, HexByteData.class);
+            getIdFromLowHiByte.setAccessible(true);
+            getIdFromLowHiByte.invoke(serialPortDTOService, year, month, day);
+      }
+
       private  void printBynary(byte num)
       {
             int aux = Byte.toUnsignedInt(num);
