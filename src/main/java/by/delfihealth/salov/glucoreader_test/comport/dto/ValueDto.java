@@ -8,6 +8,7 @@ public class ValueDto {
       private final String dateTime;
       private final double glucose;
       private final double hematocrit;
+      private final double temperature;
       private final int state;
       private final int stateUserMark;
 }

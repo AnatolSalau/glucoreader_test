@@ -84,7 +84,6 @@ class ComPortServiceTest {
 
       @Test
       void setConverterType() {
-            //
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> deviceType = comPortService
