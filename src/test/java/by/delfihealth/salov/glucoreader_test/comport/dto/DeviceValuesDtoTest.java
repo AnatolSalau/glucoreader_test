@@ -8,7 +8,7 @@ class DeviceValuesDtoTest {
       @Test
       void getDeviceValuesDtoTest() {
             System.out.println(new ValueDto(
-                  1, "DateTime", 4.5, 40, 1, 1
+                  1, "DateTime", 4.5, 40.0, 24.5, 1, 1
             ));
       }
 }

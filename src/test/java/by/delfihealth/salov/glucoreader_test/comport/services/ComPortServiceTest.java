@@ -75,6 +75,7 @@ class ComPortServiceTest {
 
       @Test
       void setCurrentDateTime() {
+            //
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> deviceType = comPortService

@@ -97,9 +97,24 @@ class SerialPortDTOServiceTest {
             getIdFromLowHiByte.invoke(serialPortDTOService, dateTimeRaw);
       }
 
+      @Test
+      void convertByteToCharArr() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+            HexByteData temperatureHi = new HexByteData(8, "0x87", HexByteType.TE_HI);
+            Method convertByteToCharArr = serialPortDTOService.getClass()
+                  .getDeclaredMethod("convertByteToCharArr", byte.class);
+            convertByteToCharArr.setAccessible(true);
+
+            char[] result = (char[]) convertByteToCharArr.invoke(serialPortDTOService,
+                  temperatureHi.getByteValue());
+            System.out.println(result);
+
+      }
+
       private void printBynary(byte num) {
             int aux = Byte.toUnsignedInt(num);
             String binary = String.format("%8s", Integer.toBinaryString(aux)).replace(' ', '0');
             System.out.println(binary);
       }
+
+
 }

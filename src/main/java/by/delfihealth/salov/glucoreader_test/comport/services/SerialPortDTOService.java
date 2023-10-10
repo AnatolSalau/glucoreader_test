@@ -8,7 +8,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
+import java.nio.LongBuffer;
 import java.util.ArrayList;
+import java.util.BitSet;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -26,12 +28,6 @@ public class SerialPortDTOService {
       }
 
       public DataDto convertSerialPortDtoToDataDto(SerialPortDto serialPortDto) {
-            int idRaw = serialPortDto.getId().intValue();
-            String nameRaw = serialPortDto.getName();
-            String descriptionRaw = serialPortDto.getDescription();
-            List<HexByteData> protocolVersionRaw = serialPortDto.getProtocolVersion();
-            List<HexByteData> valuesRaw = serialPortDto.getValues();
-            List<HexByteData> dateTimeRaw = serialPortDto.getDateTime();
             return null;
       }
 
@@ -50,6 +46,7 @@ public class SerialPortDTOService {
                         .collect(Collectors.toList());
 
                   List<ValueDto> result = new ArrayList<>();
+
                   for (List<HexByteData> value : values) {
                         int id = getNumberFromLowAndHighBytes(value.get(0), value.get(1));
                         String dateTime = getDateTimeFromBytes(
@@ -57,7 +54,10 @@ public class SerialPortDTOService {
                               value.get(5), value.get(6), value.get(7)
                         );
                         double glucose = getNumberFromWholeAndFractionalPart(value.get(8), value.get(9));
-                        double temperature = getNumberFromWholeAndFractionalPart(value.get(10), value.get(9));
+                        double temperature = getTemperatureFromWholeAndFractionalPart(value.get(10), value.get(11));
+                        double hematocrit = getNumberFromWholeAndFractionalPart(value.get(12), value.get(13));
+                        result.add(new ValueDto(id,dateTime,glucose,temperature,hematocrit, 0,0));
+
                   }
                   return result;
             }
@@ -99,5 +99,26 @@ public class SerialPortDTOService {
             glucoseFractionalPart = glucoseFractionalPart / 100;
             double glucose = glucoseWholePart + glucoseFractionalPart;
             return  glucose;
+      }
+
+      private double getTemperatureFromWholeAndFractionalPart(HexByteData temperatureHi, HexByteData temperatureLo) {
+            byte byteHi = temperatureHi.getByteValue();
+            byte byteLo = temperatureLo.getByteValue();
+
+            char[] charsHi = convertByteToCharArr(byteHi);
+            if (charsHi[0] == '1') {
+                  charsHi[0] = '0';
+                  String hexStrFrom = HexByteData.getHexStrFrom(charsHi);
+                  byte byteFrom = HexByteData.getByteFrom(hexStrFrom);
+
+            }
+            return 0.0;
+      }
+
+      private char[] convertByteToCharArr(byte num) {
+            int aux = Byte.toUnsignedInt(num);
+            String binary = String.format("%8s", Integer.toBinaryString(aux)).replace(' ', '0');
+            char[] chars = binary.toCharArray();
+            return chars;
       }
 }

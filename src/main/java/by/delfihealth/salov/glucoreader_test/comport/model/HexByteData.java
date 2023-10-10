@@ -15,13 +15,19 @@ public class HexByteData {
 
       public HexByteData (int number, byte dataByte, HexByteType type) {
             this.number = number;
-            this.value = getHexStr(dataByte);
+            this.value = getHexStrFrom(dataByte);
             this.type = type;
       }
 
       public HexByteData (int number, int dataInt, HexByteType type) {
             this.number = number;
-            this.value = getHexStr(dataInt);
+            this.value = getHexStrFrom(dataInt);
+            this.type = type;
+      }
+
+      public HexByteData (int number, char[] dataChars, HexByteType type) {
+            this.number = number;
+            this.value = getHexStrFrom(dataChars);
             this.type = type;
       }
 
@@ -32,7 +38,14 @@ public class HexByteData {
             return resultByte;
       }
 
-      private String getHexStr(byte data) {
+      public static byte getByteFrom(String hexByteStr) {
+            String substringValue = hexByteStr.substring(2);
+            byte[] bytes = HexFormat.of().parseHex(substringValue);
+            byte resultByte = bytes[0];
+            return resultByte;
+      }
+
+      public static String getHexStrFrom(byte data) {
             String string = Integer.toHexString(data);
             if (string.length() == 1) {
                   return "0x" + "0" + Integer.toHexString(data).toUpperCase();
@@ -45,7 +58,7 @@ public class HexByteData {
             return "0x" + Integer.toHexString(data).toUpperCase();
       }
 
-      private String getHexStr(int data) {
+      public static String getHexStrFrom(int data) {
             String string = Integer.toHexString(data);
             if (string.length() == 1) {
                   return "0x" + "0" + Integer.toHexString(data).toUpperCase();
@@ -56,6 +69,12 @@ public class HexByteData {
                         .toUpperCase();
             }
             return "0x" + Integer.toHexString(data).toUpperCase();
+      }
+
+      public static String getHexStrFrom(char[] chars) {
+            byte parseByte = Byte.parseByte(new String(chars));
+            String hexStr = getHexStrFrom(parseByte);
+            return hexStr;
       }
 
       @Override
