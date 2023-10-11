@@ -1,8 +1,7 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.DataDto;
-import by.delfihealth.salov.glucoreader_test.comport.dto.ValueDto;
-import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DataValueDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DataSerialPortDto;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -14,9 +13,9 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Service
-public class ValueDTOService {
-      public String convertSerialPortToJson (List<SerialPortDto> serialPortDTOList) {
-            JSONArray jsonArray = new JSONArray(serialPortDTOList);
+public class DataDTOService {
+      public String convertSerialPortToJson (List<DataSerialPortDto> dataSerialPortDTOList) {
+            JSONArray jsonArray = new JSONArray(dataSerialPortDTOList);
             JSONObject jsonComPorts = new JSONObject();
             jsonComPorts.put("comPortList", jsonArray);
             JSONObject jsonData = new JSONObject();
@@ -25,12 +24,17 @@ public class ValueDTOService {
             return jsonDataStr;
       }
 
+      public DataSerialPortDto convertConverterTypeRawToConverterTypeDto( List<HexByteData> converterType) {
+            int deviceType = converterType.get(4).getByteValue();
+
+            return null;
+      }
       /**
        *
        * @param valuesRaw - raw data bytes
        * @return List<ValueDto> - list from it we will create json
        */
-      public List<ValueDto> convertValuesRawToValuesDto(List<HexByteData> valuesRaw) {
+      public List<DataValueDto> convertValuesRawToValuesDto(List<HexByteData> valuesRaw) {
             List<HexByteData> subValuesList = valuesRaw.subList(4, valuesRaw.size()-2);
             final int oneValueLength = 15;
             if (subValuesList.size() % oneValueLength == 0) {
@@ -39,7 +43,7 @@ public class ValueDTOService {
                         .mapToObj(i -> subValuesList.subList(i, Math.min(i + oneValueLength, subValuesList.size())))
                         .collect(Collectors.toList());
 
-                  List<ValueDto> result = new ArrayList<>();
+                  List<DataValueDto> result = new ArrayList<>();
 
                   for (List<HexByteData> value : values) {
                         int id = getNumberFromLowAndHighBytes(value.get(0), value.get(1));
@@ -52,13 +56,19 @@ public class ValueDTOService {
                         double hematocrit = getNumberFromWholeAndFractionalPart(value.get(12), value.get(13));
                         int state = getStateFromByte(value.get(14));
                         int stateUserMark = getStateUserMarkFromByte(value.get(14));
-                        result.add(new ValueDto(id,dateTime,glucose,temperature,hematocrit, state,stateUserMark));
+                        result.add(new DataValueDto(id,dateTime,glucose,temperature,hematocrit, state,stateUserMark));
                   }
                   return result;
             }
             return null;
       }
+      private String getSerialNumberFromBytes (
+            HexByteData idB0, HexByteData idB1, HexByteData idB2, HexByteData idB3,
+            HexByteData idB4, HexByteData idB5, HexByteData idB6, HexByteData idB7
+      ) {
 
+            return null;
+      }
       private int getNumberFromLowAndHighBytes(HexByteData indexLo, HexByteData indexHi) {
             return ((int) indexLo.getByteValue() & 0xff) | (((int) indexHi.getByteValue() & 0xff) << 8);
       }

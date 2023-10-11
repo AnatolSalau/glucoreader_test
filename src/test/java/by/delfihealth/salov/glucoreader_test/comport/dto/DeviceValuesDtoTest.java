@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DeviceValuesDtoTest {
       @Test
       void getDeviceValuesDtoTest() {
-            System.out.println(new ValueDto(
+            System.out.println(new DataValueDto(
                   1, "DateTime", 4.5, "40.0", 24.5, 1, 1
             ));
       }

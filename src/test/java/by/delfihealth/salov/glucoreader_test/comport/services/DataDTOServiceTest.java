@@ -1,6 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.ValueDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DataValueDto;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
@@ -17,13 +17,13 @@ import java.util.List;
 
 
 @SpringBootTest
-class ValueDTOServiceTest {
+class DataDTOServiceTest {
 
       @Autowired
       private ComPortService comPortService;
 
       @Autowired
-      private ValueDTOService valueDTOService;
+      private DataDTOService dataDTOService;
 
       @Autowired
       private ControlSumCRC16Service controlSumCRC16Service;
@@ -36,8 +36,8 @@ class ValueDTOServiceTest {
             List<HexByteData> values = comPortService
                   .getValues(portByName, 19200, 8, 1, 2);
 
-            List<ValueDto> valueDtoList = valueDTOService.convertValuesRawToValuesDto(values);
-            System.out.println(valueDtoList);
+            List<DataValueDto> dataValueDtoList = dataDTOService.convertValuesRawToValuesDto(values);
+            System.out.println(dataValueDtoList);
       }
 
       @Test
@@ -50,7 +50,7 @@ class ValueDTOServiceTest {
             byte high = (byte) (value >> 8);
             printBynary(high);
 
-            Method getIdFromLowHiByte = valueDTOService.getClass()
+            Method getIdFromLowHiByte = dataDTOService.getClass()
                   .getDeclaredMethod("getNumberFromLowAndHighBytes", HexByteData.class, HexByteData.class);
             getIdFromLowHiByte.setAccessible(true);
 
@@ -60,7 +60,7 @@ class ValueDTOServiceTest {
             HexByteData hexByteDataHi = new HexByteData(4, high, HexByteType.INDEX_HI);
             printBynary(hexByteDataHi.getByteValue());
 
-            int result = (int) getIdFromLowHiByte.invoke(valueDTOService,
+            int result = (int) getIdFromLowHiByte.invoke(dataDTOService,
                   hexByteDataLo,
                   hexByteDataHi);
 
@@ -91,20 +91,20 @@ class ValueDTOServiceTest {
             dateTimeRaw.add(new HexByteData(10, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
             dateTimeRaw.add(new HexByteData(11, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
 
-            Method getIdFromLowHiByte = valueDTOService.getClass()
+            Method getIdFromLowHiByte = dataDTOService.getClass()
                   .getDeclaredMethod("getDateTimeFromBytes", List.class);
             getIdFromLowHiByte.setAccessible(true);
-            getIdFromLowHiByte.invoke(valueDTOService, dateTimeRaw);
+            getIdFromLowHiByte.invoke(dataDTOService, dateTimeRaw);
       }
 
       @Test
       void convertByteToCharArrTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             HexByteData temperatureHi = new HexByteData(8, "0x87", HexByteType.TE_HI);
-            Method convertByteToStringBinaryRepresentation = valueDTOService.getClass()
+            Method convertByteToStringBinaryRepresentation = dataDTOService.getClass()
                   .getDeclaredMethod("convertByteToStringBinaryRepresentation", byte.class);
             convertByteToStringBinaryRepresentation.setAccessible(true);
 
-            String result = (String) convertByteToStringBinaryRepresentation.invoke(valueDTOService,
+            String result = (String) convertByteToStringBinaryRepresentation.invoke(dataDTOService,
                   temperatureHi.getByteValue());
             System.out.println(result);
 
@@ -115,21 +115,21 @@ class ValueDTOServiceTest {
             HexByteData wholePart = new HexByteData(4, "0x17", HexByteType.INDEX_LO);
             HexByteData fractionalPart = new HexByteData(4, "0x2D", HexByteType.INDEX_HI);
 
-            Method getTemperatureFromWholeAndFractionalPart = valueDTOService.getClass()
+            Method getTemperatureFromWholeAndFractionalPart = dataDTOService.getClass()
                   .getDeclaredMethod("getTemperatureFromWholeAndFractionalPart", HexByteData.class, HexByteData.class);
             getTemperatureFromWholeAndFractionalPart.setAccessible(true);
-            getTemperatureFromWholeAndFractionalPart.invoke(valueDTOService, wholePart, fractionalPart);
+            getTemperatureFromWholeAndFractionalPart.invoke(dataDTOService, wholePart, fractionalPart);
       }
 
       @Test
       void getStateFromByteTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             HexByteData state = new HexByteData(4, "0x03", HexByteType.STATE);
 
-            Method getStateFromByte = valueDTOService.getClass()
+            Method getStateFromByte = dataDTOService.getClass()
                   .getDeclaredMethod("getStateFromByte", HexByteData.class);
             getStateFromByte.setAccessible(true);
 
-            int result = (int)getStateFromByte.invoke(valueDTOService, state);
+            int result = (int)getStateFromByte.invoke(dataDTOService, state);
             Assertions.assertEquals(11,result);
       }
 
@@ -137,11 +137,11 @@ class ValueDTOServiceTest {
       void getStateUserMarkFromByteTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             HexByteData state = new HexByteData(4, "0x04", HexByteType.STATE);
 
-            Method getUserStateFromByte = valueDTOService.getClass()
+            Method getUserStateFromByte = dataDTOService.getClass()
                   .getDeclaredMethod("getStateUserMarkFromByte", HexByteData.class);
             getUserStateFromByte.setAccessible(true);
 
-            int result = (int)getUserStateFromByte.invoke(valueDTOService, state);
+            int result = (int)getUserStateFromByte.invoke(dataDTOService, state);
             Assertions.assertEquals(1,result);
       }
 

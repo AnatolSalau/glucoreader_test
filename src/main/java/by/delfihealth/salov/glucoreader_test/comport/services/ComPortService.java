@@ -1,6 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DataSerialPortDto;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
@@ -22,25 +22,25 @@ public class ComPortService {
       @Autowired
       ControlSumCRC16Service controlSumCRC16Service;
 
-      public List<SerialPortDto> findAllSerialPortsDtoWithoutData() {
+      public List<DataSerialPortDto> findAllSerialPortsDtoWithoutData() {
             List<SerialPort> allComPorts = findAllComPorts();
-            List<SerialPortDto> serialPortDTOList = IntStream.range(0, allComPorts.size())
-                  .mapToObj(i -> new SerialPortDto(i,
+            List<DataSerialPortDto> dataSerialPortDTOList = IntStream.range(0, allComPorts.size())
+                  .mapToObj(i -> new DataSerialPortDto(i,
                         allComPorts.get(i).getSystemPortName(),
                         allComPorts.get(i).getPortDescription()
                   ))
                   .collect(Collectors.toList());
-            return serialPortDTOList;
+            return dataSerialPortDTOList;
       }
 
-      public List<SerialPortDto> findAllSerialPortsDtoWithDataByName(String portName, int baudRate, int dataBits,
-                                                                     int stopBits, int parity) {
+      public List<DataSerialPortDto> findAllSerialPortsDtoWithDataByName(String portName, int baudRate, int dataBits,
+                                                                         int stopBits, int parity) {
             List<SerialPort> allComPorts = findAllComPorts();
-            List<SerialPortDto> serialPortDTOListWithData = IntStream.range(0, allComPorts.size())
+            List<DataSerialPortDto> dataSerialPortDTOListWithData = IntStream.range(0, allComPorts.size())
                   .mapToObj(i -> {
                               if(allComPorts.get(i).getSystemPortName().equalsIgnoreCase(portName))
                               {
-                                    return new SerialPortDto(i,
+                                    return new DataSerialPortDto(i,
                                           allComPorts.get(i).getSystemPortName(),
                                           allComPorts.get(i).getPortDescription(),
                                           getProtocolVersion(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
@@ -60,7 +60,7 @@ public class ComPortService {
                         }
                   )
                   .collect(Collectors.toList());
-            return serialPortDTOListWithData;
+            return dataSerialPortDTOListWithData;
       }
 
       private List<SerialPort> findAllComPorts() {

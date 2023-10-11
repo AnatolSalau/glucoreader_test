@@ -1,7 +1,7 @@
 package by.delfihealth.salov.glucoreader_test.web.ws;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDto;
-import by.delfihealth.salov.glucoreader_test.comport.services.ValueDTOService;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DataSerialPortDto;
+import by.delfihealth.salov.glucoreader_test.comport.services.DataDTOService;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fazecast.jSerialComm.SerialPort;
 import org.slf4j.Logger;
@@ -27,20 +27,20 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       private final Set<WebSocketSession> sessions = new CopyOnWriteArraySet<>();
 
-      private List<SerialPortDto> serialPortsAfterConnectionEstablished = new ArrayList<>();
+      private List<DataSerialPortDto> serialPortsAfterConnectionEstablished = new ArrayList<>();
 
       @Autowired
       private ComPortService comPortService;
 
       @Autowired
-      private ValueDTOService valueDTOService;
+      private DataDTOService dataDTOService;
 
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             sessions.add(session);
-            List<SerialPortDto> serialPorts = comPortService.findAllSerialPortsDtoWithoutData();
+            List<DataSerialPortDto> serialPorts = comPortService.findAllSerialPortsDtoWithoutData();
             serialPortsAfterConnectionEstablished = serialPorts;
-            String jsonDataStr = valueDTOService.convertSerialPortToJson(serialPorts);
+            String jsonDataStr = dataDTOService.convertSerialPortToJson(serialPorts);
             session.sendMessage(new TextMessage(jsonDataStr));
       }
 
@@ -52,11 +52,11 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
-            List<SerialPortDto> newSerialPortsDTO = comPortService.findAllSerialPortsDtoWithoutData();
+            List<DataSerialPortDto> newSerialPortsDTO = comPortService.findAllSerialPortsDtoWithoutData();
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
                         if ( serialPortsAfterConnectionEstablished.equals(newSerialPortsDTO) == false) {
-                              String jsonDataStr = valueDTOService.convertSerialPortToJson(newSerialPortsDTO);
+                              String jsonDataStr = dataDTOService.convertSerialPortToJson(newSerialPortsDTO);
                               session.sendMessage(new TextMessage(jsonDataStr));
                         }
                   }
