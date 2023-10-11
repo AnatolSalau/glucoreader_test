@@ -14,7 +14,7 @@
                         },
                         "state": {
                               "errorCode": 0,
-                              "temperature": 36.6,
+                              "temperature": "-7.23",
                               "battery": 1
                         },
                         "dateTime": "2023-10-05T15:16:17",
@@ -29,7 +29,7 @@
                                     "id": 0,
                                     "dateTime": "2023-10-05T15:16:17",
                                     "glucose" : 4.5,
-                                    "temperature" : 36.6,
+                                    "temperature" : "-7.23",
                                     "hematocrit" : 45.5,
                                     "state" : 11,
                                     "stateUserMark" : 0
@@ -38,7 +38,7 @@
                                     "id": 1,
                                     "dateTime": "2023-10-05T15:16:17",
                                     "glucose" : 4.5,
-                                    "temperature" : 36.6,
+                                    "temperature" : "-7.23",
                                     "hematocrit" : 45.5,
                                     "state" : 11,
                                     "stateUserMark" : 0
@@ -59,7 +59,7 @@
                         },
                         "state": {
                               "errorCode": 0,
-                              "temperature": 36.6,
+                              "temperature": "-7.23",
                               "battery": 1
                         },
                         "dateTime": "2023-10-05T15:16:17",
@@ -74,7 +74,7 @@
                                     "id": 0,
                                     "dateTime": "2023-10-05T15:16:17",
                                     "glucose" : 4.5,
-                                    "temperature" : 36.6,
+                                    "temperature" : "-7.23",
                                     "hematocrit" : 45.5,
                                     "state" : 11,
                                     "stateUserMark" : 0
@@ -83,7 +83,7 @@
                                     "id": 1,
                                     "dateTime": "2023-10-05T15:16:17",
                                     "glucose" : 4.5,
-                                    "temperature" : 36.6,
+                                    "temperature" : "-7.23",
                                     "hematocrit" : 45.5,
                                     "state" : 11,
                                     "stateUserMark" : 0

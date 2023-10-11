@@ -4,7 +4,6 @@ import by.delfihealth.salov.glucoreader_test.comport.dto.ValueDto;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
-import jakarta.xml.bind.DatatypeConverter;
 import javafx.util.Pair;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -18,30 +17,31 @@ import java.util.List;
 
 
 @SpringBootTest
-class SerialPortDTOServiceTest {
+class ValueDTOServiceTest {
 
       @Autowired
       private ComPortService comPortService;
 
       @Autowired
-      private SerialPortDTOService serialPortDTOService;
+      private ValueDTOService valueDTOService;
 
       @Autowired
       private ControlSumCRC16Service controlSumCRC16Service;
 
 
       @Test
-      void convertValueRawToValueDto() {
+      void convertValueRawToValueDtoTest() {
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> values = comPortService
                   .getValues(portByName, 19200, 8, 1, 2);
 
-            List<ValueDto> valueDtoList = serialPortDTOService.convertValueRawToValueDto(values);
+            List<ValueDto> valueDtoList = valueDTOService.convertValuesRawToValuesDto(values);
+            System.out.println(valueDtoList);
       }
 
       @Test
-      void getIdFromLowHiBytetest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException{
+      void getIdFromLowHiBytetestTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException{
             int value = 999;
 
             byte low = (byte) value;
@@ -50,7 +50,7 @@ class SerialPortDTOServiceTest {
             byte high = (byte) (value >> 8);
             printBynary(high);
 
-            Method getIdFromLowHiByte = serialPortDTOService.getClass()
+            Method getIdFromLowHiByte = valueDTOService.getClass()
                   .getDeclaredMethod("getNumberFromLowAndHighBytes", HexByteData.class, HexByteData.class);
             getIdFromLowHiByte.setAccessible(true);
 
@@ -60,7 +60,7 @@ class SerialPortDTOServiceTest {
             HexByteData hexByteDataHi = new HexByteData(4, high, HexByteType.INDEX_HI);
             printBynary(hexByteDataHi.getByteValue());
 
-            int result = (int) getIdFromLowHiByte.invoke(serialPortDTOService,
+            int result = (int) getIdFromLowHiByte.invoke(valueDTOService,
                   hexByteDataLo,
                   hexByteDataHi);
 
@@ -69,7 +69,7 @@ class SerialPortDTOServiceTest {
       }
 
       @Test
-      void getDateTimeFromBytes() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+      void getDateTimeFromBytesTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             // HexByteData{'number='7', value='0x17', type='DATE_YEAR'}, -- 17 + 2000 = 2017 year
             // HexByteData{'number='8', value='0x0A', type='DATE_MONTH'},-- 10 month
             // HexByteData{'number='9', value='0x06', type='DATE_DAY'}, -- 6 date
@@ -91,23 +91,58 @@ class SerialPortDTOServiceTest {
             dateTimeRaw.add(new HexByteData(10, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
             dateTimeRaw.add(new HexByteData(11, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
 
-            Method getIdFromLowHiByte = serialPortDTOService.getClass()
+            Method getIdFromLowHiByte = valueDTOService.getClass()
                   .getDeclaredMethod("getDateTimeFromBytes", List.class);
             getIdFromLowHiByte.setAccessible(true);
-            getIdFromLowHiByte.invoke(serialPortDTOService, dateTimeRaw);
+            getIdFromLowHiByte.invoke(valueDTOService, dateTimeRaw);
       }
 
       @Test
-      void convertByteToCharArr() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+      void convertByteToCharArrTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             HexByteData temperatureHi = new HexByteData(8, "0x87", HexByteType.TE_HI);
-            Method convertByteToCharArr = serialPortDTOService.getClass()
-                  .getDeclaredMethod("convertByteToCharArr", byte.class);
-            convertByteToCharArr.setAccessible(true);
+            Method convertByteToStringBinaryRepresentation = valueDTOService.getClass()
+                  .getDeclaredMethod("convertByteToStringBinaryRepresentation", byte.class);
+            convertByteToStringBinaryRepresentation.setAccessible(true);
 
-            char[] result = (char[]) convertByteToCharArr.invoke(serialPortDTOService,
+            String result = (String) convertByteToStringBinaryRepresentation.invoke(valueDTOService,
                   temperatureHi.getByteValue());
             System.out.println(result);
 
+      }
+
+      @Test
+      void getTemperatureFromWholeAndFractionalPartTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+            HexByteData wholePart = new HexByteData(4, "0x17", HexByteType.INDEX_LO);
+            HexByteData fractionalPart = new HexByteData(4, "0x2D", HexByteType.INDEX_HI);
+
+            Method getTemperatureFromWholeAndFractionalPart = valueDTOService.getClass()
+                  .getDeclaredMethod("getTemperatureFromWholeAndFractionalPart", HexByteData.class, HexByteData.class);
+            getTemperatureFromWholeAndFractionalPart.setAccessible(true);
+            getTemperatureFromWholeAndFractionalPart.invoke(valueDTOService, wholePart, fractionalPart);
+      }
+
+      @Test
+      void getStateFromByteTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+            HexByteData state = new HexByteData(4, "0x03", HexByteType.STATE);
+
+            Method getStateFromByte = valueDTOService.getClass()
+                  .getDeclaredMethod("getStateFromByte", HexByteData.class);
+            getStateFromByte.setAccessible(true);
+
+            int result = (int)getStateFromByte.invoke(valueDTOService, state);
+            Assertions.assertEquals(11,result);
+      }
+
+      @Test
+      void getStateUserMarkFromByteTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+            HexByteData state = new HexByteData(4, "0x04", HexByteType.STATE);
+
+            Method getUserStateFromByte = valueDTOService.getClass()
+                  .getDeclaredMethod("getStateUserMarkFromByte", HexByteData.class);
+            getUserStateFromByte.setAccessible(true);
+
+            int result = (int)getUserStateFromByte.invoke(valueDTOService, state);
+            Assertions.assertEquals(1,result);
       }
 
       private void printBynary(byte num) {

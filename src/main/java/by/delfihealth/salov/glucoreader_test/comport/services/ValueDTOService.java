@@ -8,15 +8,13 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
-import java.nio.LongBuffer;
 import java.util.ArrayList;
-import java.util.BitSet;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Service
-public class SerialPortDTOService {
+public class ValueDTOService {
       public String convertSerialPortToJson (List<SerialPortDto> serialPortDTOList) {
             JSONArray jsonArray = new JSONArray(serialPortDTOList);
             JSONObject jsonComPorts = new JSONObject();
@@ -27,16 +25,12 @@ public class SerialPortDTOService {
             return jsonDataStr;
       }
 
-      public DataDto convertSerialPortDtoToDataDto(SerialPortDto serialPortDto) {
-            return null;
-      }
-
       /**
        *
        * @param valuesRaw - raw data bytes
        * @return List<ValueDto> - list from it we will create json
        */
-      public List<ValueDto> convertValueRawToValueDto(List<HexByteData> valuesRaw) {
+      public List<ValueDto> convertValuesRawToValuesDto(List<HexByteData> valuesRaw) {
             List<HexByteData> subValuesList = valuesRaw.subList(4, valuesRaw.size()-2);
             final int oneValueLength = 15;
             if (subValuesList.size() % oneValueLength == 0) {
@@ -54,10 +48,11 @@ public class SerialPortDTOService {
                               value.get(5), value.get(6), value.get(7)
                         );
                         double glucose = getNumberFromWholeAndFractionalPart(value.get(8), value.get(9));
-                        double temperature = getTemperatureFromWholeAndFractionalPart(value.get(10), value.get(11));
+                        String temperature = getTemperatureFromWholeAndFractionalPart(value.get(10), value.get(11));
                         double hematocrit = getNumberFromWholeAndFractionalPart(value.get(12), value.get(13));
-                        result.add(new ValueDto(id,dateTime,glucose,temperature,hematocrit, 0,0));
-
+                        int state = getStateFromByte(value.get(14));
+                        int stateUserMark = getStateUserMarkFromByte(value.get(14));
+                        result.add(new ValueDto(id,dateTime,glucose,temperature,hematocrit, state,stateUserMark));
                   }
                   return result;
             }
@@ -93,32 +88,53 @@ public class SerialPortDTOService {
             return result;
       }
 
-      private double getNumberFromWholeAndFractionalPart(HexByteData wholePart, HexByteData fractionalPart) {
-            double glucoseWholePart = wholePart.getByteValue();
-            double glucoseFractionalPart = fractionalPart.getByteValue();
-            glucoseFractionalPart = glucoseFractionalPart / 100;
-            double glucose = glucoseWholePart + glucoseFractionalPart;
-            return  glucose;
+      private int getStateFromByte(HexByteData state) {
+            String binaryRepresentation = convertByteToStringBinaryRepresentation(state.getByteValue());
+            String stateCode = binaryRepresentation.substring(
+                  binaryRepresentation.length() - 2);
+            return Integer.parseInt(stateCode);
       }
 
-      private double getTemperatureFromWholeAndFractionalPart(HexByteData temperatureHi, HexByteData temperatureLo) {
+      private int getStateUserMarkFromByte(HexByteData state) {
+            String binaryRepresentation = convertByteToStringBinaryRepresentation(state.getByteValue());
+            String stateCode = binaryRepresentation.substring(
+                  binaryRepresentation.length() - 3, binaryRepresentation.length()-2);
+            return Integer.parseInt(stateCode);
+      }
+      private String getTemperatureFromWholeAndFractionalPart(HexByteData temperatureHi, HexByteData temperatureLo) {
             byte byteHi = temperatureHi.getByteValue();
             byte byteLo = temperatureLo.getByteValue();
 
-            char[] charsHi = convertByteToCharArr(byteHi);
-            if (charsHi[0] == '1') {
-                  charsHi[0] = '0';
-                  String hexStrFrom = HexByteData.getHexStrFrom(charsHi);
-                  byte byteFrom = HexByteData.getByteFrom(hexStrFrom);
-
+            String charsHi = convertByteToStringBinaryRepresentation(byteHi);
+            if (charsHi.charAt(0) == '1') {
+                  int val = Integer.parseInt(charsHi.replaceFirst("1","0"), 2);
+                  byte newByteHi = (byte) val;
+                  double result = getNumberFromWholeAndFractionalPart(newByteHi, byteLo);
+                  return Double.toString(result);
             }
-            return 0.0;
+            double result = getNumberFromWholeAndFractionalPart(byteHi, byteLo);
+            return Double.toString(result);
       }
 
-      private char[] convertByteToCharArr(byte num) {
+      private double getNumberFromWholeAndFractionalPart(HexByteData wholePart, HexByteData fractionalPart) {
+            double wholePartDouble = wholePart.getByteValue();
+            double fractionalPartDouble = fractionalPart.getByteValue();
+            fractionalPartDouble = fractionalPartDouble / 100;
+            double result = wholePartDouble + fractionalPartDouble;
+            return  result;
+      }
+
+      private double getNumberFromWholeAndFractionalPart(byte wholePartByte, byte fractionalPartByte) {
+            double wholePartDouble = wholePartByte;
+            double fractionalPartDouble = fractionalPartByte;
+            fractionalPartDouble = fractionalPartDouble / 100;
+            double result = wholePartDouble + fractionalPartDouble;
+            return  result;
+      }
+
+      private String convertByteToStringBinaryRepresentation(byte num) {
             int aux = Byte.toUnsignedInt(num);
-            String binary = String.format("%8s", Integer.toBinaryString(aux)).replace(' ', '0');
-            char[] chars = binary.toCharArray();
-            return chars;
+            String binaryRepresentation = String.format("%8s", Integer.toBinaryString(aux)).replace(' ', '0');
+            return binaryRepresentation;
       }
 }
