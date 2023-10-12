@@ -41,7 +41,7 @@ class DataDTOServiceTest {
       }
 
       @Test
-      void getIdFromLowHiBytetestTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException{
+      void getIdFromLowHiBytetestTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             int value = 999;
 
             byte low = (byte) value;
@@ -129,8 +129,8 @@ class DataDTOServiceTest {
                   .getDeclaredMethod("getStateFromByte", HexByteData.class);
             getStateFromByte.setAccessible(true);
 
-            int result = (int)getStateFromByte.invoke(dataDTOService, state);
-            Assertions.assertEquals(11,result);
+            int result = (int) getStateFromByte.invoke(dataDTOService, state);
+            Assertions.assertEquals(11, result);
       }
 
       @Test
@@ -141,15 +141,34 @@ class DataDTOServiceTest {
                   .getDeclaredMethod("getStateUserMarkFromByte", HexByteData.class);
             getUserStateFromByte.setAccessible(true);
 
-            int result = (int)getUserStateFromByte.invoke(dataDTOService, state);
-            Assertions.assertEquals(1,result);
+            int result = (int) getUserStateFromByte.invoke(dataDTOService, state);
+            Assertions.assertEquals(1, result);
       }
 
+      @Test
+      void getSerialNumberFromBytesTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+            HexByteData id0 = new HexByteData(0, "0xC0", HexByteType.SERIAL_ID_B0);
+            HexByteData id1 = new HexByteData(1, "0xC1", HexByteType.SERIAL_ID_B1);
+            HexByteData id2 = new HexByteData(2, "0xC2", HexByteType.SERIAL_ID_B2);
+            HexByteData id3 = new HexByteData(3, "0x44", HexByteType.SERIAL_ID_B3);
+            HexByteData id4 = new HexByteData(4, "0x45", HexByteType.SERIAL_ID_B4);
+            HexByteData id5 = new HexByteData(5, "0x46", HexByteType.SERIAL_ID_B5);
+            HexByteData id6 = new HexByteData(6, "0x47", HexByteType.SERIAL_ID_B6);
+            HexByteData id7 = new HexByteData(7, "0x48", HexByteType.SERIAL_ID_B7);
+
+            Method getSerialNumberFromBytes = dataDTOService.getClass()
+                  .getDeclaredMethod("getSerialNumberFromBytes",
+                        HexByteData.class, HexByteData.class, HexByteData.class, HexByteData.class,
+                        HexByteData.class, HexByteData.class, HexByteData.class, HexByteData.class);
+            getSerialNumberFromBytes.setAccessible(true);
+
+            getSerialNumberFromBytes.invoke(dataDTOService,id0, id1, id2, id3, id4, id5, id6, id7);
+
+      }
       private void printBynary(byte num) {
             int aux = Byte.toUnsignedInt(num);
             String binary = String.format("%8s", Integer.toBinaryString(aux)).replace(' ', '0');
             System.out.println(binary);
       }
-
 
 }
