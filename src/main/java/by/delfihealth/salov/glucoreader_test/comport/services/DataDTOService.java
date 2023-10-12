@@ -9,11 +9,13 @@ import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.CharacterCodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Service
@@ -33,14 +35,22 @@ public class DataDTOService {
        * @param converterType - raw data bytes
        * @return ConverterTypeDto - type of converter with addition information like serial id and etc
        */
-      public ConverterTypeDto convertConverterTypeRawToConverterTypeDto(List<HexByteData> converterType) {
+      public ConverterTypeDto convertConverterTypeRawToConverterTypeDto(List<HexByteData> converterType){
             int deviceType = converterType.get(4).getByteValue();
-            byte idB0 = converterType.get(5).getByteValue();
-            byte idB1 = converterType.get(6).getByteValue();
-            byte idB2 = converterType.get(7).getByteValue();
-            byte idB3 = converterType.get(8).getByteValue();
-            byte idB4 = converterType.get(9).getByteValue();
-            return null;
+            String serialNumber = null;
+            try {
+                  serialNumber = getSerialNumberFromBytes(
+                        converterType.get(5), converterType.get(6), converterType.get(7), converterType.get(8),
+                        converterType.get(9), converterType.get(10), converterType.get(11), converterType.get(12)
+                  );
+            } catch (CharacterCodingException e) {
+                  e.printStackTrace();
+            }
+
+            int hwVersion = converterType.get(13).getByteValue();
+            int swVersionLow = converterType.get(14).getByteValue();
+            int swVersionHigh = converterType.get(15).getByteValue();
+            return new ConverterTypeDto(deviceType, serialNumber, hwVersion, swVersionLow, swVersionHigh);
       }
 
       /**
@@ -79,27 +89,16 @@ public class DataDTOService {
       private String getSerialNumberFromBytes(
             HexByteData id0, HexByteData id1, HexByteData id2, HexByteData id3,
             HexByteData id4, HexByteData id5, HexByteData id6, HexByteData id7
-      ) throws UnsupportedEncodingException {
-            byte idB0 = id0.getByteValue();
-            byte idB1 = id1.getByteValue();
-            byte idB2 = id2.getByteValue();
-            byte idB3 = id3.getByteValue();
-            byte idB4 = id4.getByteValue();
-            byte idB5 = id5.getByteValue();
-            byte idB6 = id6.getByteValue();
-            byte idB7 = id7.getByteValue();
-            int intB0 = Byte.toUnsignedInt(idB0);
-            int intB1 = Byte.toUnsignedInt(idB1);
-            int intB2 = Byte.toUnsignedInt(idB2);
-            int intB3 = Byte.toUnsignedInt(idB3);
-            int intB4 = Byte.toUnsignedInt(idB4);
-            int intB5 = Byte.toUnsignedInt(idB5);
-            int intB6 = Byte.toUnsignedInt(idB6);
-            int intB7 = Byte.toUnsignedInt(idB7);
+      ) throws CharacterCodingException {
             Charset charset = Charset.forName("windows-1251");
             CharsetDecoder decoder = charset.newDecoder();
-
-            return null;
+            ByteBuffer buffer = ByteBuffer.wrap(new byte[]{
+                  id0.getByteValue(), id1.getByteValue(), id2.getByteValue(), id3.getByteValue(),
+                  id4.getByteValue(), id5.getByteValue(), id6.getByteValue(), id7.getByteValue()
+            });
+            CharBuffer decode = decoder.decode(buffer);
+            String result = decode.toString();
+            return result;
       }
 
       private int getNumberFromLowAndHighBytes(HexByteData indexLo, HexByteData indexHi) {
