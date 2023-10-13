@@ -32,7 +32,7 @@ public class ComPortService {
                   .collect(Collectors.toList());
             return dataSerialPortDTOList;
       }
-
+      //they
       public List<DataSerialPortDto> findAllSerialPortsDtoWithDataByName(String portName, int baudRate, int dataBits,
                                                                          int stopBits, int parity) {
             List<SerialPort> allComPorts = findAllComPorts();
@@ -189,7 +189,6 @@ public class ComPortService {
             /**
              * -------------------------------------------------------------
              */
-
             closeComport(serialPort);
             return getDateTimeResponse;
       }

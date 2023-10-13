@@ -1,7 +1,10 @@
 package by.delfihealth.salov.glucoreader_test.comport.model;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.HexFormat;
 
+@EqualsAndHashCode
 public class HexByteData {
       private final int number;
       private final String value;

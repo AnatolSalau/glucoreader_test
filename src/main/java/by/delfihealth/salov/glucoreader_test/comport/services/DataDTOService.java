@@ -1,14 +1,14 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.ConverterTypeDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DeviceTypeDto;
 import by.delfihealth.salov.glucoreader_test.comport.dto.DataValueDto;
 import by.delfihealth.salov.glucoreader_test.comport.dto.DataSerialPortDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.StateDto;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.CharacterCodingException;
@@ -31,26 +31,36 @@ public class DataDTOService {
       }
 
       /**
-       *
-       * @param converterType - raw data bytes
+       * @param state - raw data bytes
+       * @return StateDto - device status
+       */
+      public StateDto convertStateDtoRawToStateDto(List<HexByteData> state) {
+            int errorCode = state.get(4).getByteValue();
+            String temperature = getTemperatureFromWholeAndFractionalPart(state.get(5), state.get(6));
+            int battery = state.get(7).getByteValue();
+            return new StateDto(errorCode, temperature,battery);
+      }
+
+      /**
+       * @param deviceType - raw data bytes
        * @return ConverterTypeDto - type of converter with addition information like serial id and etc
        */
-      public ConverterTypeDto convertConverterTypeRawToConverterTypeDto(List<HexByteData> converterType){
-            int deviceType = converterType.get(4).getByteValue();
+      public DeviceTypeDto convertDeviceTypeRawToDeviceTypeDto(List<HexByteData> deviceType){
+            int deviceTypeNumber = deviceType.get(4).getByteValue();
             String serialNumber = null;
             try {
                   serialNumber = getSerialNumberFromBytes(
-                        converterType.get(5), converterType.get(6), converterType.get(7), converterType.get(8),
-                        converterType.get(9), converterType.get(10), converterType.get(11), converterType.get(12)
+                        deviceType.get(5), deviceType.get(6), deviceType.get(7), deviceType.get(8),
+                        deviceType.get(9), deviceType.get(10), deviceType.get(11), deviceType.get(12)
                   );
             } catch (CharacterCodingException e) {
                   e.printStackTrace();
             }
 
-            int hwVersion = converterType.get(13).getByteValue();
-            int swVersionLow = converterType.get(14).getByteValue();
-            int swVersionHigh = converterType.get(15).getByteValue();
-            return new ConverterTypeDto(deviceType, serialNumber, hwVersion, swVersionLow, swVersionHigh);
+            int hwVersion = deviceType.get(13).getByteValue();
+            int swVersionLow = deviceType.get(14).getByteValue();
+            int swVersionHigh = deviceType.get(15).getByteValue();
+            return new DeviceTypeDto(deviceTypeNumber, serialNumber, hwVersion, swVersionLow, swVersionHigh);
       }
 
       /**
@@ -154,10 +164,10 @@ public class DataDTOService {
                   int val = Integer.parseInt(charsHi.replaceFirst("1", "0"), 2);
                   byte newByteHi = (byte) val;
                   double result = getNumberFromWholeAndFractionalPart(newByteHi, byteLo);
-                  return Double.toString(result);
+                  return "-" + Double.toString(result);
             }
             double result = getNumberFromWholeAndFractionalPart(byteHi, byteLo);
-            return Double.toString(result);
+            return "-" + Double.toString(result);
       }
 
       private double getNumberFromWholeAndFractionalPart(HexByteData wholePart, HexByteData fractionalPart) {

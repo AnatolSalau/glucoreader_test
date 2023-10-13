@@ -1,7 +1,8 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.ConverterTypeDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DeviceTypeDto;
 import by.delfihealth.salov.glucoreader_test.comport.dto.DataValueDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.StateDto;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
@@ -169,35 +170,57 @@ class DataDTOServiceTest {
       }
 
       @Test
-      void convertConverterTypeRawToConverterTypeDto() {
-            List<HexByteData> converterTypeResponse = new ArrayList<>();
-            converterTypeResponse.add(new HexByteData(0, "0x02", HexByteType.STX));
-            converterTypeResponse.add(new HexByteData(1, "0x12", HexByteType.LEN_LO));
-            converterTypeResponse.add(new HexByteData(2, "0x00", HexByteType.LEN_HI));
-            converterTypeResponse.add(new HexByteData(3, "0x31", HexByteType.CMD));
-            converterTypeResponse.add(new HexByteData(4, "0x02", HexByteType.DEVICE_TYPE));
-            converterTypeResponse.add(new HexByteData(5, "0x41", HexByteType.SERIAL_ID_B0));
-            converterTypeResponse.add(new HexByteData(6, "0x41", HexByteType.SERIAL_ID_B1));
-            converterTypeResponse.add(new HexByteData(7, "0x30", HexByteType.SERIAL_ID_B2));
-            converterTypeResponse.add(new HexByteData(8, "0x30", HexByteType.SERIAL_ID_B3));
-            converterTypeResponse.add(new HexByteData(9, "0x30", HexByteType.SERIAL_ID_B4));
-            converterTypeResponse.add(new HexByteData(10, "0x30", HexByteType.SERIAL_ID_B5));
-            converterTypeResponse.add(new HexByteData(11, "0x30", HexByteType.SERIAL_ID_B6));
-            converterTypeResponse.add(new HexByteData(12, "0x31", HexByteType.SERIAL_ID_B7));
-            converterTypeResponse.add(new HexByteData(13, "0x01", HexByteType.HW_VERSION));
-            converterTypeResponse.add(new HexByteData(14, "0x00", HexByteType.SW_VERSION_LO));
-            converterTypeResponse.add(new HexByteData(14, "0x01", HexByteType.SW_VERSION_HI));
+      void convertDeviceTypeRawToDeviceTypeDto() {
+            List<HexByteData> deviceTypeResponse = new ArrayList<>();
+            deviceTypeResponse.add(new HexByteData(0, "0x02", HexByteType.STX));
+            deviceTypeResponse.add(new HexByteData(1, "0x12", HexByteType.LEN_LO));
+            deviceTypeResponse.add(new HexByteData(2, "0x00", HexByteType.LEN_HI));
+            deviceTypeResponse.add(new HexByteData(3, "0x31", HexByteType.CMD));
+            deviceTypeResponse.add(new HexByteData(4, "0x02", HexByteType.DEVICE_TYPE));
+            deviceTypeResponse.add(new HexByteData(5, "0x41", HexByteType.SERIAL_ID_B0));
+            deviceTypeResponse.add(new HexByteData(6, "0x41", HexByteType.SERIAL_ID_B1));
+            deviceTypeResponse.add(new HexByteData(7, "0x30", HexByteType.SERIAL_ID_B2));
+            deviceTypeResponse.add(new HexByteData(8, "0x30", HexByteType.SERIAL_ID_B3));
+            deviceTypeResponse.add(new HexByteData(9, "0x30", HexByteType.SERIAL_ID_B4));
+            deviceTypeResponse.add(new HexByteData(10, "0x30", HexByteType.SERIAL_ID_B5));
+            deviceTypeResponse.add(new HexByteData(11, "0x30", HexByteType.SERIAL_ID_B6));
+            deviceTypeResponse.add(new HexByteData(12, "0x31", HexByteType.SERIAL_ID_B7));
+            deviceTypeResponse.add(new HexByteData(13, "0x01", HexByteType.HW_VERSION));
+            deviceTypeResponse.add(new HexByteData(14, "0x00", HexByteType.SW_VERSION_LO));
+            deviceTypeResponse.add(new HexByteData(14, "0x01", HexByteType.SW_VERSION_HI));
             Pair<String, String> highLowByteOfSum = controlSumCRC16Service
-                  .getHighLowByteOfSum(converterTypeResponse);
-            converterTypeResponse.add(new HexByteData(15, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
-            converterTypeResponse.add(new HexByteData(16, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
+                  .getHighLowByteOfSum(deviceTypeResponse);
+            deviceTypeResponse.add(new HexByteData(15, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
+            deviceTypeResponse.add(new HexByteData(16, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
 
-            ConverterTypeDto converterTypeDtoExpected = new ConverterTypeDto(
+            DeviceTypeDto deviceTypeDtoExpected = new DeviceTypeDto(
                   2, "AA000001", 1, 0, 1
             );
-            ConverterTypeDto converterTypeDtoResult = dataDTOService.convertConverterTypeRawToConverterTypeDto(converterTypeResponse);
+            DeviceTypeDto deviceTypeDtoResult = dataDTOService.convertDeviceTypeRawToDeviceTypeDto(deviceTypeResponse);
 
-            Assertions.assertEquals(converterTypeDtoExpected, converterTypeDtoResult);
+            Assertions.assertEquals(deviceTypeDtoExpected, deviceTypeDtoResult);
+      }
+
+      @Test
+      void convertStateDtoRawToStateDtoTest() {
+            List<HexByteData> stateResponse = new ArrayList<>();
+            stateResponse.add(new HexByteData(0, "0x02", HexByteType.STX));
+            stateResponse.add(new HexByteData(1, "0x0A", HexByteType.LEN_LO));
+            stateResponse.add(new HexByteData(2, "0x00", HexByteType.LEN_HI));
+            stateResponse.add(new HexByteData(3, "0x03", HexByteType.CMD));
+            stateResponse.add(new HexByteData(4, "0x00", HexByteType.ERROR_CODE));
+            stateResponse.add(new HexByteData(5, "0x87", HexByteType.TE_HI));
+            stateResponse.add(new HexByteData(6, "0x11", HexByteType.TE_LO));
+            stateResponse.add(new HexByteData(7, "0x01", HexByteType.BATTERY));
+            Pair<String, String> highLowByteOfSum = controlSumCRC16Service
+                  .getHighLowByteOfSum(stateResponse);
+            stateResponse.add(new HexByteData(8, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
+            stateResponse.add(new HexByteData(9, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
+
+            StateDto stateDtoExpected = new StateDto(0, "-7.17", 1);
+            StateDto stateDtoResult = dataDTOService.convertStateDtoRawToStateDto(stateResponse);
+
+            Assertions.assertEquals(stateDtoExpected, stateDtoResult);
       }
 
       private void printBynary(byte num) {

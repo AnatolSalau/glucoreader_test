@@ -44,7 +44,7 @@ class ComPortServiceTest {
                   .getState(portByName, 19200, 8, 1, 2);
             System.out.println(deviceType);
       }
-
+      //
       @Test
       void getDateTime() {
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
@@ -56,6 +56,7 @@ class ComPortServiceTest {
 
       @Test
       void getConverterType() {
+            //
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> deviceType = comPortService
