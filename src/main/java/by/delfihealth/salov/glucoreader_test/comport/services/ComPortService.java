@@ -20,7 +20,7 @@ import java.util.stream.IntStream;
 public class ComPortService {
 
       @Autowired
-      ControlSumCRC16Service controlSumCRC16Service;
+      private ControlSumCRC16Service controlSumCRC16Service;
 
       public List<DataSerialPortDto> findAllSerialPortsDtoWithoutData() {
             List<SerialPort> allComPorts = findAllComPorts();
@@ -32,37 +32,15 @@ public class ComPortService {
                   .collect(Collectors.toList());
             return dataSerialPortDTOList;
       }
-      //they
-      public List<DataSerialPortDto> findAllSerialPortsDtoWithDataByName(String portName, int baudRate, int dataBits,
-                                                                         int stopBits, int parity) {
-            List<SerialPort> allComPorts = findAllComPorts();
-            List<DataSerialPortDto> dataSerialPortDTOListWithData = IntStream.range(0, allComPorts.size())
-                  .mapToObj(i -> {
-                              if(allComPorts.get(i).getSystemPortName().equalsIgnoreCase(portName))
-                              {
-                                    return new DataSerialPortDto(i,
-                                          allComPorts.get(i).getSystemPortName(),
-                                          allComPorts.get(i).getPortDescription(),
-                                          getProtocolVersion(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
-                                          getDeviceType(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
-                                          getState(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
-                                          getDateTime(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
-                                          getConverterType(allComPorts.get(i), baudRate, dataBits, stopBits, parity),
-                                          /*getValues(allComPorts.get(i), baudRate, dataBits, stopBits, parity)*/ null
-                                    );
-                              } else {
-               /*                     return new SerialPortDTO(i,
-                                          allComPorts.get(i).getSystemPortName(),
-                                          allComPorts.get(i).getPortDescription()
-                                    );*/
-                                    return null;
-                              }
-                        }
-                  )
-                  .collect(Collectors.toList());
-            return dataSerialPortDTOListWithData;
+
+
+      private String getName(SerialPort serialPort) {
+            return serialPort.getSystemPortName();
       }
 
+      private String getDescription(SerialPort serialPort) {
+            return serialPort.getPortDescription();
+      }
       private List<SerialPort> findAllComPorts() {
             SerialPort[] commPorts = SerialPort.getCommPorts();
             List<SerialPort> serialPorts = Arrays.asList(commPorts);
@@ -326,7 +304,7 @@ public class ComPortService {
             setConverterTypeRequest.add(new HexByteData(17, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
 
             comPortWrite(serialPort, convertRequestToByteArr(setConverterTypeRequest));
-            List<HexByteData> setConverterTypeResponse = convertRequestToSetDateTime(
+            List<HexByteData> setConverterTypeResponse = convertRequestToSetConverterType(
                   comPortRead(serialPort, 7, 15, 150));
             /**
              * -------------------------------------------------------------

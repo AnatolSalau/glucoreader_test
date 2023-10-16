@@ -3,7 +3,7 @@ package by.delfihealth.salov.glucoreader_test.comport.dto;
 import lombok.Data;
 
 @Data
-public class DataValueDto {
+public class ValueDto {
       private final int id;
       private final String dateTime;
       private final double glucose;

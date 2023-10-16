@@ -1,11 +1,15 @@
 {
       "data": {
-            "comPortList": [
+            "deviceList": [
                   {
-                        "id": 0,
-                        "name": "COM1",
-                        "description": "ELTIMA_Virtual_Serial_Port_00",
-                        "protocolVersion": 1,
+                        "comPort": {
+                              "name": "COM1",
+                              "description": "ELTIMA_Virtual_Serial_Port_00"
+                        },
+                        "protocolVersion": {
+                              "versionLow": 1,
+                              "versionHigh": 1
+                        },
                         "deviceType": {
                               "deviceType": 1,
                               "serialId": "AA110000",
@@ -50,7 +54,8 @@
                         "id": 1,
                         "name": "COM2",
                         "description": "ELTIMA_Virtual_Serial_Port_01",
-                        "protocolVersion": 1,
+                        "protocolVersionLow": 1,
+                        "protocolVersionHigh": 1,
                         "deviceType": {
                               "deviceType": 1,
                               "serialId": "AA110000",

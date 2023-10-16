@@ -1,8 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.DeviceTypeDto;
-import by.delfihealth.salov.glucoreader_test.comport.dto.DataValueDto;
-import by.delfihealth.salov.glucoreader_test.comport.dto.StateDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.*;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
@@ -19,27 +17,32 @@ import java.util.List;
 
 
 @SpringBootTest
-class DataDTOServiceTest {
+class DeviceDTOServiceTest {
 
       @Autowired
       private ComPortService comPortService;
 
       @Autowired
-      private DataDTOService dataDTOService;
+      private DeviceDTOService deviceDTOService;
 
       @Autowired
       private ControlSumCRC16Service controlSumCRC16Service;
 
 
       @Test
-      void convertValueRawToValueDtoTest() {
+      void convertValueRawToValueDtoTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<HexByteData> values = comPortService
                   .getValues(portByName, 19200, 8, 1, 2);
 
-            List<DataValueDto> dataValueDtoList = dataDTOService.convertValuesRawToValuesDto(values);
-            System.out.println(dataValueDtoList);
+            Method convertValuesRawToValuesDto = deviceDTOService.getClass()
+                  .getDeclaredMethod("convertValuesRawToValuesDto", List.class);
+            convertValuesRawToValuesDto.setAccessible(true);
+
+            List<ValueDto> result = (List<ValueDto>) convertValuesRawToValuesDto.invoke(deviceDTOService,
+                  values);
+            System.out.println(result);
       }
 
       @Test
@@ -47,22 +50,22 @@ class DataDTOServiceTest {
             int value = 999;
 
             byte low = (byte) value;
-            printBynary(low);
+            printBinary(low);
 
             byte high = (byte) (value >> 8);
-            printBynary(high);
+            printBinary(high);
 
-            Method getIdFromLowHiByte = dataDTOService.getClass()
+            Method getIdFromLowHiByte = deviceDTOService.getClass()
                   .getDeclaredMethod("getNumberFromLowAndHighBytes", HexByteData.class, HexByteData.class);
             getIdFromLowHiByte.setAccessible(true);
 
             HexByteData hexByteDataLo = new HexByteData(4, low, HexByteType.INDEX_LO);
-            printBynary(hexByteDataLo.getByteValue());
+            printBinary(hexByteDataLo.getByteValue());
 
             HexByteData hexByteDataHi = new HexByteData(4, high, HexByteType.INDEX_HI);
-            printBynary(hexByteDataHi.getByteValue());
+            printBinary(hexByteDataHi.getByteValue());
 
-            int result = (int) getIdFromLowHiByte.invoke(dataDTOService,
+            int result = (int) getIdFromLowHiByte.invoke(deviceDTOService,
                   hexByteDataLo,
                   hexByteDataHi);
 
@@ -93,20 +96,20 @@ class DataDTOServiceTest {
             dateTimeRaw.add(new HexByteData(10, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
             dateTimeRaw.add(new HexByteData(11, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
 
-            Method getIdFromLowHiByte = dataDTOService.getClass()
+            Method getIdFromLowHiByte = deviceDTOService.getClass()
                   .getDeclaredMethod("getDateTimeFromBytes", List.class);
             getIdFromLowHiByte.setAccessible(true);
-            getIdFromLowHiByte.invoke(dataDTOService, dateTimeRaw);
+            getIdFromLowHiByte.invoke(deviceDTOService, dateTimeRaw);
       }
 
       @Test
       void convertByteToCharArrTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             HexByteData temperatureHi = new HexByteData(8, "0x87", HexByteType.TE_HI);
-            Method convertByteToStringBinaryRepresentation = dataDTOService.getClass()
+            Method convertByteToStringBinaryRepresentation = deviceDTOService.getClass()
                   .getDeclaredMethod("convertByteToStringBinaryRepresentation", byte.class);
             convertByteToStringBinaryRepresentation.setAccessible(true);
 
-            String result = (String) convertByteToStringBinaryRepresentation.invoke(dataDTOService,
+            String result = (String) convertByteToStringBinaryRepresentation.invoke(deviceDTOService,
                   temperatureHi.getByteValue());
             System.out.println(result);
 
@@ -117,21 +120,21 @@ class DataDTOServiceTest {
             HexByteData wholePart = new HexByteData(4, "0x17", HexByteType.INDEX_LO);
             HexByteData fractionalPart = new HexByteData(4, "0x2D", HexByteType.INDEX_HI);
 
-            Method getTemperatureFromWholeAndFractionalPart = dataDTOService.getClass()
+            Method getTemperatureFromWholeAndFractionalPart = deviceDTOService.getClass()
                   .getDeclaredMethod("getTemperatureFromWholeAndFractionalPart", HexByteData.class, HexByteData.class);
             getTemperatureFromWholeAndFractionalPart.setAccessible(true);
-            getTemperatureFromWholeAndFractionalPart.invoke(dataDTOService, wholePart, fractionalPart);
+            getTemperatureFromWholeAndFractionalPart.invoke(deviceDTOService, wholePart, fractionalPart);
       }
 
       @Test
       void getStateFromByteTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             HexByteData state = new HexByteData(4, "0x03", HexByteType.STATE);
 
-            Method getStateFromByte = dataDTOService.getClass()
+            Method getStateFromByte = deviceDTOService.getClass()
                   .getDeclaredMethod("getStateFromByte", HexByteData.class);
             getStateFromByte.setAccessible(true);
 
-            int result = (int) getStateFromByte.invoke(dataDTOService, state);
+            int result = (int) getStateFromByte.invoke(deviceDTOService, state);
             Assertions.assertEquals(11, result);
       }
 
@@ -139,11 +142,11 @@ class DataDTOServiceTest {
       void getStateUserMarkFromByteTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             HexByteData state = new HexByteData(4, "0x04", HexByteType.STATE);
 
-            Method getUserStateFromByte = dataDTOService.getClass()
+            Method getUserStateFromByte = deviceDTOService.getClass()
                   .getDeclaredMethod("getStateUserMarkFromByte", HexByteData.class);
             getUserStateFromByte.setAccessible(true);
 
-            int result = (int) getUserStateFromByte.invoke(dataDTOService, state);
+            int result = (int) getUserStateFromByte.invoke(deviceDTOService, state);
             Assertions.assertEquals(1, result);
       }
 
@@ -158,19 +161,19 @@ class DataDTOServiceTest {
             HexByteData id6 = new HexByteData(6, "0x47", HexByteType.SERIAL_ID_B6);
             HexByteData id7 = new HexByteData(7, "0x48", HexByteType.SERIAL_ID_B7);
 
-            Method getSerialNumberFromBytes = dataDTOService.getClass()
+            Method getSerialNumberFromBytes = deviceDTOService.getClass()
                   .getDeclaredMethod("getSerialNumberFromBytes",
                         HexByteData.class, HexByteData.class, HexByteData.class, HexByteData.class,
                         HexByteData.class, HexByteData.class, HexByteData.class, HexByteData.class);
             getSerialNumberFromBytes.setAccessible(true);
 
-            String result = (String)getSerialNumberFromBytes.invoke(dataDTOService, id0, id1, id2, id3, id4, id5, id6, id7);
+            String result = (String)getSerialNumberFromBytes.invoke(deviceDTOService, id0, id1, id2, id3, id4, id5, id6, id7);
 
             Assertions.assertEquals("ABCDEFGH", result);
       }
 
       @Test
-      void convertDeviceTypeRawToDeviceTypeDto() {
+      void convertDeviceTypeRawToDeviceTypeDto() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             List<HexByteData> deviceTypeResponse = new ArrayList<>();
             deviceTypeResponse.add(new HexByteData(0, "0x02", HexByteType.STX));
             deviceTypeResponse.add(new HexByteData(1, "0x12", HexByteType.LEN_LO));
@@ -196,13 +199,19 @@ class DataDTOServiceTest {
             DeviceTypeDto deviceTypeDtoExpected = new DeviceTypeDto(
                   2, "AA000001", 1, 0, 1
             );
-            DeviceTypeDto deviceTypeDtoResult = dataDTOService.convertDeviceTypeRawToDeviceTypeDto(deviceTypeResponse);
+
+            Method convertDeviceTypeRawToDeviceTypeDto = deviceDTOService.getClass()
+                  .getDeclaredMethod("convertDeviceTypeRawToDeviceTypeDto",
+                        List.class);
+            convertDeviceTypeRawToDeviceTypeDto.setAccessible(true);
+
+            DeviceTypeDto deviceTypeDtoResult = (DeviceTypeDto)convertDeviceTypeRawToDeviceTypeDto.invoke(deviceDTOService, deviceTypeResponse);
 
             Assertions.assertEquals(deviceTypeDtoExpected, deviceTypeDtoResult);
       }
 
       @Test
-      void convertStateDtoRawToStateDtoTest() {
+      void convertStateDtoRawToStateDtoTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             List<HexByteData> stateResponse = new ArrayList<>();
             stateResponse.add(new HexByteData(0, "0x02", HexByteType.STX));
             stateResponse.add(new HexByteData(1, "0x0A", HexByteType.LEN_LO));
@@ -218,12 +227,56 @@ class DataDTOServiceTest {
             stateResponse.add(new HexByteData(9, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
 
             StateDto stateDtoExpected = new StateDto(0, "-7.17", 1);
-            StateDto stateDtoResult = dataDTOService.convertStateDtoRawToStateDto(stateResponse);
+
+            Method convertStateDtoRawToStateDto = deviceDTOService.getClass()
+                  .getDeclaredMethod("convertStateDtoRawToStateDto",
+                        List.class);
+            convertStateDtoRawToStateDto.setAccessible(true);
+
+            StateDto stateDtoResult = (StateDto)convertStateDtoRawToStateDto.invoke(deviceDTOService, stateResponse);
 
             Assertions.assertEquals(stateDtoExpected, stateDtoResult);
       }
 
-      private void printBynary(byte num) {
+      @Test
+      void convertProtocolVersionRawToProtocolVersionDtoTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+            List<HexByteData> protocolVersionResponse =  new ArrayList<>();
+            protocolVersionResponse.add(new HexByteData(0, "0x02", HexByteType.STX));
+            protocolVersionResponse.add(new HexByteData(1, "0x08", HexByteType.LEN_LO));
+            protocolVersionResponse.add(new HexByteData(2, "0x00", HexByteType.LEN_HI));
+            protocolVersionResponse.add(new HexByteData(3, "0x01", HexByteType.CMD));
+            protocolVersionResponse.add(new HexByteData(4, "0x00", HexByteType.VERSION_LOW));
+            protocolVersionResponse.add(new HexByteData(5, "0x01", HexByteType.VERSION_HIGH));
+            Pair<String, String> highLowByteOfSum = controlSumCRC16Service
+                  .getHighLowByteOfSum(protocolVersionResponse);
+            protocolVersionResponse.add(new HexByteData(6, highLowByteOfSum.getValue(), HexByteType.CRC_LO));
+            protocolVersionResponse.add(new HexByteData(7, highLowByteOfSum.getKey(), HexByteType.CRC_HI));
+
+            ProtocolVersionDto expected = new ProtocolVersionDto(0, 1);
+
+            Method convertProtocolVersionRawToProtocolVersionDto = deviceDTOService.getClass()
+                  .getDeclaredMethod("convertProtocolVersionRawToProtocolVersionDto",
+                        List.class);
+            convertProtocolVersionRawToProtocolVersionDto.setAccessible(true);
+
+            ProtocolVersionDto result = (ProtocolVersionDto)convertProtocolVersionRawToProtocolVersionDto
+                  .invoke(deviceDTOService, protocolVersionResponse);
+
+            Assertions.assertEquals(expected, result);
+      }
+
+      @Test
+      void getDeviceDtoFromComportTest() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            DeviceDto deviceDtoFromComport = deviceDTOService
+                  .getDeviceDtoFromComport(portByName, 19200, 8, 1, 2);
+
+            System.out.println(deviceDtoFromComport);
+
+      }
+
+      private void printBinary(byte num) {
             int aux = Byte.toUnsignedInt(num);
             String binary = String.format("%8s", Integer.toBinaryString(aux)).replace(' ', '0');
             System.out.println(binary);
