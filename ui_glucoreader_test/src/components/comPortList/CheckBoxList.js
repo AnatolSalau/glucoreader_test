@@ -2,16 +2,16 @@ import style from './CheckBoxList.module.css'
 import CheckBox from "./CheckBox";
 
 function CheckBoxList({activeComPortName, setActiveComPortNameHandler, comPortList}) {
+
       return (
             <div className={style.checkBoxList}>
                   {
                         comPortList.map(
-                              (comPort, key) => {
+                              (device, key) => {
                                     return <CheckBox
                                           key = {key}
-                                          id = {comPort.id}
-                                          name = {comPort.name}
-                                          description = {comPort.description}
+                                          name = {device.comPort}
+                                          description = {device.comPort}
                                           activeComPortName = {activeComPortName}
                                           setActiveComPortNameHandler= {setActiveComPortNameHandler}
                                     />

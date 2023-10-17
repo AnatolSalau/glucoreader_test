@@ -29,7 +29,7 @@ function Main({connection}) {
                         console.log("__________________________________")
                         console.log(json.data);
                         console.log("__________________________________")
-                        setComPortList(json.data.comPortList);
+                        setComPortList(json.data.deviceList);
                   }
             };
             connection.onmessage = (ev) => {
@@ -40,7 +40,7 @@ function Main({connection}) {
                   console.log(json.data);
 
                   console.log("__________________________________")
-                  setComPortList(json.data.comPortList);
+                  setComPortList(json.data.deviceList);
             };
             connection.onclose = (ev) => {
                   console.log('Connection is close');

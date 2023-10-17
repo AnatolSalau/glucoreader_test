@@ -1,6 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.web.ws;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.DeviceDto;
 import by.delfihealth.salov.glucoreader_test.comport.services.DeviceDTOService;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fazecast.jSerialComm.SerialPort;
@@ -15,7 +15,6 @@ import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -27,7 +26,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       private final Set<WebSocketSession> sessions = new CopyOnWriteArraySet<>();
 
-      private List<SerialPortDto> serialPortsAfterConnectionEstablished = new ArrayList<>();
+      private String dataJson = null;
 
       @Autowired
       private ComPortService comPortService;
@@ -38,10 +37,9 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             sessions.add(session);
-            List<SerialPortDto> serialPorts = comPortService.findAllSerialPortsDtoWithoutData();
-            serialPortsAfterConnectionEstablished = serialPorts;
-            String jsonDataStr = deviceDTOService.convertSerialPortToJson(serialPorts);
-            session.sendMessage(new TextMessage(jsonDataStr));
+            String newData = getDataJson();
+            dataJson = newData;
+            session.sendMessage(new TextMessage(newData));
       }
 
       @Override
@@ -52,16 +50,21 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
-            List<SerialPortDto> newSerialPortsDTO = comPortService.findAllSerialPortsDtoWithoutData();
+            String newData = getDataJson();
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
-                        if ( serialPortsAfterConnectionEstablished.equals(newSerialPortsDTO) == false) {
-                              String jsonDataStr = deviceDTOService.convertSerialPortToJson(newSerialPortsDTO);
-                              session.sendMessage(new TextMessage(jsonDataStr));
+
+                        boolean equals = dataJson.equals(newData);
+
+                        System.out.println(dataJson);
+                        System.out.println(newData);
+                        System.out.println(equals);
+                        if ( equals == false) {
+                              session.sendMessage(new TextMessage(newData));
                         }
                   }
             }
-            serialPortsAfterConnectionEstablished = newSerialPortsDTO;
+            dataJson = newData;
       }
 
       @Override
@@ -85,5 +88,14 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             return Collections.singletonList("subprotocol.glucoreader.websocket");
       }
 
+      private String getDataJson() {
+            List<SerialPort> serialPorts = comPortService.findAllComPortsByDescriptionStartWith("ELTIMA");
 
+            List<DeviceDto> deviceDtoListFromComportList = deviceDTOService.getDeviceDtoListFromComportList(
+                  serialPorts, 19200, 8, 1, 2
+            );
+
+            String json = deviceDTOService.convertDeviceDtoToJson(deviceDtoListFromComportList);
+            return json;
+      }
 }

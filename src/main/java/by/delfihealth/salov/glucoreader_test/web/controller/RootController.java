@@ -22,8 +22,6 @@ public class RootController {
 
       @GetMapping()
       public  String getAllData() {
-            SerialPort portByName = comPortService.findSerialPortByName("COM2");
-
             List<SerialPort> serialPorts = comPortService.findAllComPortsByDescriptionStartWith("ELTIMA");
 
             List<DeviceDto> deviceDtoListFromComportList = deviceDTOService.getDeviceDtoListFromComportList(
