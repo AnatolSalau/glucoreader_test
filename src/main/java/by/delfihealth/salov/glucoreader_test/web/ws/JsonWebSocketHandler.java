@@ -84,4 +84,6 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       public List<String> getSubProtocols() {
             return Collections.singletonList("subprotocol.glucoreader.websocket");
       }
+
+
 }
