@@ -51,11 +51,14 @@
                         ]
                   },
                   {
-                        "id": 1,
-                        "name": "COM2",
-                        "description": "ELTIMA_Virtual_Serial_Port_01",
-                        "protocolVersionLow": 1,
-                        "protocolVersionHigh": 1,
+                        "comPort": {
+                              "name": "COM1",
+                              "description": "ELTIMA_Virtual_Serial_Port_01"
+                        },
+                        "protocolVersion": {
+                              "versionLow": 1,
+                              "versionHigh": 1
+                        },
                         "deviceType": {
                               "deviceType": 1,
                               "serialId": "AA110000",

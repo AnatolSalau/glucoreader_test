@@ -13,7 +13,6 @@ import java.nio.CharBuffer;
 import java.nio.charset.CharacterCodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -23,8 +22,8 @@ public class DeviceDTOService {
       @Autowired
       private ComPortService comPortService;
 
-      public String convertSerialPortToJson(List<DataSerialPortDto> dataSerialPortDTOList) {
-            JSONArray jsonArray = new JSONArray(dataSerialPortDTOList);
+      public String convertSerialPortToJson(List<SerialPortDto> serialPortDTOList) {
+            JSONArray jsonArray = new JSONArray(serialPortDTOList);
             JSONObject jsonComPorts = new JSONObject();
             jsonComPorts.put("comPortList", jsonArray);
             JSONObject jsonData = new JSONObject();
@@ -33,6 +32,36 @@ public class DeviceDTOService {
             return jsonDataStr;
       }
 
+      public String convertDeviceDtoToJson(DeviceDto deviceDto) {
+            List<DeviceDto> deviceDtoList = new ArrayList<>();
+            deviceDtoList.add(deviceDto);
+
+            JSONObject deviceList = new JSONObject();
+            deviceList.put("deviceList", new JSONArray(deviceDtoList));
+
+            JSONObject data = new JSONObject();
+            data.put("data",deviceList);
+            return data.toString();
+      }
+
+      public String convertDeviceDtoToJson(List<DeviceDto> deviceDtoList) {
+            JSONObject deviceList = new JSONObject();
+            deviceList.put("deviceList", new JSONArray(deviceDtoList));
+
+            JSONObject data = new JSONObject();
+            data.put("data",deviceList);
+            return data.toString();
+      }
+
+      public List<DeviceDto> getDeviceDtoListFromComportList(List<SerialPort> serialPorts, int baudRate,
+                                                             int dataBits, int stopBits, int parity) {
+            List<DeviceDto> result = new ArrayList<>();
+            serialPorts.forEach(serialPort -> {
+                  result.add(getDeviceDtoFromComport(serialPort,
+                        baudRate,dataBits,stopBits,parity));
+            });
+            return result;
+      }
 
       public DeviceDto getDeviceDtoFromComport(SerialPort serialPort, int baudRate, int dataBits,
                                                int stopBits, int parity) {
@@ -144,7 +173,6 @@ public class DeviceDTOService {
       }
 
       private String getSerialNumberFromBytes(
-
             HexByteData id0, HexByteData id1, HexByteData id2, HexByteData id3,
             HexByteData id4, HexByteData id5, HexByteData id6, HexByteData id7
       ) throws CharacterCodingException {

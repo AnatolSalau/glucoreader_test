@@ -273,7 +273,42 @@ class DeviceDTOServiceTest {
                   .getDeviceDtoFromComport(portByName, 19200, 8, 1, 2);
 
             System.out.println(deviceDtoFromComport);
+            //
+      }
 
+      @Test
+      void convertDeviceDtoToJson() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            DeviceDto deviceDtoFromComport = deviceDTOService
+                  .getDeviceDtoFromComport(portByName, 19200, 8, 1, 2);
+
+            String json = deviceDTOService.convertDeviceDtoToJson(deviceDtoFromComport);
+            System.out.println(json);
+      }
+
+      @Test
+      void getDeviceDtoListFromComportList() {
+            List<SerialPort> serialPorts = comPortService.findAllComPortsByDescriptionStartWith("ELTIMA");
+
+            List<DeviceDto> deviceDtoListFromComportList = deviceDTOService.getDeviceDtoListFromComportList(
+                  serialPorts, 19200, 8, 1, 2
+            );
+            System.out.println(deviceDtoListFromComportList);
+      }
+
+      @Test
+      void convertDeviceDtoListToJson() {
+            SerialPort portByName = comPortService.findSerialPortByName("COM2");
+
+            List<SerialPort> serialPorts = comPortService.findAllComPortsByDescriptionStartWith("ELTIMA");
+
+            List<DeviceDto> deviceDtoListFromComportList = deviceDTOService.getDeviceDtoListFromComportList(
+                  serialPorts, 19200, 8, 1, 2
+            );
+
+            String json = deviceDTOService.convertDeviceDtoToJson(deviceDtoListFromComportList);
+            System.out.println(json);
       }
 
       private void printBinary(byte num) {

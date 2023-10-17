@@ -1,6 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.comport.services;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.DataSerialPortDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDto;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteData;
 import by.delfihealth.salov.glucoreader_test.comport.model.HexByteType;
 import com.fazecast.jSerialComm.SerialPort;
@@ -22,29 +22,15 @@ public class ComPortService {
       @Autowired
       private ControlSumCRC16Service controlSumCRC16Service;
 
-      public List<DataSerialPortDto> findAllSerialPortsDtoWithoutData() {
+      public List<SerialPortDto> findAllSerialPortsDtoWithoutData() {
             List<SerialPort> allComPorts = findAllComPorts();
-            List<DataSerialPortDto> dataSerialPortDTOList = IntStream.range(0, allComPorts.size())
-                  .mapToObj(i -> new DataSerialPortDto(i,
+            List<SerialPortDto> serialPortDTOList = IntStream.range(0, allComPorts.size())
+                  .mapToObj(i -> new SerialPortDto(i,
                         allComPorts.get(i).getSystemPortName(),
                         allComPorts.get(i).getPortDescription()
                   ))
                   .collect(Collectors.toList());
-            return dataSerialPortDTOList;
-      }
-
-
-      private String getName(SerialPort serialPort) {
-            return serialPort.getSystemPortName();
-      }
-
-      private String getDescription(SerialPort serialPort) {
-            return serialPort.getPortDescription();
-      }
-      private List<SerialPort> findAllComPorts() {
-            SerialPort[] commPorts = SerialPort.getCommPorts();
-            List<SerialPort> serialPorts = Arrays.asList(commPorts);
-            return serialPorts;
+            return serialPortDTOList;
       }
 
       public List<HexByteData> getProtocolVersion(SerialPort serialPort, int baudRate, int dataBits,
@@ -331,6 +317,30 @@ public class ComPortService {
             if (serialPort.isOpen())
                   return serialPort.closePort();
             return false;
+      }
+
+      public List<SerialPort> findAllComPortsByDescriptionStartWith(String nameStartWith) {
+            SerialPort[] commPorts = SerialPort.getCommPorts();
+
+            List<SerialPort> serialPorts = Arrays.stream(commPorts)
+                  .filter(serialPort -> {
+                        return serialPort.getPortDescription().startsWith(nameStartWith);
+                  }).toList();
+            return serialPorts;
+      }
+
+      private String getName(SerialPort serialPort) {
+            return serialPort.getSystemPortName();
+      }
+
+      private String getDescription(SerialPort serialPort) {
+            return serialPort.getPortDescription();
+      }
+
+      private List<SerialPort> findAllComPorts() {
+            SerialPort[] commPorts = SerialPort.getCommPorts();
+            List<SerialPort> serialPorts = Arrays.asList(commPorts);
+            return serialPorts;
       }
 
       private byte[] convertRequestToByteArr(List<HexByteData> dataList) {

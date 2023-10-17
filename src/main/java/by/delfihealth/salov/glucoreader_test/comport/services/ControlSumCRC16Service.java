@@ -18,7 +18,6 @@ public class ControlSumCRC16Service {
                   .stream()
                   .map(HexByteData::getByteValue)
                   .forEach(checksum::update);
-            System.out.println(checksum);
             String crcLoHiHex = Integer.toHexString((int) checksum.getValue());
             String crcHiHex = "0x" + crcLoHiHex.substring(0, 2).toUpperCase();
             String crcLoHex = "0x" + crcLoHiHex.substring(2, 4).toUpperCase();

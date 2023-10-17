@@ -1,6 +1,6 @@
 package by.delfihealth.salov.glucoreader_test.web.ws;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.DataSerialPortDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.SerialPortDto;
 import by.delfihealth.salov.glucoreader_test.comport.services.DeviceDTOService;
 import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
 import com.fazecast.jSerialComm.SerialPort;
@@ -27,7 +27,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       private final Set<WebSocketSession> sessions = new CopyOnWriteArraySet<>();
 
-      private List<DataSerialPortDto> serialPortsAfterConnectionEstablished = new ArrayList<>();
+      private List<SerialPortDto> serialPortsAfterConnectionEstablished = new ArrayList<>();
 
       @Autowired
       private ComPortService comPortService;
@@ -38,7 +38,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             sessions.add(session);
-            List<DataSerialPortDto> serialPorts = comPortService.findAllSerialPortsDtoWithoutData();
+            List<SerialPortDto> serialPorts = comPortService.findAllSerialPortsDtoWithoutData();
             serialPortsAfterConnectionEstablished = serialPorts;
             String jsonDataStr = deviceDTOService.convertSerialPortToJson(serialPorts);
             session.sendMessage(new TextMessage(jsonDataStr));
@@ -52,7 +52,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
-            List<DataSerialPortDto> newSerialPortsDTO = comPortService.findAllSerialPortsDtoWithoutData();
+            List<SerialPortDto> newSerialPortsDTO = comPortService.findAllSerialPortsDtoWithoutData();
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
                         if ( serialPortsAfterConnectionEstablished.equals(newSerialPortsDTO) == false) {

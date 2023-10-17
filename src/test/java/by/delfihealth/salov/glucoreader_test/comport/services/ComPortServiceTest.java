@@ -92,4 +92,11 @@ class ComPortServiceTest {
                         "0xB6", "0xB7", "0x02","0x00", "0x02");
             System.out.println(deviceType);
       }
+
+      @Test
+      void findAllComPortsByDescriptionStartWithTest() {
+            List<SerialPort> serialPorts = comPortService
+                  .findAllComPortsByDescriptionStartWith("ELTIMA");
+            System.out.println(serialPorts);
+      }
 }
