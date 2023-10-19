@@ -1,9 +1,7 @@
 package by.delfihealth.salov.glucoreader_test.web.ws;
 
-import by.delfihealth.salov.glucoreader_test.comport.dto.DeviceDto;
+import by.delfihealth.salov.glucoreader_test.comport.dto.ComPortDto;
 import by.delfihealth.salov.glucoreader_test.comport.services.DeviceDTOService;
-import by.delfihealth.salov.glucoreader_test.comport.services.ComPortService;
-import com.fazecast.jSerialComm.SerialPort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +13,12 @@ import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.stream.Collectors;
 
 public class JsonWebSocketHandler extends TextWebSocketHandler implements SubProtocolCapable {
 
@@ -26,19 +26,15 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       private final Set<WebSocketSession> sessions = new CopyOnWriteArraySet<>();
 
-      private String dataJson = null;
-
-      @Autowired
-      private ComPortService comPortService;
-
       @Autowired
       private DeviceDTOService deviceDTOService;
 
+      List<ComPortDto> comPortDtoList = new ArrayList<>();
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             sessions.add(session);
-            String newData = getDataJson();
-            dataJson = newData;
+            String newData = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
+            comPortDtoList = deviceDTOService.getComPortDtoListByPortDescription("ELTIMA");
             session.sendMessage(new TextMessage(newData));
       }
 
@@ -50,32 +46,24 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
 
       @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
-            String newData = getDataJson();
+            List<ComPortDto> newComPortDtoList = deviceDTOService
+                  .getComPortDtoListByPortDescription("ELTIMA");
             for (WebSocketSession session : sessions) {
                   if (session.isOpen()) {
-
-                        boolean equals = dataJson.equals(newData);
-
-                        System.out.println(dataJson);
-                        System.out.println(newData);
-                        System.out.println(equals);
+                        boolean equals = comPortDtoList.equals(newComPortDtoList);
                         if ( equals == false) {
-                              session.sendMessage(new TextMessage(newData));
+                              String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
+                              session.sendMessage(new TextMessage(data));
                         }
                   }
             }
-            dataJson = newData;
+            comPortDtoList = newComPortDtoList;
       }
 
       @Override
       public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
             String request = message.getPayload();
             logger.info("Server received: {}", request);
-            SerialPort serialPortByName = comPortService.findSerialPortByName(request);
-            comPortService.openComPort(serialPortByName, 19200, 8,
-                  1, 2);
-
-            comPortService.closeComport(serialPortByName);
       }
 
       @Override
@@ -86,16 +74,5 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       @Override
       public List<String> getSubProtocols() {
             return Collections.singletonList("subprotocol.glucoreader.websocket");
-      }
-
-      private String getDataJson() {
-            List<SerialPort> serialPorts = comPortService.findAllComPortsByDescriptionStartWith("ELTIMA");
-
-            List<DeviceDto> deviceDtoListFromComportList = deviceDTOService.getDeviceDtoListFromComportList(
-                  serialPorts, 19200, 8, 1, 2
-            );
-
-            String json = deviceDTOService.convertDeviceDtoToJson(deviceDtoListFromComportList);
-            return json;
       }
 }

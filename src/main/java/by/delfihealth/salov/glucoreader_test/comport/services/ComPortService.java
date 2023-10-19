@@ -319,22 +319,14 @@ public class ComPortService {
             return false;
       }
 
-      public List<SerialPort> findAllComPortsByDescriptionStartWith(String nameStartWith) {
+      public List<SerialPort> findAllComPortsByDescriptionStartWith(String descriptionStartWith) {
             SerialPort[] commPorts = SerialPort.getCommPorts();
 
             List<SerialPort> serialPorts = Arrays.stream(commPorts)
                   .filter(serialPort -> {
-                        return serialPort.getPortDescription().startsWith(nameStartWith);
+                        return serialPort.getPortDescription().startsWith(descriptionStartWith);
                   }).toList();
             return serialPorts;
-      }
-
-      private String getName(SerialPort serialPort) {
-            return serialPort.getSystemPortName();
-      }
-
-      private String getDescription(SerialPort serialPort) {
-            return serialPort.getPortDescription();
       }
 
       private List<SerialPort> findAllComPorts() {

@@ -16,20 +16,29 @@ import java.nio.charset.CharsetDecoder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 @Service
 public class DeviceDTOService {
       @Autowired
       private ComPortService comPortService;
 
-      public String convertSerialPortToJson(List<SerialPortDto> serialPortDTOList) {
-            JSONArray jsonArray = new JSONArray(serialPortDTOList);
-            JSONObject jsonComPorts = new JSONObject();
-            jsonComPorts.put("comPortList", jsonArray);
-            JSONObject jsonData = new JSONObject();
-            jsonData.put("data", jsonComPorts);
-            String jsonDataStr = jsonData.toString();
-            return jsonDataStr;
+      public List<ComPortDto> getComPortDtoListByPortDescription(String descriptionStartWith) {
+            List<SerialPort> allComPortsByDescriptionStartWith = comPortService.findAllComPortsByDescriptionStartWith(descriptionStartWith);
+            List<ComPortDto> comPortDtoList = allComPortsByDescriptionStartWith
+                  .stream().map((port) -> getComPortDto(port.getSystemPortName())).toList();
+            return comPortDtoList;
+      }
+
+      public String getDataJsonByPortDescription(String descriptionStartWith) {
+            List<SerialPort> serialPorts = comPortService.findAllComPortsByDescriptionStartWith(descriptionStartWith);
+
+            List<DeviceDto> deviceDtoListFromComportList = getDeviceDtoListFromComportList(
+                  serialPorts, 19200, 8, 1, 2
+            );
+
+            String json = convertDeviceDtoToJson(deviceDtoListFromComportList);
+            return json;
       }
 
       public String convertDeviceDtoToJson(DeviceDto deviceDto) {

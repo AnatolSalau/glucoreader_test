@@ -9,16 +9,7 @@ let countRender = 0;
 
 function Main({connection}) {
 
-      let [comPortList, setComPortList] = useState([
-            {
-                  id: 0,
-                  name: "name",
-                  description: "description",
-                  protocolVersion: [
-
-                  ]
-            }
-      ]);
+      let [deviceList, setDeviceList] = useState([]);
 
       useEffect(() => {
             connection.onopen = (ev) => {
@@ -29,7 +20,7 @@ function Main({connection}) {
                         console.log("__________________________________")
                         console.log(json.data);
                         console.log("__________________________________")
-                        setComPortList(json.data.deviceList);
+                        setDeviceList(json.data.deviceList);
                   }
             };
             connection.onmessage = (ev) => {
@@ -40,7 +31,7 @@ function Main({connection}) {
                   console.log(json.data);
 
                   console.log("__________________________________")
-                  setComPortList(json.data.deviceList);
+                  setDeviceList(json.data.deviceList);
             };
             connection.onclose = (ev) => {
                   console.log('Connection is close');
@@ -57,15 +48,15 @@ function Main({connection}) {
             }
             parseDateTimeFromStr();
 
-      }, [setComPortList]);
+      }, [setDeviceList]);
 
       let [activeComPortName, setActiveComPortName] = useState("");
 
       console.log("Main countRender : " + countRender++);
 
-      const setActiveComPortNameHandler = (name) => {
+      const setActiveDeviceNameHandler = (name) => {
                   if (name === activeComPortName) {
-                        setActiveComPortNameHandler("")
+                        setActiveDeviceNameHandler("")
 
                   }
                   else {
@@ -79,9 +70,9 @@ function Main({connection}) {
             <div className={style.main}>
                   <ComPortList
                         text={"Список COM портов:"}
-                        comPortList={comPortList}
-                        activeComPortName={activeComPortName}
-                        setActiveComPortNameHandler={setActiveComPortNameHandler}
+                        deviceList={deviceList}
+                        activeDeviceName={activeComPortName}
+                        setActiveDeviceNameHandlerHandler={setActiveDeviceNameHandler}
                   />
                   <Section text={"Соединение:"}>
                         <FcOk/>

@@ -1,19 +1,20 @@
 import style from './CheckBoxList.module.css'
 import CheckBox from "./CheckBox";
 
-function CheckBoxList({activeComPortName, setActiveComPortNameHandler, comPortList}) {
+function CheckBoxList({activeDeviceName, setActiveDeviceNameHandler, deviceList}) {
 
       return (
             <div className={style.checkBoxList}>
                   {
-                        comPortList.map(
+                        deviceList.map(
                               (device, key) => {
+                                    console.log("device = " + device)
                                     return <CheckBox
                                           key = {key}
-                                          name = {device.comPort}
-                                          description = {device.comPort}
-                                          activeComPortName = {activeComPortName}
-                                          setActiveComPortNameHandler= {setActiveComPortNameHandler}
+                                          name = {device.comPortDto.name}
+                                          description = {device.comPortDto.description}
+                                          devicePortName= {activeDeviceName}
+                                          setActiveDeviceNameHandler= {setActiveDeviceNameHandler}
                                     />
                               }
                         )

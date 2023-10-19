@@ -4,11 +4,11 @@ import style from "./CheckBox.module.css";
 
 let checkBoxRenderCount = 0;
 
-function CheckBox({id, name, description, activeComPortName, setActiveComPortNameHandler}) {
-
+function CheckBox({id, name, description, devicePortName, setActiveDeviceNameHandler}) {
+      console.log('name = ' + name);
       const changeStyleByClick = () => {
                  return ` ${
-                       name === activeComPortName
+                       name === devicePortName
                              ? ` ${style.checkBox} ${style.active}`
                              : ` ${style.checkBox} `
                  } `
@@ -16,7 +16,7 @@ function CheckBox({id, name, description, activeComPortName, setActiveComPortNam
 
       const changeIconByCLick = () => {
             // console.log("changeIconByCLick");
-            return name === activeComPortName
+            return name === devicePortName
                   ? <MdOutlineCheckBox/>
                   : <MdOutlineCheckBoxOutlineBlank/>
 
@@ -26,7 +26,7 @@ function CheckBox({id, name, description, activeComPortName, setActiveComPortNam
             <div
                   className={changeStyleByClick()}
                   onClick={() => {
-                        setActiveComPortNameHandler(name);
+                        setActiveDeviceNameHandler(name);
                         changeStyleByClick();
                         // setPortIsActive(!portIsActive);
                   }}

@@ -273,7 +273,6 @@ class DeviceDTOServiceTest {
                   .getDeviceDtoFromComport(portByName, 19200, 8, 1, 2);
 
             System.out.println(deviceDtoFromComport);
-            //
       }
 
       @Test
@@ -299,6 +298,7 @@ class DeviceDTOServiceTest {
 
       @Test
       void convertDeviceDtoListToJson() {
+            //
             SerialPort portByName = comPortService.findSerialPortByName("COM2");
 
             List<SerialPort> serialPorts = comPortService.findAllComPortsByDescriptionStartWith("ELTIMA");
