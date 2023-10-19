@@ -787,3 +787,125 @@ java.lang.ClassCastException: class by.delfihealth.salov.glucoreader_test.compor
 2023-10-19T15:47:10.671+03:00  INFO 4712 --- [http-nio-8044-exec-2] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
 2023-10-19T15:47:12.105+03:00  INFO 4712 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
 2023-10-19T15:47:12.702+03:00  INFO 4712 --- [http-nio-8044-exec-6] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T15:51:34.730+03:00  INFO 4712 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:52:03.732+03:00  INFO 4712 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:52:03.732+03:00  INFO 4712 --- [http-nio-8044-exec-2] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:52:03.732+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:52:03.732+03:00  INFO 4712 --- [http-nio-8044-exec-2] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:52:19.769+03:00  INFO 4712 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T15:53:07.176+03:00  INFO 4712 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:53:15.235+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T15:53:34.104+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:53:52.135+03:00  INFO 4712 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T15:53:54.626+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T15:55:50.719+03:00  INFO 4712 --- [http-nio-8044-exec-2] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T15:57:36.798+03:00  INFO 4712 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T15:57:37.622+03:00  INFO 4712 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T15:57:38.669+03:00  INFO 4712 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T15:57:39.372+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T15:57:40.132+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T15:57:40.996+03:00  INFO 4712 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T15:57:41.640+03:00  INFO 4712 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T15:57:42.364+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T15:57:43.422+03:00  INFO 4712 --- [http-nio-8044-exec-2] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T15:57:45.650+03:00  INFO 4712 --- [http-nio-8044-exec-6] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T15:57:46.243+03:00  INFO 4712 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T15:57:46.944+03:00  INFO 4712 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T15:58:12.731+03:00  INFO 4712 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T15:58:13.646+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T15:58:14.416+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:05:56.772+03:00  INFO 4712 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:07:02.344+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:07:41.101+03:00  INFO 4712 --- [http-nio-8044-exec-6] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:08:15.456+03:00  INFO 4712 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:08:16.126+03:00  INFO 4712 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:08:16.778+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:08:17.410+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:08:21.119+03:00  INFO 4712 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:09:54.271+03:00  INFO 4712 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:09:54.828+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:09:55.380+03:00  INFO 4712 --- [http-nio-8044-exec-2] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:09:56.180+03:00  INFO 4712 --- [http-nio-8044-exec-6] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T16:10:02.338+03:00  INFO 4712 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:10:02.846+03:00  INFO 4712 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:10:03.204+03:00  INFO 4712 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:10:03.930+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:10:47.541+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:12:21.609+03:00  INFO 4712 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:12:59.083+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:14:53.937+03:00  INFO 4712 --- [http-nio-8044-exec-6] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T16:14:54.324+03:00  INFO 4712 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:14:54.564+03:00  INFO 4712 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: 
+2023-10-19T16:14:54.766+03:00  INFO 4712 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:14:55.038+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: 
+2023-10-19T16:14:55.325+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:15:00.265+03:00  INFO 4712 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:15:00.754+03:00  INFO 4712 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:15:01.373+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T16:15:02.804+03:00  INFO 4712 --- [http-nio-8044-exec-2] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:15:12.057+03:00  INFO 4712 --- [http-nio-8044-exec-6] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:15:12.540+03:00  INFO 4712 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:15:12.960+03:00  INFO 4712 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T16:15:13.626+03:00  INFO 4712 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:15:14.010+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:15:14.344+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM2
+2023-10-19T16:21:11.900+03:00  INFO 4712 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:21:11.900+03:00  INFO 4712 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:21:11.900+03:00  INFO 4712 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:21:11.901+03:00  INFO 4712 --- [http-nio-8044-exec-1] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:21:11.901+03:00  INFO 4712 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=null]
+2023-10-19T16:24:27.166+03:00  INFO 4712 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-19T16:24:27.166+03:00  INFO 4712 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-19T16:24:27.166+03:00  INFO 4712 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-19T16:24:27.167+03:00  INFO 4712 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-19T16:24:27.167+03:00  INFO 4712 --- [SpringApplicationShutdownHook] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-19T16:24:27.172+03:00  INFO 4712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-19T16:24:27.175+03:00  INFO 4712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-19T16:24:27.175+03:00  INFO 4712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-19T16:24:29.645+03:00  INFO 15888 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 17.0.4.1 with PID 15888 (started by User in D:\JAVA\Projects\glucoreader_test)
+2023-10-19T16:24:29.648+03:00  INFO 15888 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-10-19T16:24:30.161+03:00  INFO 15888 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-19T16:24:30.203+03:00  INFO 15888 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2023-10-19T16:24:30.544+03:00  INFO 15888 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8044 (http)
+2023-10-19T16:24:30.549+03:00  INFO 15888 --- [JavaFX-Launcher] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-19T16:24:30.549+03:00  INFO 15888 --- [JavaFX-Launcher] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-19T16:24:30.611+03:00  INFO 15888 --- [JavaFX-Launcher] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-19T16:24:30.612+03:00  INFO 15888 --- [JavaFX-Launcher] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 899 ms
+2023-10-19T16:24:30.708+03:00  INFO 15888 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-10-19T16:24:30.708+03:00  INFO 15888 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-10-19T16:24:30.708+03:00  INFO 15888 --- [JavaFX-Launcher] o.f.c.internal.license.VersionPrinter    : 
+2023-10-19T16:24:30.714+03:00  INFO 15888 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-19T16:24:30.827+03:00  INFO 15888 --- [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1a43f048
+2023-10-19T16:24:30.829+03:00  INFO 15888 --- [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-19T16:24:30.840+03:00  INFO 15888 --- [JavaFX-Launcher] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:src/main/resources/db/database.sqlite (SQLite 3.42)
+2023-10-19T16:24:30.862+03:00  INFO 15888 --- [JavaFX-Launcher] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
+2023-10-19T16:24:30.864+03:00  INFO 15888 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Current version of schema "main": 1
+2023-10-19T16:24:30.864+03:00  INFO 15888 --- [JavaFX-Launcher] o.f.core.internal.command.DbMigrate      : Schema "main" is up to date. No migration necessary.
+2023-10-19T16:24:30.907+03:00  INFO 15888 --- [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-19T16:24:30.940+03:00  INFO 15888 --- [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-19T16:24:30.941+03:00  INFO 15888 --- [JavaFX-Launcher] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-19T16:24:31.030+03:00  INFO 15888 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-19T16:24:31.096+03:00  INFO 15888 --- [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-19T16:24:31.224+03:00  INFO 15888 --- [JavaFX-Launcher] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-19T16:24:31.548+03:00  INFO 15888 --- [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-19T16:24:31.569+03:00  INFO 15888 --- [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-19T16:24:31.631+03:00  WARN 15888 --- [JavaFX-Launcher] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-19T16:24:32.017+03:00  INFO 15888 --- [JavaFX-Launcher] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8044 (http) with context path ''
+2023-10-19T16:24:32.024+03:00  INFO 15888 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 2.761 seconds (process running for 3.359)
+2023-10-19T16:24:32.968+03:00  INFO 15888 --- [http-nio-8044-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-19T16:24:32.968+03:00  INFO 15888 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-19T16:24:32.969+03:00  INFO 15888 --- [http-nio-8044-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-19T16:24:38.803+03:00  INFO 15888 --- [http-nio-8044-exec-4] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:24:39.615+03:00  INFO 15888 --- [http-nio-8044-exec-7] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: 
+2023-10-19T16:24:40.643+03:00  INFO 15888 --- [http-nio-8044-exec-10] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM3
+2023-10-19T16:24:41.203+03:00  INFO 15888 --- [http-nio-8044-exec-5] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: 
+2023-10-19T16:24:41.903+03:00  INFO 15888 --- [http-nio-8044-exec-6] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:24:42.677+03:00  INFO 15888 --- [http-nio-8044-exec-3] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: 
+2023-10-19T16:24:43.365+03:00  INFO 15888 --- [http-nio-8044-exec-8] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM5
+2023-10-19T16:24:45.422+03:00  INFO 15888 --- [http-nio-8044-exec-9] b.d.s.g.web.ws.JsonWebSocketHandler      : Server received: COM4
+2023-10-19T16:24:57.928+03:00  INFO 15888 --- [JavaFX Application Thread] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-19T16:24:57.930+03:00  INFO 15888 --- [JavaFX Application Thread] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-19T16:24:57.932+03:00  INFO 15888 --- [JavaFX Application Thread] b.d.s.g.web.ws.JsonWebSocketHandler      : Server connection closed: CloseStatus[code=1001, reason=The web application is stopping]
+2023-10-19T16:24:57.947+03:00  INFO 15888 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-19T16:24:57.950+03:00  INFO 15888 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-19T16:24:57.954+03:00  INFO 15888 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
