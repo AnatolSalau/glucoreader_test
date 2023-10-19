@@ -1,0 +1,5 @@
+.deviceWindow {
+      display: flex;
+      flex-direction: column;
+      background-color: #EEEEF2;
+}

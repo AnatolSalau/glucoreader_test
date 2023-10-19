@@ -1,11 +1,10 @@
 import {useEffect, useState} from "react";
 import { FcOk } from 'react-icons/fc'
 import style from './Main.module.css'
-import Section from "./Section";
+import Section from "./deviceWindow/Section";
 import ComPortList from "./comPortList/ComPortList";
-import axios from 'axios';
+import DeviceWindow from "./deviceWindow/DeviceWindow";
 
-let countRender = 0;
 
 function Main({connection}) {
 
@@ -15,22 +14,13 @@ function Main({connection}) {
             connection.onopen = (ev) => {
                   console.log('Connection is open');
                   if (ev.data) {
-                        console.log(ev.data)
                         let json = JSON.parse(ev.data);
-                        console.log("__________________________________")
-                        console.log(json.data);
-                        console.log("__________________________________")
                         setDeviceList(json.data.deviceList);
                   }
             };
             connection.onmessage = (ev) => {
                   console.log('Message from server received');
                   let json = JSON.parse(ev.data);
-                  console.log("__________________________________")
-                  console.log("JSON : ")
-                  console.log(json.data);
-
-                  console.log("__________________________________")
                   setDeviceList(json.data.deviceList);
             };
             connection.onclose = (ev) => {
@@ -50,36 +40,29 @@ function Main({connection}) {
 
       }, [setDeviceList]);
 
-      let [activeComPortName, setActiveComPortName] = useState("");
-
-      console.log("Main countRender : " + countRender++);
+      let [activeDeviceName, setActiveDeviceName] = useState("");
 
       const setActiveDeviceNameHandler = (name) => {
-                  if (name === activeComPortName) {
+                  if (name === activeDeviceName) {
                         setActiveDeviceNameHandler("")
 
                   }
                   else {
-                        setActiveComPortName(name);
+                        setActiveDeviceName(name);
                         connection.send(name);
                   }
       };
-      console.log("activeComPortName : " + activeComPortName);
-
+      console.log("activeDeviceName : " + activeDeviceName);
+      console.log(deviceList)
       return (
             <div className={style.main}>
                   <ComPortList
                         text={"Список COM портов:"}
                         deviceList={deviceList}
-                        activeDeviceName={activeComPortName}
+                        activeDeviceName={activeDeviceName}
                         setActiveDeviceNameHandlerHandler={setActiveDeviceNameHandler}
                   />
-                  <Section text={"Соединение:"}>
-                        <FcOk/>
-                  </Section>
-                  <Section text={"Версия протокола:"}/>
-                  <Section text={"Версия прибора:"}/>
-                  <Section text={"Состояние прибора:"}/>
+                  <DeviceWindow/>
             </div>
       )
 }

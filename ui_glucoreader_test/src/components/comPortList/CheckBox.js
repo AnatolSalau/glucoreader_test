@@ -2,10 +2,7 @@ import {MdOutlineCheckBoxOutlineBlank} from 'react-icons/md';
 import {MdOutlineCheckBox} from 'react-icons/md';
 import style from "./CheckBox.module.css";
 
-let checkBoxRenderCount = 0;
-
 function CheckBox({id, name, description, devicePortName, setActiveDeviceNameHandler}) {
-      console.log('name = ' + name);
       const changeStyleByClick = () => {
                  return ` ${
                        name === devicePortName
@@ -15,20 +12,17 @@ function CheckBox({id, name, description, devicePortName, setActiveDeviceNameHan
       }
 
       const changeIconByCLick = () => {
-            // console.log("changeIconByCLick");
             return name === devicePortName
                   ? <MdOutlineCheckBox/>
                   : <MdOutlineCheckBoxOutlineBlank/>
 
       }
-      // console.log("CheckBoxRenderCount : " + checkBoxRenderCount++);
       return (
             <div
                   className={changeStyleByClick()}
                   onClick={() => {
                         setActiveDeviceNameHandler(name);
                         changeStyleByClick();
-                        // setPortIsActive(!portIsActive);
                   }}
             >
                   <div className={style.checkFieldEmpty}>

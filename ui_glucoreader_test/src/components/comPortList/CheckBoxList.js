@@ -8,7 +8,6 @@ function CheckBoxList({activeDeviceName, setActiveDeviceNameHandler, deviceList}
                   {
                         deviceList.map(
                               (device, key) => {
-                                    console.log("device = " + device)
                                     return <CheckBox
                                           key = {key}
                                           name = {device.comPortDto.name}

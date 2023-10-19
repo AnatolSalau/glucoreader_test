@@ -1,6 +1,12 @@
 .comPortList {
       display: flex;
+      flex-direction: column;
       align-items: center;
+      min-width: 200px;
+      padding-bottom: 5px;
+      background-color: rgba(167, 238, 225, 0.30);
+      border-radius: 4px;;
+
 }
 
 .text {
