@@ -2,107 +2,3653 @@
       "data": {
             "deviceList": [
                   {
-                        "comPort": {
-                              "name": "COM1",
+                        "dateTime": "2023-10-17T14:51:21",
+                        "valueDtoList": [
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 1,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 2,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 3,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 4,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 5,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 6,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 7,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 8,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 9,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 10,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 11,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 12,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 13,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 14,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 15,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 16,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 17,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 18,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 19,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 20,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 21,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 22,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 23,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 24,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 25,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 26,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 27,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 28,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 29,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 30,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 31,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 32,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 33,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 34,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 35,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 36,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 37,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 38,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 39,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 40,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 41,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 42,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 43,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 44,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 45,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 46,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 47,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 48,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 49,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 50,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 51,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 52,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 53,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 54,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 55,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 56,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 57,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 58,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 59,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 60,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 61,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 62,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2023-10-17T13:23:21",
+                                    "glucose": 4.67,
+                                    "stateUserMark": 0,
+                                    "temperature": "19.48",
+                                    "hematocrit": 40.92,
+                                    "id": 63,
+                                    "state": 0
+                              }
+                        ],
+                        "deviceTypeDto": {
+                              "deviceType": 1,
+                              "swVersionHigh": 1,
+                              "serialId": "\u0007\u0003\u0004\u0005\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 5
+                        },
+                        "comPortDto": {
+                              "name": "COM2",
                               "description": "ELTIMA_Virtual_Serial_Port_00"
                         },
-                        "protocolVersion": {
-                              "versionLow": 1,
-                              "versionHigh": 1
+                        "protocolVersionDto": {
+                              "versionHi": 1,
+                              "versionLo": 0
                         },
-                        "deviceType": {
-                              "deviceType": 1,
-                              "serialId": "AA110000",
-                              "hwVersion": 1,
-                              "swVersion": 1
-                        },
-                        "state": {
-                              "errorCode": 0,
-                              "temperature": "-7.23",
-                              "battery": 1
-                        },
-                        "dateTime": "2023-10-05T15:16:17",
                         "converterType": {
-                              "deviceType": 1,
-                              "serialId": "AA110000",
-                              "hwVersion": 1,
-                              "swVersion": 1
+                              "deviceType": 2,
+                              "swVersionHigh": 1,
+                              "serialId": "\b\t\u0007\u0004\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 4
                         },
-                        "values": [
-                              {
-                                    "id": 0,
-                                    "dateTime": "2023-10-05T15:16:17",
-                                    "glucose" : 4.5,
-                                    "temperature" : "-7.23",
-                                    "hematocrit" : 45.5,
-                                    "state" : 11,
-                                    "stateUserMark" : 0
-                              },
-                              {
-                                    "id": 1,
-                                    "dateTime": "2023-10-05T15:16:17",
-                                    "glucose" : 4.5,
-                                    "temperature" : "-7.23",
-                                    "hematocrit" : 45.5,
-                                    "state" : 11,
-                                    "stateUserMark" : 0
-                              },
-                              {}
-                        ]
+                        "stateDto": {
+                              "temperature": "23.17",
+                              "errorCode": 0,
+                              "battery": 1
+                        }
                   },
                   {
-                        "comPort": {
-                              "name": "COM1",
+                        "dateTime": "2000-0-0T0:0:0",
+                        "valueDtoList": [
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              }
+                        ],
+                        "deviceTypeDto": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "comPortDto": {
+                              "name": "COM3",
                               "description": "ELTIMA_Virtual_Serial_Port_01"
                         },
-                        "protocolVersion": {
-                              "versionLow": 1,
-                              "versionHigh": 1
+                        "protocolVersionDto": {
+                              "versionHi": 0,
+                              "versionLo": 0
                         },
-                        "deviceType": {
-                              "deviceType": 1,
-                              "serialId": "AA110000",
-                              "hwVersion": 1,
-                              "swVersion": 1
-                        },
-                        "state": {
-                              "errorCode": 0,
-                              "temperature": "-7.23",
-                              "battery": 1
-                        },
-                        "dateTime": "2023-10-05T15:16:17",
                         "converterType": {
-                              "deviceType": 1,
-                              "serialId": "AA110000",
-                              "hwVersion": 1,
-                              "swVersion": 1
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
                         },
-                        "values": [
-                              {
-                                    "id": 0,
-                                    "dateTime": "2023-10-05T15:16:17",
-                                    "glucose" : 4.5,
-                                    "temperature" : "-7.23",
-                                    "hematocrit" : 45.5,
-                                    "state" : 11,
-                                    "stateUserMark" : 0
-                              },
-                              {
-                                    "id": 1,
-                                    "dateTime": "2023-10-05T15:16:17",
-                                    "glucose" : 4.5,
-                                    "temperature" : "-7.23",
-                                    "hematocrit" : 45.5,
-                                    "state" : 11,
-                                    "stateUserMark" : 0
-                              },
-                              {}
-                        ]
+                        "stateDto": {
+                              "temperature": "0.0",
+                              "errorCode": 0,
+                              "battery": 0
+                        }
                   },
-                  null,
-                  null,
-                  null,
-                  null
+                  {
+                        "dateTime": "2000-0-0T0:0:0",
+                        "valueDtoList": [
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              }
+                        ],
+                        "deviceTypeDto": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "comPortDto": {
+                              "name": "COM4",
+                              "description": "ELTIMA_Virtual_Serial_Port_02"
+                        },
+                        "protocolVersionDto": {
+                              "versionHi": 0,
+                              "versionLo": 0
+                        },
+                        "converterType": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "stateDto": {
+                              "temperature": "0.0",
+                              "errorCode": 0,
+                              "battery": 0
+                        }
+                  },
+                  {
+                        "dateTime": "2000-0-0T0:0:0",
+                        "valueDtoList": [
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              }
+                        ],
+                        "deviceTypeDto": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "comPortDto": {
+                              "name": "COM5",
+                              "description": "ELTIMA_Virtual_Serial_Port_03"
+                        },
+                        "protocolVersionDto": {
+                              "versionHi": 0,
+                              "versionLo": 0
+                        },
+                        "converterType": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "stateDto": {
+                              "temperature": "0.0",
+                              "errorCode": 0,
+                              "battery": 0
+                        }
+                  },
+                  {
+                        "dateTime": "2000-0-0T0:0:0",
+                        "valueDtoList": [
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              }
+                        ],
+                        "deviceTypeDto": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "comPortDto": {
+                              "name": "COM8",
+                              "description": "ELTIMA_Virtual_Serial_Port_04"
+                        },
+                        "protocolVersionDto": {
+                              "versionHi": 0,
+                              "versionLo": 0
+                        },
+                        "converterType": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "stateDto": {
+                              "temperature": "0.0",
+                              "errorCode": 0,
+                              "battery": 0
+                        }
+                  },
+                  {
+                        "dateTime": "2000-0-0T0:0:0",
+                        "valueDtoList": [
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              },
+                              {
+                                    "dateTime": "2000-0-0T0:0:0",
+                                    "glucose": 0,
+                                    "stateUserMark": 0,
+                                    "temperature": "0.0",
+                                    "hematocrit": 0,
+                                    "id": 0,
+                                    "state": 0
+                              }
+                        ],
+                        "deviceTypeDto": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "comPortDto": {
+                              "name": "COM9",
+                              "description": "ELTIMA_Virtual_Serial_Port_05"
+                        },
+                        "protocolVersionDto": {
+                              "versionHi": 0,
+                              "versionLo": 0
+                        },
+                        "converterType": {
+                              "deviceType": 0,
+                              "swVersionHigh": 0,
+                              "serialId": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                              "swVersionLow": 0,
+                              "hwVersion": 0
+                        },
+                        "stateDto": {
+                              "temperature": "0.0",
+                              "errorCode": 0,
+                              "battery": 0
+                        }
+                  }
             ]
       }
 }

@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import { FcOk } from 'react-icons/fc'
 import style from './Main.module.css'
 import Section from "./deviceWindow/Section";
-import ComPortList from "./comPortList/ComPortList";
+import ComPortList from "./deviceList/ComPortList";
 import DeviceWindow from "./deviceWindow/DeviceWindow";
 
 
@@ -27,7 +27,7 @@ function Main({connection}) {
                   console.log('Connection is close');
             };
 
-            const parseDateTimeFromStr = () => {
+/*            const parseDateTimeFromStr = () => {
                   let mydate = new Date('2023-10-05T15:16:17');
                   console.log("GetDay : " + mydate.getUTCDate());
                   console.log("GetMonth : " + (mydate.getMonth() + 1));
@@ -36,7 +36,7 @@ function Main({connection}) {
                   console.log("GetMinutes : " + mydate.getMinutes());
                   console.log("GetSeconds : " + mydate.getSeconds());
             }
-            parseDateTimeFromStr();
+            parseDateTimeFromStr();*/
 
       }, [setDeviceList]);
 
@@ -52,8 +52,6 @@ function Main({connection}) {
                         connection.send(name);
                   }
       };
-      console.log("activeDeviceName : " + activeDeviceName);
-      console.log(deviceList)
       return (
             <div className={style.main}>
                   <ComPortList
@@ -62,7 +60,7 @@ function Main({connection}) {
                         activeDeviceName={activeDeviceName}
                         setActiveDeviceNameHandlerHandler={setActiveDeviceNameHandler}
                   />
-                  <DeviceWindow/>
+                  <DeviceWindow activeDeviceName={activeDeviceName} deviceList={deviceList}/>
             </div>
       )
 }
