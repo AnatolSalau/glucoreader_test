@@ -1,50 +1,47 @@
 import style from './DeviceWindow.module.css'
 import Section from "./Section";
 import {FcHighPriority, FcOk} from "react-icons/fc";
-import CheckBox from "../deviceList/CheckBox";
-import {useState} from "react";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+
 
 let count = 0;
 
 function DeviceWindow({activeDeviceName, deviceList}) {
       console.log(activeDeviceName);
-      console.log(count++);
-      let [data, setData] = useState(null);
-      const getData = () => {
-            deviceList.map(
-                  (device) => {
-                        if (device.comPortDto.name === activeDeviceName) {
-                              setData(device);
-                        }
+      console.log("DeviceWindow count render = " + count++);
+      let data = null;
+      deviceList.map(
+            (device) => {
+                  console.log("getData name : " + device.comPortDto.name);
+                  if (device.comPortDto.name === activeDeviceName) {
+                        data = device;
                   }
-            )
-      };
-      getData();
+            }
+      )
       return (
             <div className={style.deviceWindow}>
                   {
                         data
                               ? <>
-                                    <Section text={"Соединение успешно"}/>
-                                    <Section/>
+                                    <Section text={"Соединение:"}><FcOk/>
+                                    </Section>
+                                    <Section text={(data)
+                                          ? `Версия протокола: мин. вер = ${data.protocolVersionDto.versionHi}, 
+                                          макс. вер = ${data.protocolVersionDto.serialId}`
+                                          : <FcHighPriority/>}
+                                    />
+                                    <Section text={(data)
+                                          ? `ID прибора = ${data.deviceTypeDto.serialId}`
+                                          : <FcHighPriority/>}/>
+                                    <Section text={(data)
+                                          ? `ID конвертера = ${data.converterType.serialId}`
+                                          : <FcHighPriority/>}/>
                               </>
                               :<>
-                                    <Section text={"Соединение неуспешно"}/>
+                                    <Section text={"COM port не выбран"}/>
                                     <Section/>
                               </>
                   }
-{/*                  <Section text={"Соединение:"}>
-                        {(data)
-                              ? <FcOk/>
-                              : <FcHighPriority/>}
-                  </Section>
-                  <Section text={(data)
-                        ? `Версия протокола: мин. вер = ${data.protocolVersionDto.versionHi}, макс. вер = ${data.protocolVersionDto.versionLo}`
-                        : <FcHighPriority/>}
-                  />
-                  <Section text={"Версия прибора:"}/>
-                  <Section text={"Состояние прибора:"}/>*/}
             </div>
       )
 }
