@@ -16,31 +16,27 @@ function Main({connection}) {
                   if (ev.data) {
                         let json = JSON.parse(ev.data);
                         setDeviceList(json.data.deviceList);
+                        console.log("onOpen" + json.data.deviceList);
                   }
             };
             connection.onmessage = (ev) => {
                   console.log('Message from server received');
                   let json = JSON.parse(ev.data);
                   setDeviceList(json.data.deviceList);
+                  console.log("onMessage" + json.data.deviceList);
             };
             connection.onclose = (ev) => {
-                  console.log('Connection is close');
+                  console.log("onClose" + 'Connection is close');
             };
 
-/*            const parseDateTimeFromStr = () => {
-                  let mydate = new Date('2023-10-05T15:16:17');
-                  console.log("GetDay : " + mydate.getUTCDate());
-                  console.log("GetMonth : " + (mydate.getMonth() + 1));
-                  console.log("GetFullYear : " + mydate.getFullYear());
-                  console.log("GetHours : " + mydate.getHours());
-                  console.log("GetMinutes : " + mydate.getMinutes());
-                  console.log("GetSeconds : " + mydate.getSeconds());
-            }
-            parseDateTimeFromStr();*/
 
-      }, [setDeviceList]);
+      }, [deviceList]);
 
       let [activeDeviceName, setActiveDeviceName] = useState("");
+
+      const setDeviceListHandler = () => {
+            connection.send("getDeviceList");
+      }
 
       const setActiveDeviceNameHandler = (name) => {
                   if (name === activeDeviceName) {
@@ -58,7 +54,8 @@ function Main({connection}) {
                         text={"Список COM портов:"}
                         deviceList={deviceList}
                         activeDeviceName={activeDeviceName}
-                        setActiveDeviceNameHandlerHandler={setActiveDeviceNameHandler}
+                        setActiveDeviceNameHandler={setActiveDeviceNameHandler}
+                        setDeviceListHandler={setDeviceListHandler}
                   />
                   <DeviceWindow activeDeviceName={activeDeviceName} deviceList={deviceList}/>
             </div>

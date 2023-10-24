@@ -42,7 +42,7 @@
       -fx-pref-width: 150;
 }
 .scroll-bar:vertical {
-      -fx-pref-width: 8;
+      -fx-pref-width: 24;
 }
 
 .scroll-bar:vertical .thumb {

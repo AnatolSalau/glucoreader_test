@@ -54,6 +54,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
                         if ( equals == false) {
                               String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
                               session.sendMessage(new TextMessage(data));
+                              System.out.println("Session - data was sent");
                         }
                   }
             }
@@ -63,7 +64,10 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       @Override
       public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
             String request = message.getPayload();
-            logger.info("Server received: {}", request);
+            if(request.equals("getDeviceList")) {
+                  String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
+                  session.sendMessage(new TextMessage(data));
+            }
       }
 
       @Override
