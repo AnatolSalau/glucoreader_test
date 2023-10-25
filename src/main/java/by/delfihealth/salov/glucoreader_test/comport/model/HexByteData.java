@@ -60,7 +60,7 @@ public class HexByteData {
             }
             return "0x" + Integer.toHexString(data).toUpperCase();
       }
-
+      // 
       public static String getHexStrFrom(int data) {
             String string = Integer.toHexString(data);
             if (string.length() == 1) {

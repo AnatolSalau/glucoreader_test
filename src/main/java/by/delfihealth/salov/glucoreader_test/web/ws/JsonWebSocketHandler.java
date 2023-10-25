@@ -68,6 +68,19 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
                   String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
                   session.sendMessage(new TextMessage(data));
             }
+            if(request.equals("setCurrentDateTime")) {
+                  deviceDTOService.setCurrentDateTime("ELTIMA", 19200, 8, 1, 2);
+                  String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
+                  session.sendMessage(new TextMessage(data));
+                  System.out.println("setCurrentDateTime");
+            }
+            if(request.startsWith("setConverterType")) {
+                  String dataRequest = request.substring(24);
+/*                  deviceDTOService.setConverterType("ELTIMA", 19200, 8, 1, 2);
+                  String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
+                  session.sendMessage(new TextMessage(data));*/
+                  System.out.println("setConverterType : " + dataRequest);
+            }
       }
 
       @Override

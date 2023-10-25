@@ -23,6 +23,35 @@ public class DeviceDTOService {
       @Autowired
       private ComPortService comPortService;
 
+      public void setConverterType (String deviceType, String i0, String i1,String i2,String i3,String i4,String i5,String i6,String i7,
+                                    String hw, String swLow, String swHigh,
+                                    String descriptionStartWith, int baudRate,
+                                    int dataBits, int stopBits, int parity) {
+            System.out.println("deviceType = " + deviceType);
+            System.out.println("i0 = " + i0);
+            System.out.println("i1 = " + i1);
+            System.out.println("i2 = " + i2);
+            System.out.println("i3 = " + i3);
+            System.out.println("i4 = " + i4);
+            System.out.println("i5 = " + i5);
+            System.out.println("i6 = " + i6);
+            System.out.println("i7 = " + i7);
+            System.out.println("hw = " + hw);
+            System.out.println("swLow = " + swLow);
+            System.out.println("swHigh = " + swHigh);
+            //comPortService.setConverterType();
+      }
+
+      public void setCurrentDateTime(String descriptionStartWith, int baudRate,
+                                     int dataBits, int stopBits, int parity) {
+            List<SerialPort> allComPortsByDescriptionStartWith = comPortService
+                  .findAllComPortsByDescriptionStartWith(descriptionStartWith);
+                  for (SerialPort serialPort : allComPortsByDescriptionStartWith) {
+                        comPortService.setCurrentDateTime(serialPort,baudRate,
+                              dataBits, stopBits, parity);
+                  }
+      }
+
       public List<ComPortDto> getComPortDtoListByPortDescription(String descriptionStartWith) {
             List<SerialPort> allComPortsByDescriptionStartWith = comPortService.findAllComPortsByDescriptionStartWith(descriptionStartWith);
             List<ComPortDto> comPortDtoList = allComPortsByDescriptionStartWith

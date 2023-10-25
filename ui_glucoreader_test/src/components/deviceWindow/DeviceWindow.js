@@ -104,8 +104,6 @@ function DeviceWindow({activeDeviceName, deviceList}) {
                                                             метка пользователя : ${value.stateUserMark}
                                                             `}/>
                                                       })}
-
-
                                                 </div>
                                           </div>
                                     </div>

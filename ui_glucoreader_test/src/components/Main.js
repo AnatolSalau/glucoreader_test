@@ -39,15 +39,26 @@ function Main({connection}) {
       }
 
       const setActiveDeviceNameHandler = (name) => {
-                  if (name === activeDeviceName) {
-                        setActiveDeviceNameHandler("")
+            if (name === activeDeviceName) {
+                  setActiveDeviceNameHandler("")
 
-                  }
-                  else {
-                        setActiveDeviceName(name);
-                        connection.send(name);
-                  }
+            }
+            else {
+                  setActiveDeviceName(name);
+                  connection.send(name);
+            }
       };
+      
+      const setDataTimeHandler = () => {
+            connection.send("setCurrentDateTime");
+            console.log("setDataTimeHandler")
+      }
+      
+      const setConverterTypeHandler = (message) => {
+            console.log("setConverterTypeHandler=" + message);
+            connection.send("setConverterTypeHandler=" + JSON.stringify(message));
+
+      }
       return (
             <div className={style.main}>
                   <ComPortList
@@ -56,6 +67,8 @@ function Main({connection}) {
                         activeDeviceName={activeDeviceName}
                         setActiveDeviceNameHandler={setActiveDeviceNameHandler}
                         setDeviceListHandler={setDeviceListHandler}
+                        setDataTimeHandler={setDataTimeHandler}
+                        setConverterTypeHandler={setConverterTypeHandler}
                   />
                   <DeviceWindow activeDeviceName={activeDeviceName} deviceList={deviceList}/>
             </div>
