@@ -32,7 +32,9 @@ public class ComPortService {
                   .collect(Collectors.toList());
             return serialPortDTOList;
       }
+      /*
 
+       */
       public List<HexByteData> getProtocolVersion(SerialPort serialPort, int baudRate, int dataBits,
                                                   int stopBits, int parity) {
             openComPort(serialPort, baudRate,
