@@ -12,6 +12,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.io.IOException;
 import java.util.Objects;
 
 @SpringBootApplication
@@ -48,6 +49,27 @@ public class GlucoreaderTestApplication extends Application {
       //Set window stage settings and show it
       @Override
       public void start(Stage primaryStage) throws Exception {
+            Runnable myRunnable =
+                  new Runnable(){
+                        public void run(){
+                              //Create Stage
+                              Stage newWindow = new Stage();
+                              newWindow.setTitle("New Scene");
+                              //Create view from FXML
+                              FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/preloader.fxml"));
+                              //Set view in window
+                              try {
+                                    newWindow.setScene(new Scene(loader.load()));
+                              } catch (IOException e) {
+                                    e.printStackTrace();
+                              }
+                              //Launch
+                              newWindow.toFront();
+                              newWindow.show();
+                        }
+                  };
+            myRunnable.run();
+
             primaryStage.setOpacity(0.0);
 
             //Fxml resources
@@ -60,7 +82,7 @@ public class GlucoreaderTestApplication extends Application {
                   .withContent(root)
                   .apply();
 
-            scene = primaryStage.  getScene();
+            scene = primaryStage.getScene();
 
             WaitomoTheme.apply(scene);
 
@@ -68,9 +90,8 @@ public class GlucoreaderTestApplication extends Application {
 
             primaryStage.getIcons().add(titleImage);
             primaryStage.setTitle("GR Test");
-
             primaryStage.show();
-            Thread.sleep(100);;
+            Thread.sleep(100);
             primaryStage.setOpacity(1.0);
             this.primaryStage = primaryStage;
       }
