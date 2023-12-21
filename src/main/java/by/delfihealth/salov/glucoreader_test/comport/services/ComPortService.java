@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -136,6 +136,7 @@ public class ComPortService {
             /**
              * -------------------------------------------------------------
              */
+
             List<HexByteData> getDateRequest = new ArrayList<>();
             getDateRequest.add(new HexByteData(0, "0x02", HexByteType.STX));
             getDateRequest.add(new HexByteData(1, "0x06", HexByteType.LEN_LO));
@@ -349,7 +350,7 @@ public class ComPortService {
             byte[] protocolVersionByteResponse = new byte[responseLength];
             for (int i = 0; i < maxTimeout; i += minTimeout) {
                   try {
-                        TimeUnit.MILLISECONDS.sleep(minTimeout);
+                        Thread.sleep(minTimeout);
                   } catch (InterruptedException e) {
                         e.printStackTrace();
                   }

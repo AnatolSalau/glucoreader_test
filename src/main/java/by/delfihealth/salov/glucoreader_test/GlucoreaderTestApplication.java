@@ -13,7 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.Objects;
-import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
 public class GlucoreaderTestApplication extends Application {
@@ -71,7 +70,7 @@ public class GlucoreaderTestApplication extends Application {
             primaryStage.setTitle("GR Test");
 
             primaryStage.show();
-            TimeUnit.MILLISECONDS.sleep(100);
+            Thread.sleep(100);;
             primaryStage.setOpacity(1.0);
             this.primaryStage = primaryStage;
       }

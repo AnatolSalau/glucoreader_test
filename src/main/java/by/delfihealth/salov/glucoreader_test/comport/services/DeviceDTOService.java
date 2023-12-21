@@ -160,7 +160,9 @@ public class DeviceDTOService {
             int battery = state.get(7).getByteValue();
             return new StateDto(errorCode, temperature, battery);
       }
+      /*
 
+       */
       private DeviceTypeDto convertDeviceTypeRawToDeviceTypeDto(List<HexByteData> deviceType) {
             int deviceTypeNumber = deviceType.get(4).getByteValue();
             String serialNumber = null;
@@ -179,7 +181,9 @@ public class DeviceDTOService {
             return new DeviceTypeDto(deviceTypeNumber, serialNumber, hwVersion,
                   swVersionLow, swVersionHigh);
       }
+      /*
 
+       */
       private List<ValueDto> convertValuesRawToValuesDto(List<HexByteData> valuesRaw) {
             List<HexByteData> subValuesList = valuesRaw.subList(4, valuesRaw.size() - 2);
             final int oneValueLength = 15;
@@ -229,7 +233,7 @@ public class DeviceDTOService {
       private int getNumberFromLowAndHighBytes(HexByteData indexLo, HexByteData indexHi) {
             return ((int) indexLo.getByteValue() & 0xff) | (((int) indexHi.getByteValue() & 0xff) << 8);
       }
-
+      
       private String getDateTimeFromDateTimeRaw(List<HexByteData> dateTimeRaw) {
             //'2023-10-05T15:16:17'
             int year = dateTimeRaw.get(4).getByteValue() + 2000;
@@ -255,7 +259,9 @@ public class DeviceDTOService {
                   sec.getByteValue());
             return result;
       }
+      /*
 
+       */
       private int getStateFromByte(HexByteData state) {
             String binaryRepresentation = convertByteToStringBinaryRepresentation(state.getByteValue());
             String stateCode = binaryRepresentation.substring(

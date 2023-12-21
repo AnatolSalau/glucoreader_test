@@ -17,6 +17,9 @@ function DeviceWindow({activeDeviceName, deviceList}) {
                   }
             }
       )
+      /*
+
+       */
       return (
             <div className={style.deviceWindow}>
                   {
@@ -112,6 +115,24 @@ function DeviceWindow({activeDeviceName, deviceList}) {
                               : <>
                                     <Section text={"COM port не выбран"}/>
                                     <Section/>
+                                    <div style={{
+                                          border: "1px solid black",
+                                          height: 40,
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center"
+
+                                    }}>
+                                          <div style={{
+                                                border: "1px solid darkblue", height: 20,
+                                                textAlign:"center",
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center"
+                                          }}>
+                                                text
+                                          </div>
+                                    </div>
                               </>
                   }
             </div>

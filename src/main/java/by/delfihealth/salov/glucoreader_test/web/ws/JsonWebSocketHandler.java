@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
-import java.util.stream.Collectors;
+
 
 public class JsonWebSocketHandler extends TextWebSocketHandler implements SubProtocolCapable {
 
@@ -30,6 +30,7 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
       private DeviceDTOService deviceDTOService;
 
       List<ComPortDto> comPortDtoList = new ArrayList<>();
+      
       @Override
       public void afterConnectionEstablished(WebSocketSession session) throws Exception {
             sessions.add(session);
@@ -37,13 +38,17 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             comPortDtoList = deviceDTOService.getComPortDtoListByPortDescription("ELTIMA");
             session.sendMessage(new TextMessage(newData));
       }
+      /*
 
+       */
       @Override
       public void afterConnectionClosed(WebSocketSession session, CloseStatus status) {
             logger.info("Server connection closed: {}", status);
             sessions.remove(session);
       }
+      /*
 
+       */
       @Scheduled(fixedRate = 1000)
       void sendPeriodicMessages() throws IOException {
             List<ComPortDto> newComPortDtoList = deviceDTOService
@@ -60,10 +65,13 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             }
             comPortDtoList = newComPortDtoList;
       }
+      /*
 
+       */
       @Override
       public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
             String request = message.getPayload();
+
             if(request.equals("getDeviceList")) {
                   String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
                   session.sendMessage(new TextMessage(data));
@@ -76,18 +84,24 @@ public class JsonWebSocketHandler extends TextWebSocketHandler implements SubPro
             }
             if(request.startsWith("setConverterType")) {
                   String dataRequest = request.substring(24);
-/*                  deviceDTOService.setConverterType("ELTIMA", 19200, 8, 1, 2);
-                  String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
-                  session.sendMessage(new TextMessage(data));*/
+                  /*
+                        deviceDTOService.setConverterType("ELTIMA", 19200, 8, 1, 2);
+                        String data = deviceDTOService.getDataJsonByPortDescription("ELTIMA");
+                        session.sendMessage(new TextMessage(data));
+                  */
                   System.out.println("setConverterType : " + dataRequest);
             }
       }
-
+      /*
+                   
+       */
       @Override
       public void handleTransportError(WebSocketSession session, Throwable exception) {
             logger.info("Server transport error: {}", exception.getMessage());
       }
+      /*
 
+       */
       @Override
       public List<String> getSubProtocols() {
             return Collections.singletonList("subprotocol.glucoreader.websocket");

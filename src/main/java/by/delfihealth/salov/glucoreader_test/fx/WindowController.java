@@ -38,7 +38,6 @@ public class WindowController implements Initializable {
             engine.load(linkWindow);
             playSplashScreenAnimation(splashScreen, 1000,500).play();
       }
-
       private PauseTransition playSplashScreenAnimation( Pane pane, double pauseDuration, double visibilityChangeDuration) {
             PauseTransition pause = new PauseTransition(Duration.millis(pauseDuration));
             pause.setOnFinished(e -> {
